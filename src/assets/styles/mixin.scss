@@ -1,0 +1,52 @@
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin full {
+    width: 100%;
+    height: 100%;
+}
+
+@mixin position($left, $bottom) {
+    position: absolute;
+    left: $left;
+    bottom: $bottom;
+}
+
+@mixin skew {
+    transform: skewX(-10deg);
+    -webkit-transform: skewX(-10deg);
+}
+
+@mixin noskew {
+    transform: skewX(10deg);
+    -webkit-transform: skewX(10deg);
+}
+
+// font
+
+@mixin font($size){
+    font-size: $size;
+    font-weight: 700;
+}
+
+@mixin font-large {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+@mixin font-big {
+    font-size: 26px;
+    font-weight: 700;
+}
+
+@mixin font-regular{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+@mixin font-light{
+    font-size: 18px;
+}

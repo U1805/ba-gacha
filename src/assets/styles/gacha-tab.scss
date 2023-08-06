@@ -1,0 +1,203 @@
+.gacha_icon {
+  width: 62px;
+  @include noskew;
+}
+
+.stone_icon {
+  width: 23px;
+  @include noskew;
+}
+
+.point_icon {
+  width: 57px;
+  padding-top: 5px;
+  z-index: 1;
+}
+
+@mixin gacha-button($color, $url0, $url1) {
+  width: 237px;
+  border-radius: 10px;
+  background: $color;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    background-size: contain;
+    z-index: -1;
+    @include full;
+  }
+  &::before {
+    left: -15px;
+    top: -5px;
+    background: url($url0) no-repeat;
+  }
+  &::after {
+    right: -25px;
+    bottom: -5px;
+    background: url($url1) right bottom no-repeat;
+  }
+}
+
+.tab-container {
+  position: relative;
+  background: $white-main;
+  border: 1px solid rgb(154, 179, 193);
+  border-radius: 3px;
+  box-shadow: 0px 4px 6px -3px rgb(0 0 0/0.5);
+
+  .tab-body {
+    position: relative;
+    width: 100%;
+    height: 343px;
+    padding: 15px 17px;
+    text-indent: 2px;
+
+    &::before {
+      content: '';
+      background: url(/IntroBg.png) no-repeat left bottom;
+      background-size: 74%;
+      @include position(0, 0);
+      @include full;
+    }
+
+    & > div {
+      text-align: left;
+    }
+
+    .time {
+      color: $black-shadow;
+      line-height: 16px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid $white-border;
+      @include font-light;
+    }
+
+    .title {
+      line-height: 40px;
+      color: $black-main;
+      padding: 20px 0 20px 2px;
+      border-bottom: 3px solid $white-border;
+      @include font-large;
+    }
+
+    .subtitle {
+      line-height: 16px;
+      color: rgb(0, 126, 255);
+      padding: 9px 0 10px 2px;
+      border-bottom: 2px solid rgb(205, 214, 218);
+      @include font-regular;
+    }
+
+    .notice {
+      line-height: 19px;
+      color: $black-shadow;
+      padding: 4px 0 0 2px;
+      @include font-light;
+    }
+
+    .button-container {
+      width: 100%;
+      height: 78px;
+      display: flex;
+      justify-content: space-evenly;
+      @include position(0, 15px);
+      .gacha-button {
+        position: relative;
+        height: 100%;
+        padding-left: 14px;
+        border: 1px solid $black-border;
+        overflow: hidden;
+        box-shadow: 0px 5px 5px -5px rgb(0 0 0/0.6);
+        @include skew;
+        @include center;
+        .right {
+          flex-wrap: wrap;
+          margin-left: -10px;
+          @include center;
+          .cost {
+            width: 110px;
+            height: 26px;
+            color: white;
+            background: $black-shadow;
+            border-radius: 3px;
+            margin-left: -10px;
+            @include font-regular;
+            @include center;
+            span {
+              @include noskew;
+            }
+          }
+          .text {
+            width: 100%;
+            color: $black-shadow;
+            line-height: 31px;
+            text-align: right;
+            padding-right: 19px;
+            @include font-big;
+            @include noskew;
+          }
+        }
+      }
+      .button-blue {
+        @include gacha-button($blue, '/ButtonBlueBg0.png', '/ButtonBlueBg1.png');
+      }
+      .button-yellow {
+        @include gacha-button($golden, '/ButtonYellowBg0.png', '/ButtonYellowBg1.png');
+      }
+    }
+  }
+
+  .tab-foot {
+    height: 57px;
+    background: $blue-main;
+    @include center;
+
+    .text {
+      width: 163px;
+      height: 37px;
+      color: $black-main;
+      background: white;
+      border-top: 1px solid $black-main;
+      border-bottom: 1px solid $black-main;
+      margin-left: -17px;
+      @include center;
+      @include font-regular;
+      @include skew;
+      span {
+        @include noskew;
+      }
+    }
+
+    .point {
+      width: 125px;
+      height: 37px;
+      color: white;
+      background: $black-shadow;
+      border-radius: 0 3px 3px 0;
+      margin-right: 10px;
+      @include center;
+      @include font-regular;
+      @include skew;
+      span {
+        @include noskew;
+      }
+    }
+
+    .select {
+      width: 145px;
+      height: 44px;
+      color: $black-main;
+      background: rgb(221, 254, 255);
+      border-radius: 7px;
+      border: 1px solid $black-border;
+      box-shadow: 0px 5px 5px -5px rgb(0 0 0/0.5);
+      @include center;
+      @include font-regular;
+      @include skew;
+      span {
+        @include noskew;
+      }
+    }
+  }
+}
