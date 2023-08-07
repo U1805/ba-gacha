@@ -47,9 +47,15 @@ function getStudents(num: number) {
     flag.value = false
     flag2.value = false
     result.value = []
+    let twoStarFlag:boolean = false
     for (let i = 0; i < num; i++) {
         let student: myStudent = getRandomGacha()
+        if (student.StarGrade > 1) twoStarFlag = true
+        while(i == 9 && !twoStarFlag && student.StarGrade == 1){
+            student = getRandomGacha()// 十连保底
+        }
         if (student.StarGrade == 3) flag.value = true
+
         let res: resultItem = {
             Id: student.Id,
             Name: student.Name,
@@ -69,7 +75,9 @@ function getStudents(num: number) {
         }
     }
     totalCnt.value += num
-    console.log(history.value)
+    console.debug(result.value)
+    console.debug(history.value)
+    console.debug(flag.value, flag2.value, twoStarFlag)
     setData()
     // 特殊三星
     if (flag.value && Math.random() < special) flag2.value = true

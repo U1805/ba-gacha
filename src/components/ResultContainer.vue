@@ -69,13 +69,13 @@ function backgroundColor(star: number) {
     @include center;
     align-content: center;
     flex-wrap: wrap;
-    width: 70%;
-    height: 100%;
+    width: 1180px;
+    height: 800px;
 }
 
 .button-container {
-    width: 40%;
-    height: 10%;
+    width: 670px;
+    height: 95px;
     display: flex;
     justify-content: space-evenly;
     margin-bottom: 100px;
@@ -90,6 +90,10 @@ function backgroundColor(star: number) {
         div {
             @include noskew;
             @include font-big;
+        }
+
+        &:active {
+            transform: scale(0.95) skewX(-10deg);
         }
     }
 

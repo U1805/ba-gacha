@@ -15,28 +15,28 @@
         height: 17px;
 
         img {
-            width: 120%;
+            width: 66px;
             @include noskew;
         }
     }
 
     .char,
     .star {
+        width: 190px;
         position: absolute;
         content: '';
-        width: 100%;
         border: 1.5px solid white;
     }
 
     .char {
-        height: 75%;
+        height: 165px;
         top: 0;
         @include center;
         overflow: hidden;
         border-radius: 15px 15px 0 0;
 
         img {
-            height: 110%;
+            height: 175px;
             @include noskew;
         }
     }
@@ -52,7 +52,7 @@
     }
 
     .star {
-        height: 25%;
+        height: 54px;
         bottom: 0;
         background-color: $black-main;
         @include center;
@@ -68,9 +68,9 @@
 
 .point-container {
     position: absolute;
-    width: 14%;
-    height: 8%;
-    right: 5%;
+    width: 250px;
+    height: 80px;
+    right: 90px;
     border-radius: 10px;
     @include skew;
 
@@ -85,7 +85,7 @@
 
     .text,
     .num {
-        height: 50%;
+        height: 40px;
         border: 2px solid $black-shadow;
         @include center;
 

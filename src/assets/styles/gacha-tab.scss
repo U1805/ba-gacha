@@ -28,15 +28,15 @@
 
     .tab-body {
         position: relative;
-        width: 100%;
-        height: 85%;
+        width: 845px;
+        height: 440px;
         padding: 20px 20px;
         text-indent: 2px;
 
         &::before {
             content: '';
             background: url(/IntroBg.png) no-repeat left bottom;
-            background-size: 74%;
+            background-size: 770px 385px;
             @include position(0, 0);
             @include full;
         }
@@ -46,6 +46,7 @@
         }
 
         .duration {
+            width: 100%;
             color: $black-shadow;
             background-color: $blue-light;
             line-height: 16px;
@@ -76,8 +77,8 @@
         }
 
         .button-container {
-            width: 100%;
-            height: 25%;
+            width: 845px;
+            height: 110px;
             display: flex;
             justify-content: space-evenly;
             @include position(0, 30px);
@@ -89,6 +90,9 @@
                 box-shadow: 0px 5px 5px -5px rgb(0 0 0/0.6);
                 @include skew;
                 @include center;
+                &:active {
+                    transform: scale(0.95) skewX(-10deg);
+                }
 
                 .right {
                     flex-wrap: wrap;
@@ -96,8 +100,8 @@
                     @include center;
 
                     .cost {
-                        width: 65%;
-                        height: 50%;
+                        width: 160px;
+                        height: 35px;
                         color: white;
                         background: $black-shadow;
                         border-radius: 3px;
@@ -111,11 +115,11 @@
                     }
 
                     .text {
-                        width: 100%;
+                        width: 230px;
                         color: $black-shadow;
-                        line-height: 31px;
+                        line-height: 30px;
                         text-align: right;
-                        padding-right: 19px;
+                        padding-right: 20px;
                         @include font-big;
                         @include noskew;
                     }
@@ -133,13 +137,13 @@
     }
 
     .tab-foot {
-        height: 15%;
+        height: 80px;
         background: $blue-main;
         @include center;
 
         .text {
-            width: 30%;
-            height: 55%;
+            width: 260px;
+            height: 42px;
             color: $black-main;
             background: white;
             border: 2px solid $black-main;
@@ -154,12 +158,12 @@
         }
 
         .point {
-            width: 25%;
-            height: 55%;
+            width: 215px;
+            height: 42px;
             color: white;
             background: $black-shadow;
             border-radius: 0 3px 3px 0;
-            margin-right: 10px;
+            margin-right: 20px;
             @include center;
             @include skew;
 
@@ -170,8 +174,8 @@
         }
 
         .select {
-            width: 25%;
-            height: 70%;
+            width: 215px;
+            height: 54px;
             color: $black-main;
             background: $blue-light;
             border-radius: 7px;
@@ -184,6 +188,10 @@
                 @include font-regular;
                 font-size: 28px;
                 @include noskew;
+            }
+
+            &:active {
+                transform: scale(0.95) skewX(-10deg);
             }
         }
     }

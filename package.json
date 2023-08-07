@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --host",
     "build": "run-p type-check build-only",
     "preview": "vite preview",
     "build-only": "vite build",
@@ -26,6 +26,7 @@
     "eslint": "^8.45.0",
     "eslint-plugin-vue": "^9.15.1",
     "npm-run-all": "^4.1.5",
+    "postcss-px-to-viewport": "^1.1.1",
     "prettier": "^3.0.0",
     "sass": "^1.64.2",
     "sass-loader": "^13.3.2",

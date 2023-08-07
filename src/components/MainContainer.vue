@@ -141,7 +141,7 @@ function getStudents(num: number) {
     display: flex;
     height: 100vh;
     position: relative;
-    width: 120%;
+    width: 1111px;
     z-index: 3;
     content: url('/Background.png');
     mask-image: linear-gradient(to left, #fff 70%, transparent 100%);
@@ -152,31 +152,29 @@ function getStudents(num: number) {
     grid-area: 1 / 2 / 3 / 3;
     height: 100vh;
     z-index: 4;
-    padding: 160px 40px 120px 40px;
-    display: flex;
+    @include center;
     flex-direction: column;
-    align-items: center;
 
     div {
-        width: 100%;
+        width: 844px;
     }
 
     .event-banner {
         display: flex;
         justify-content: flex-start;
-        height: 20%;
+        height: 140px;
 
         overflow: hidden;
 
         img {
-            height: 100%;
+            height: 140px;
             margin: 0 5px;
         }
     }
 
     .event-scroll {
         background-color: #ffffffba;
-        height: 2%;
+        height: 13.5px;
         width: fit-content;
         padding: 0 10px;
         margin: 8px;
@@ -201,7 +199,7 @@ function getStudents(num: number) {
     }
 
     .tab-container {
-        height: 75%;
+        height: 520px;
     }
 }
 </style>
