@@ -9,6 +9,11 @@
     height: 100%;
 }
 
+@mixin full-screen {
+    width: 100vw;
+    height: 100vh;
+}
+
 @mixin position($left, $bottom) {
     position: absolute;
     left: $left;
@@ -27,7 +32,7 @@
 
 // font
 
-@mixin font($size){
+@mixin font($size) {
     font-size: $size;
     font-weight: 700;
 }
@@ -42,16 +47,45 @@
     font-weight: 700;
 }
 
-@mixin font-heavy{
+@mixin font-heavy {
     font-size: 22px;
     font-weight: 1400;
 }
 
-@mixin font-regular{
+@mixin font-regular {
     font-size: 22px;
     font-weight: 700;
 }
 
-@mixin font-light{
+@mixin font-light {
     font-size: 22px;
+}
+
+// button
+
+@mixin gacha-button($color, $url0, $url1) {
+    width: 40%;
+    border-radius: 10px;
+    background: $color;
+
+    &::before,
+    &::after {
+        content: '';
+        position: absolute;
+        background-size: contain;
+        z-index: -1;
+        @include full;
+    }
+
+    &::before {
+        left: -20px;
+        top: -20px;
+        background: url($url0) no-repeat;
+    }
+
+    &::after {
+        right: -25px;
+        bottom: -20px;
+        background: url($url1) right bottom no-repeat;
+    }
 }

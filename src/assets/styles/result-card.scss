@@ -1,0 +1,108 @@
+.card {
+    width: 180px;
+    height: 220px;
+    margin: 25px 15px;
+    position: relative;
+    background-color: aqua;
+    border: 1.5px solid white;
+    border-radius: 20px;
+    @include skew;
+
+    .new {
+        position: absolute;
+        top: -10px;
+        left: -10px;
+        height: 17px;
+
+        img {
+            width: 120%;
+            @include noskew;
+        }
+    }
+
+    .char,
+    .star {
+        position: absolute;
+        content: '';
+        width: 100%;
+        border: 1.5px solid white;
+    }
+
+    .char {
+        height: 75%;
+        top: 0;
+        @include center;
+        overflow: hidden;
+        border-radius: 15px 15px 0 0;
+
+        img {
+            height: 110%;
+            @include noskew;
+        }
+    }
+
+    &.blue .char {
+        background-color: $gray-card;
+    }
+    &.golden .char {
+        background-color: $golden-card;
+    }
+    &.pink .char {
+        background-color: $pink-card;
+    }
+
+    .star {
+        height: 25%;
+        bottom: 0;
+        background-color: $black-main;
+        @include center;
+        border-radius: 0 0 15px 15px;
+
+        img {
+            width: 33px;
+            margin: 3px;
+            @include noskew;
+        }
+    }
+}
+
+.point-container {
+    position: absolute;
+    width: 14%;
+    height: 8%;
+    right: 5%;
+    border-radius: 10px;
+    @include skew;
+
+    img {
+        width: 120px;
+        position: absolute;
+        left: -70px;
+        top: -10px;
+        @include noskew;
+        z-index: 32;
+    }
+
+    .text,
+    .num {
+        height: 50%;
+        border: 2px solid $black-shadow;
+        @include center;
+
+        span {
+            @include font-regular;
+            @include noskew;
+        }
+    }
+
+    .text {
+        background-color: white;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .num {
+        color: white;
+        background-color: $black-shadow;
+        border-radius: 0 0 10px 10px;
+    }
+}

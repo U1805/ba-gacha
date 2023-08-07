@@ -14,9 +14,9 @@
         <div class="gradient"></div>
         <div class="gacha-wrapper">
             <div class="event-banner">
-                <img src="/EventBanner0.png">
-                <img src="/EventBanner0.png">
-                <img src="/EventBanner1.png">
+                <img src="/EventBanner0.png" />
+                <img src="/EventBanner0.png" />
+                <img src="/EventBanner1.png" />
             </div>
             <div class="event-scroll">
                 <span class="dot active"></span>
@@ -28,38 +28,44 @@
                 <div class="tab-body">
                     <div class="duration">07/25/2023 From 10:00 ~ 08/01/2023 Until 09:59</div>
                     <div class="title">Fest Recruitment</div>
-                    <div class="subtitle">Increased chance to get 3★ Mika!<br></div>
-                    <div class="notice">One 2★ or higher student is guaranteed for every ten recruitments!<br>※ Students who
-                        have already been recruited will be converted into Eligma and Eleph.</div>
+                    <div class="subtitle">Increased chance to get 3★ Mika!<br /></div>
+                    <div class="notice">
+                        One 2★ or higher student is guaranteed for every ten recruitments!<br />※
+                        Students who have already been recruited will be converted into Eligma and
+                        Eleph.
+                    </div>
                     <!-- Button-container begin -->
                     <div class="button-container">
                         <div class="gacha-button button-blue">
-                            <img src="/Gacha0.png" class="gacha_icon">
-                            <div class="right"><img src="/Stone.png" class="stone_icon">
-                                <div class="cost"> <span>120</span> </div>
+                            <img src="/Gacha0.png" class="gacha_icon" />
+                            <div class="right">
+                                <img src="/Stone.png" class="stone_icon" />
+                                <div class="cost"><span>120</span></div>
                                 <div class="text">招募 1 次</div>
                             </div>
                         </div>
                         <div class="gacha-button button-yellow">
-                            <img src="/Gacha1.png" class="gacha_icon">
-                            <div class="right"><img src="/Stone.png" class="stone_icon">
-                                <div class="cost "> <span>1200</span> </div>
+                            <img src="/Gacha1.png" class="gacha_icon" />
+                            <div class="right">
+                                <img src="/Stone.png" class="stone_icon" />
+                                <div class="cost"><span>1200</span></div>
                                 <div class="text">招募 10 次</div>
                             </div>
                         </div>
                     </div>
                     <!-- Button-container end -->
                 </div>
-                <div class="tab-foot"><img src="/Point.png" draggable="false" class="point_icon">
-                    <div class="text"> <span>招募点数</span> </div>
-                    <div class="point"> <span>60</span> </div>
-                    <div class="select"> <span>重置</span> </div>
+                <div class="tab-foot">
+                    <img src="/Point.png" draggable="false" class="point_icon" />
+                    <div class="text"><span>招募点数</span></div>
+                    <div class="point"><span>60</span></div>
+                    <div class="select"><span>重置</span></div>
                 </div>
             </div>
         </div>
     </div>
 </template>
-  
+
 <style scoped lang="scss">
 @import '@/assets/styles/gacha-tab.scss';
 
@@ -68,14 +74,16 @@
     grid-template-columns: 45vw 55vw;
     grid-template-rows: $header_hight 1fr;
 
-    background: url("/Background.png") no-repeat;
+    background: url('/Background.png') no-repeat;
+    background-size: cover;
     overflow: hidden;
 }
 
 .header {
     grid-area: 1 / 1 / 2 / 3;
     display: flex;
-    background: url("/Header.png") top no-repeat;
+    background: url('/Header.png') top no-repeat;
+    background-size: cover;
     filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.441));
     background-size: contain;
     position: relative;
@@ -102,7 +110,7 @@
     }
 
     .stone {
-        left: 860px
+        left: 860px;
     }
 }
 
@@ -122,7 +130,7 @@
     position: relative;
     width: 120%;
     z-index: 3;
-    content: url("/Background.png");
+    content: url('/Background.png');
     mask-image: linear-gradient(to left, #fff 70%, transparent 100%);
     -webkit-mask-image: linear-gradient(to left, #fff 70%, transparent 100%);
 }

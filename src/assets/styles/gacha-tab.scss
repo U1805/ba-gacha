@@ -1,217 +1,190 @@
 .gacha_icon {
-  width: 90px;
-  margin: 10px;
-  @include noskew;
+    width: 90px;
+    margin: 10px;
+    @include noskew;
 }
 
 .stone_icon {
-  width: 80px;
-  margin: -10px -20px;
-  @include noskew;
+    width: 80px;
+    margin: -10px -20px;
+    @include noskew;
 }
 
 .point_icon {
-  width: 110px;
-  margin: -10px -20px;
-  z-index: 1;
-}
-
-@mixin gacha-button($color, $url0, $url1) {
-  width: 40%;
-  border-radius: 10px;
-  background: $color;
-
-  &::before,
-  &::after {
-    content: '';
-    position: absolute;
-    background-size: contain;
-    z-index: -1;
-    @include full;
-  }
-
-  &::before {
-    left: -20px;
-    top: -20px;
-    background: url($url0) no-repeat;
-  }
-
-  &::after {
-    right: -25px;
-    bottom: -20px;
-    background: url($url1) right bottom no-repeat;
-  }
+    width: 110px;
+    margin: -10px -20px;
+    z-index: 1;
 }
 
 .tab-container {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background: $white-main;
-  border: 1px solid $white-border;
-  border-radius: 3px;
-  box-shadow: 0px 4px 6px -3px rgb(0 0 0/0.5);
-
-  .tab-body {
     position: relative;
-    width: 100%;
-    height: 85%;
-    padding: 20px 20px;
-    text-indent: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: $white-main;
+    border: 1px solid $white-border;
+    border-radius: 3px;
+    box-shadow: 0px 4px 6px -3px rgb(0 0 0/0.5);
 
-    &::before {
-      content: '';
-      background: url(/IntroBg.png) no-repeat left bottom;
-      background-size: 74%;
-      @include position(0, 0);
-      @include full;
-    }
-
-    &>div {
-      text-align: left;
-    }
-
-    .duration {
-      color: $black-shadow;
-      background-color: $blue-light;
-      line-height: 16px;
-      padding: 12px;
-      @include font-light;
-    }
-
-    .title {
-      line-height: 24px;
-      color: $black-main;
-      padding: 20px 0 20px 2px;
-      border-bottom: 3px solid $white-border;
-      @include font-large;
-    }
-
-    .subtitle {
-      line-height: 16px;
-      color: rgb(0, 126, 255);
-      padding: 9px 0 10px 2px;
-      border-bottom: 3px solid $white-border;
-      @include font-regular;
-    }
-
-    .notice {
-      line-height: 32px;
-      color: $black-shadow;
-      @include font-light;
-    }
-
-    .button-container {
-      width: 100%;
-      height: 25%;
-      display: flex;
-      justify-content: space-evenly;
-      @include position(0, 30px);
-
-      .gacha-button {
+    .tab-body {
         position: relative;
-        padding-left: 14px;
-        overflow: hidden;
-        box-shadow: 0px 5px 5px -5px rgb(0 0 0/0.6);
-        @include skew;
+        width: 100%;
+        height: 85%;
+        padding: 20px 20px;
+        text-indent: 2px;
+
+        &::before {
+            content: '';
+            background: url(/IntroBg.png) no-repeat left bottom;
+            background-size: 74%;
+            @include position(0, 0);
+            @include full;
+        }
+
+        & > div {
+            text-align: left;
+        }
+
+        .duration {
+            color: $black-shadow;
+            background-color: $blue-light;
+            line-height: 16px;
+            padding: 12px;
+            @include font-light;
+        }
+
+        .title {
+            line-height: 24px;
+            color: $black-main;
+            padding: 20px 0 20px 2px;
+            border-bottom: 3px solid $white-border;
+            @include font-large;
+        }
+
+        .subtitle {
+            line-height: 16px;
+            color: rgb(0, 126, 255);
+            padding: 9px 0 10px 2px;
+            border-bottom: 3px solid $white-border;
+            @include font-regular;
+        }
+
+        .notice {
+            line-height: 32px;
+            color: $black-shadow;
+            @include font-light;
+        }
+
+        .button-container {
+            width: 100%;
+            height: 25%;
+            display: flex;
+            justify-content: space-evenly;
+            @include position(0, 30px);
+
+            .gacha-button {
+                position: relative;
+                padding-left: 14px;
+                overflow: hidden;
+                box-shadow: 0px 5px 5px -5px rgb(0 0 0/0.6);
+                @include skew;
+                @include center;
+
+                .right {
+                    flex-wrap: wrap;
+                    margin-left: -20px;
+                    @include center;
+
+                    .cost {
+                        width: 65%;
+                        height: 50%;
+                        color: white;
+                        background: $black-shadow;
+                        border-radius: 3px;
+                        margin-left: -10px;
+                        @include center;
+
+                        span {
+                            @include font-regular;
+                            @include noskew;
+                        }
+                    }
+
+                    .text {
+                        width: 100%;
+                        color: $black-shadow;
+                        line-height: 31px;
+                        text-align: right;
+                        padding-right: 19px;
+                        @include font-big;
+                        @include noskew;
+                    }
+                }
+            }
+
+            .button-blue {
+                @include gacha-button($blue, '/ButtonBlueBg0.png', '/ButtonBlueBg1.png');
+            }
+
+            .button-yellow {
+                @include gacha-button($golden, '/ButtonYellowBg0.png', '/ButtonYellowBg1.png');
+            }
+        }
+    }
+
+    .tab-foot {
+        height: 15%;
+        background: $blue-main;
         @include center;
 
-        .right {
-          flex-wrap: wrap;
-          margin-left: -20px;
-          @include center;
-
-          .cost {
-            width: 65%;
-            height: 50%;
-            color: white;
-            background: $black-shadow;
-            border-radius: 3px;
-            margin-left: -10px;
+        .text {
+            width: 30%;
+            height: 55%;
+            color: $black-main;
+            background: white;
+            border: 2px solid $black-main;
+            margin-left: -17px;
             @include center;
+            @include skew;
 
             span {
-              @include font-regular;
-              @include noskew;
+                @include noskew;
+                @include font-regular;
             }
-          }
-
-          .text {
-            width: 100%;
-            color: $black-shadow;
-            line-height: 31px;
-            text-align: right;
-            padding-right: 19px;
-            @include font-big;
-            @include noskew;
-          }
         }
-      }
 
-      .button-blue {
-        @include gacha-button($blue, '/ButtonBlueBg0.png', '/ButtonBlueBg1.png');
-      }
+        .point {
+            width: 25%;
+            height: 55%;
+            color: white;
+            background: $black-shadow;
+            border-radius: 0 3px 3px 0;
+            margin-right: 10px;
+            @include center;
+            @include skew;
 
-      .button-yellow {
-        @include gacha-button($golden, '/ButtonYellowBg0.png', '/ButtonYellowBg1.png');
-      }
+            span {
+                @include font-regular;
+                @include noskew;
+            }
+        }
+
+        .select {
+            width: 25%;
+            height: 70%;
+            color: $black-main;
+            background: $blue-light;
+            border-radius: 7px;
+            border: 1px solid $black-border;
+            box-shadow: 0px 5px 5px -5px rgb(0 0 0/0.5);
+            @include center;
+            @include skew;
+
+            span {
+                @include font-regular;
+                font-size: 28px;
+                @include noskew;
+            }
+        }
     }
-  }
-
-  .tab-foot {
-    height: 15%;
-    background: $blue-main;
-    @include center;
-
-    .text {
-      width: 30%;
-      height: 55%;
-      color: $black-main;
-      background: white;
-      border: 2px solid $black-main;
-      margin-left: -17px;
-      @include center;
-      @include skew;
-
-      span {
-        @include noskew;
-        @include font-regular;
-      }
-    }
-
-    .point {
-      width: 25%;
-      height: 55%;
-      color: white;
-      background: $black-shadow;
-      border-radius: 0 3px 3px 0;
-      margin-right: 10px;
-      @include center;
-      @include skew;
-
-      span {
-        @include font-regular;
-        @include noskew;
-      }
-    }
-
-    .select {
-      width: 25%;
-      height: 70%;
-      color: $black-main;
-      background: $blue-light;
-      border-radius: 7px;
-      border: 1px solid $black-border;
-      box-shadow: 0px 5px 5px -5px rgb(0 0 0/0.5);
-      @include center;
-      @include skew;
-
-      span {
-        @include font-regular;
-        font-size: 28px;
-        @include noskew;
-      }
-    }
-  }
 }
