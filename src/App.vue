@@ -4,8 +4,9 @@ import VideoContainer from './components/VideoContainer.vue'
 import ResultContainer from './components/ResultContainer.vue'
 
 import data from '@/assets/utils/students.json'
-import { myStudent, resultItem, historyItem } from '@/assets/utils/interface'
-import { onMounted, provide, Ref, ref } from 'vue'
+import type { myStudent, resultItem, historyItem } from '@/assets/utils/interface'
+import type { Ref } from 'vue'
+import { onMounted, provide, ref } from 'vue'
 
 const database: myStudent[] = data
 var result: Ref<resultItem[]> = ref([])

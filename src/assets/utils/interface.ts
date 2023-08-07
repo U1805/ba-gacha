@@ -14,4 +14,4 @@ interface historyItem {
     Cnt: number
 }
 
-export { myStudent, resultItem, historyItem }
+export type { myStudent, resultItem, historyItem }

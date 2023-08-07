@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import { inject, ref, Ref } from 'vue'
+import type { Ref } from 'vue'
+import { inject, ref } from 'vue'
 
 const changeVisibleParent = inject('changeVisible') as Function
 var layerVisible: Ref<boolean[]> = ref([true, false, false])

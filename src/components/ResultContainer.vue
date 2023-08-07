@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { resultItem } from '@/assets/utils/interface'
+import type { resultItem } from '@/assets/utils/interface'
 import { inject } from 'vue'
 
 const getStudents_ = inject('getStudents') as Function
@@ -61,7 +61,7 @@ function backgroundColor(star: number) {
     @include center;
     flex-direction: column;
     @include full-screen;
-    background: url(/Background.png);
+    background: url('/Background.png');
     background-size: cover;
 }
 
