@@ -21,6 +21,6 @@ export default defineConfig({
     },
     base: '/blue-archive-gacha-simulator/',
     build: {
-        outDir: 'build'
+        outDir: 'docs'
     }
 })
