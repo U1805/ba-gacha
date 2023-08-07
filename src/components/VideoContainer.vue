@@ -32,7 +32,8 @@ const sign_ended = () => {
         <video
             muted
             autoplay
-            :src="!(flag == flag2) ? '/arona_special.mp4' : '/arona_normal.mp4'"
+            :src="'/blue-archive-gacha-simulator'+
+                !(flag == flag2) ? '/arona_special.mp4' : '/arona_normal.mp4'"
             v-show="layerVisible[0]"
             @ended="arona_ended()"
             @click="arona_ended()"
@@ -40,7 +41,8 @@ const sign_ended = () => {
         <video
             muted
             autoplay
-            :src="!(flag == flag2) ? '/wait_special.mp4' : '/wait_normal.mp4'"
+            :src="'/blue-archive-gacha-simulator'+
+                !(flag == flag2) ? '/wait_special.mp4' : '/wait_normal.mp4'"
             loop="true"
             v-show="layerVisible[1]"
             @click="wait_ended()"
@@ -48,7 +50,8 @@ const sign_ended = () => {
         <video
             muted
             autoplay
-            :src="flag ? (flag2 ? '/sign_special2.mp4' : '/sign_special.mp4') : '/sign_normal.mp4'"
+            :src="'/blue-archive-gacha-simulator'+
+                flag ? (flag2 ? '/sign_special2.mp4' : '/sign_special.mp4') : '/sign_normal.mp4'"
             v-show="layerVisible[2]"
             @ended="sign_ended()"
         ></video>
