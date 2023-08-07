@@ -3,10 +3,12 @@ import { inject } from 'vue'
 
 const getStudents_ = inject('getStudents') as Function
 const changeVisible = inject('changeVisible') as Function
+const resetHistory = inject('resetHistory') as Function
+const totalCnt = inject('totalCnt') as number
 function getStudents(num: number) {
     getStudents_(num)
     changeVisible(0)
-    changeVisible(2)
+    changeVisible(1)
 }
 </script>
 
@@ -19,9 +21,7 @@ function getStudents(num: number) {
             <div class="stone">999,999</div>
         </div>
         <div class="preview">
-            <video muted autoplay loop="true">
-                <source src="/Preview0.mp4" type="video/webm" />
-            </video>
+            <video muted autoplay loop="true" src="/Preview0.mp4"></video>
         </div>
         <div class="gradient"></div>
         <div class="gacha-wrapper">
@@ -42,9 +42,8 @@ function getStudents(num: number) {
                     <div class="title">Fest Recruitment</div>
                     <div class="subtitle">Increased chance to get 3★ Mika!<br /></div>
                     <div class="notice">
-                        One 2★ or higher student is guaranteed for every ten recruitments!<br />※
-                        Students who have already been recruited will be converted into Eligma and
-                        Eleph.
+                        One 2★ or higher student is guaranteed for every ten recruitments!<br />※ Students who
+                        have already been recruited will be converted into Eligma and Eleph.
                     </div>
                     <!-- Button-container begin -->
                     <div class="button-container">
@@ -70,8 +69,10 @@ function getStudents(num: number) {
                 <div class="tab-foot">
                     <img src="/Point.png" draggable="false" class="point_icon" />
                     <div class="text"><span>招募点数</span></div>
-                    <div class="point"><span>60</span></div>
-                    <div class="select"><span>重置</span></div>
+                    <div class="point">
+                        <span>{{ totalCnt }}</span>
+                    </div>
+                    <div class="select" @click="resetHistory()"><span>重置</span></div>
                 </div>
             </div>
         </div>

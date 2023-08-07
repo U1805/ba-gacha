@@ -1,13 +1,20 @@
 <script setup lang="ts">
-import { myStudent } from '@/assets/utils/interface'
+import { resultItem } from '@/assets/utils/interface'
 import { inject } from 'vue'
 
-const getStudents = inject('getStudents') as Function
+const getStudents_ = inject('getStudents') as Function
 const changeVisible = inject('changeVisible') as Function
-const result = inject('result') as myStudent[]
+const result = inject('result') as resultItem[]
+const totalCnt = inject('totalCnt') as number
 function confirm() {
     changeVisible(2)
     changeVisible(0)
+}
+
+function getStudents(num: number) {
+    getStudents_(num)
+    changeVisible(2)
+    changeVisible(1)
 }
 
 function backgroundColor(star: number) {
@@ -25,7 +32,7 @@ function backgroundColor(star: number) {
                 <div class="char">
                     <img :src="item['Avatar']" />
                 </div>
-                <div class="new"><img src="/New.png" /></div>
+                <div class="new" v-show="item['isNew']"><img src="/New.png" /></div>
                 <div class="star"><img src="/Star.png" v-for="n in item['StarGrade']" /></div>
             </div>
         </div>
@@ -39,7 +46,9 @@ function backgroundColor(star: number) {
             <div class="point-container">
                 <img src="/Point.png" />
                 <div class="text"><span>招募点数</span></div>
-                <div class="num"><span>60</span></div>
+                <div class="num">
+                    <span>{{ totalCnt }}</span>
+                </div>
             </div>
         </div>
     </div>

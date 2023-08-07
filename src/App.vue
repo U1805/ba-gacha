@@ -1,44 +1,107 @@
 <script setup lang="ts">
 import MainContainer from './components/MainContainer.vue'
+import VideoContainer from './components/VideoContainer.vue'
 import ResultContainer from './components/ResultContainer.vue'
 
 import data from '@/assets/utils/students.json'
-import { myStudent } from '@/assets/utils/interface'
-import { provide, Ref, ref } from 'vue'
+import { myStudent, resultItem, historyItem } from '@/assets/utils/interface'
+import { onMounted, provide, Ref, ref } from 'vue'
 
 const database: myStudent[] = data
-var result: Ref<myStudent[]> = ref([])
+var result: Ref<resultItem[]> = ref([])
+var history: Ref<historyItem[]> = ref([])
+var totalCnt: Ref<number> = ref(0)
 var layerVisible: Ref<boolean[]> = ref([true, false, false])
 
+function changeVisible(layer: number) {
+    layerVisible.value[layer] = !layerVisible.value[layer]
+}
+
+// gacha
+const one_star: number = 0.79
+const two_star: number = 0.185
+const three_star: number = 0.025
 function getRandomInt(len: number) {
     return Math.floor(Math.random() * len)
+}
+
+function getRandomGacha() {
+    let t = Math.random()
+    let rank: number
+    let student: myStudent
+
+    if (t < one_star) rank = 1
+    else if (t < two_star + one_star) rank = 2
+    else rank = 3
+    do {
+        student = database[getRandomInt(database.length)]
+    } while (student.StarGrade != rank)
+    return student
 }
 
 function getStudents(num: number) {
     result.value = []
     for (let i = 0; i < num; i++) {
-        result.value[i] = database[getRandomInt(database.length)]
+        let student: myStudent = getRandomGacha()
+        let res: resultItem = {
+            Id: student.Id,
+            Name: student.Name,
+            Avatar: student.Avatar,
+            StarGrade: student.StarGrade,
+            isNew: false
+        }
+        let studentIdx = history.value.findIndex((element) => element.Id == student.Id)
+        if (studentIdx > -1) {
+            result.value.push(res)
+            history.value[studentIdx].Cnt++
+        } else {
+            res.isNew = true
+            result.value.push(res)
+            let item: historyItem = { Id: student.Id, Cnt: 1 }
+            history.value.push(item)
+        }
     }
-    console.log(result.value)
+    totalCnt.value += num
+    console.log(history.value)
+    setData()
 }
 
-function changVisible(layer: number) {
-    layerVisible.value[layer] = !layerVisible.value[layer]
-    console.log(layerVisible.value)
+// store utils
+const setData = () => {
+    localStorage.setItem('history', JSON.stringify(history.value))
 }
+const getData = () => {
+    const data = localStorage.getItem('history')
+    history.value = data != null ? JSON.parse(data) : ([] as historyItem[])
+    let cnt = 0
+    for (let item of history.value) {
+        cnt += item.Cnt
+    }
+    totalCnt.value = cnt
+}
+const resetData = () => {
+    history.value = [] as historyItem[]
+    totalCnt.value = 0
+    setData()
+}
+
+onMounted(() => {
+    getData()
+})
+
+// provide & inject
 
 provide('getStudents', getStudents)
-provide('changeVisible', changVisible)
+provide('resetHistory', resetData)
+provide('changeVisible', changeVisible)
 provide('result', result)
+provide('totalCnt', totalCnt)
 </script>
 
 <template>
     <MainContainer style="position: absolute; z-index: 10" v-if="layerVisible[0]"></MainContainer>
     <VideoContainer style="position: absolute; z-index: 20" v-if="layerVisible[1]"></VideoContainer>
-    <ResultContainer
-        style="position: absolute; z-index: 30"
-        v-if="layerVisible[2]"
-    ></ResultContainer>
+    <ResultContainer style="position: absolute; z-index: 30" v-if="layerVisible[2]"></ResultContainer>
 </template>
 
 <style scoped lang="scss"></style>
