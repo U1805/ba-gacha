@@ -13,6 +13,8 @@ var result: Ref<resultItem[]> = ref([])
 var history: Ref<historyItem[]> = ref([])
 var totalCnt: Ref<number> = ref(0)
 var layerVisible: Ref<boolean[]> = ref([true, false, false])
+var flag: Ref<boolean> = ref(false)
+var flag2: Ref<boolean> = ref(false) // 特殊三星
 
 function changeVisible(layer: number) {
     layerVisible.value[layer] = !layerVisible.value[layer]
@@ -22,6 +24,7 @@ function changeVisible(layer: number) {
 const one_star: number = 0.79
 const two_star: number = 0.185
 const three_star: number = 0.025
+const special: number = 0.05
 function getRandomInt(len: number) {
     return Math.floor(Math.random() * len)
 }
@@ -41,9 +44,12 @@ function getRandomGacha() {
 }
 
 function getStudents(num: number) {
+    flag.value = false
+    flag2.value = false
     result.value = []
     for (let i = 0; i < num; i++) {
         let student: myStudent = getRandomGacha()
+        if (student.StarGrade == 3) flag.value = true
         let res: resultItem = {
             Id: student.Id,
             Name: student.Name,
@@ -65,6 +71,8 @@ function getStudents(num: number) {
     totalCnt.value += num
     console.log(history.value)
     setData()
+    // 特殊三星
+    if (flag.value && Math.random() < special) flag2.value = true
 }
 
 // store utils
@@ -97,6 +105,8 @@ provide('resetHistory', resetData)
 provide('changeVisible', changeVisible)
 provide('result', result)
 provide('totalCnt', totalCnt)
+provide('flag', flag)
+provide('flag2', flag2)
 </script>
 
 <template>

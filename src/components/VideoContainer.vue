@@ -3,6 +3,8 @@ import type { Ref } from 'vue'
 import { inject, ref } from 'vue'
 
 const changeVisibleParent = inject('changeVisible') as Function
+const flag = inject('flag') as boolean
+const flag2 = inject('flag2') as boolean
 var layerVisible: Ref<boolean[]> = ref([true, false, false])
 function changeVisible(layer: number) {
     layerVisible.value[layer] = !layerVisible.value[layer]
@@ -30,7 +32,7 @@ const sign_ended = () => {
         <video
             muted
             autoplay
-            src="/arona_normal.mp4"
+            :src="!(flag == flag2) ? '/arona_special.mp4' : '/arona_normal.mp4'"
             v-show="layerVisible[0]"
             @ended="arona_ended()"
             @click="arona_ended()"
@@ -38,7 +40,7 @@ const sign_ended = () => {
         <video
             muted
             autoplay
-            src="/wait_normal.mp4"
+            :src="!(flag == flag2) ? '/wait_special.mp4' : '/wait_normal.mp4'"
             loop="true"
             v-show="layerVisible[1]"
             @click="wait_ended()"
@@ -46,10 +48,9 @@ const sign_ended = () => {
         <video
             muted
             autoplay
-            src="/sign_normal.mp4"
+            :src="flag ? (flag2 ? '/sign_special2.mp4' : '/sign_special.mp4') : '/sign_normal.mp4'"
             v-show="layerVisible[2]"
             @ended="sign_ended()"
-            @click="sign_ended()"
         ></video>
     </div>
 </template>
