@@ -33,20 +33,25 @@
 }
 
 @mixin font-large {
-    font-size: 40px;
+    font-size: 48px;
     font-weight: 700;
 }
 
 @mixin font-big {
-    font-size: 26px;
+    font-size: 32px;
     font-weight: 700;
 }
 
+@mixin font-heavy{
+    font-size: 22px;
+    font-weight: 1400;
+}
+
 @mixin font-regular{
-    font-size: 18px;
+    font-size: 22px;
     font-weight: 700;
 }
 
 @mixin font-light{
-    font-size: 18px;
+    font-size: 22px;
 }
