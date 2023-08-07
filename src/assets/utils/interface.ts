@@ -5,4 +5,13 @@ interface myStudent {
     Avatar: string
 }
 
-export { myStudent }
+interface resultItem extends myStudent {
+    isNew: boolean
+}
+
+interface historyItem {
+    Id: number
+    Cnt: number
+}
+
+export { myStudent, resultItem, historyItem }
