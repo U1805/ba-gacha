@@ -1,3 +1,15 @@
+<script setup lang="ts">
+import { inject } from 'vue'
+
+const getStudents_ = inject('getStudents') as Function
+const changeVisible = inject('changeVisible') as Function
+function getStudents(num: number) {
+    getStudents_(num)
+    changeVisible(0)
+    changeVisible(2)
+}
+</script>
+
 <template>
     <div class="table-container">
         <div class="header">
@@ -36,7 +48,7 @@
                     </div>
                     <!-- Button-container begin -->
                     <div class="button-container">
-                        <div class="gacha-button button-blue">
+                        <div class="gacha-button button-blue" @click="getStudents(1)">
                             <img src="/Gacha0.png" class="gacha_icon" />
                             <div class="right">
                                 <img src="/Stone.png" class="stone_icon" />
@@ -44,7 +56,7 @@
                                 <div class="text">招募 1 次</div>
                             </div>
                         </div>
-                        <div class="gacha-button button-yellow">
+                        <div class="gacha-button button-yellow" @click="getStudents(10)">
                             <img src="/Gacha1.png" class="gacha_icon" />
                             <div class="right">
                                 <img src="/Stone.png" class="stone_icon" />

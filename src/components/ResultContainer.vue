@@ -1,21 +1,39 @@
+<script setup lang="ts">
+import { myStudent } from '@/assets/utils/interface'
+import { inject } from 'vue'
+
+const getStudents = inject('getStudents') as Function
+const changeVisible = inject('changeVisible') as Function
+const result = inject('result') as myStudent[]
+function confirm() {
+    changeVisible(2)
+    changeVisible(0)
+}
+
+function backgroundColor(star: number) {
+    if (star == 1) return 'blue'
+    else if (star == 2) return 'golden'
+    else if (star == 3) return 'pink'
+    else return null
+}
+</script>
+
 <template>
     <div class="result">
         <div class="result-container">
-            <div class="card pink" v-for="_ in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]">
+            <div class="card" :class="backgroundColor(item['StarGrade'])" v-for="item in result">
                 <div class="char">
-                    <img
-                        src="https://static.wikia.nocookie.net/blue-archive/images/9/96/Hanako_Swimsuit_Icon.png"
-                    />
+                    <img :src="item['Avatar']" />
                 </div>
                 <div class="new"><img src="/New.png" /></div>
-                <div class="star"><img src="/Star.png" v-for="_ in [1, 2, 3]" /></div>
+                <div class="star"><img src="/Star.png" v-for="n in item['StarGrade']" /></div>
             </div>
         </div>
         <div class="button-container">
-            <div class="gacha-button button-blue">
+            <div class="gacha-button button-blue" @click="confirm">
                 <div>确定</div>
             </div>
-            <div class="gacha-button button-yellow">
+            <div class="gacha-button button-yellow" @click="getStudents(result.length)">
                 <div>再来一次</div>
             </div>
             <div class="point-container">
@@ -40,16 +58,18 @@
 
 .result-container {
     @include center;
+    align-content: center;
     flex-wrap: wrap;
     width: 70%;
+    height: 100%;
 }
 
 .button-container {
     width: 40%;
-    height: 8%;
+    height: 10%;
     display: flex;
     justify-content: space-evenly;
-    margin: 40px;
+    margin-bottom: 100px;
 
     .gacha-button {
         position: relative;
