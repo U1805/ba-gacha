@@ -35,7 +35,7 @@
 
         &::before {
             content: '';
-            background: url(/IntroBg.png) no-repeat left bottom;
+            background: url(/IntroBgLeft.png) no-repeat left bottom;
             background-size: 770px 385px;
             @include position(0, 0);
             @include full;
@@ -55,6 +55,7 @@
         }
 
         .title {
+            width: 100%;
             line-height: 24px;
             color: $black-main;
             padding: 20px 0 20px 2px;
@@ -63,6 +64,7 @@
         }
 
         .subtitle {
+            width: 100%;
             line-height: 16px;
             color: rgb(0, 126, 255);
             padding: 9px 0 10px 2px;
@@ -71,6 +73,7 @@
         }
 
         .notice {
+            width: 100%;
             line-height: 32px;
             color: $black-shadow;
             @include font-light;

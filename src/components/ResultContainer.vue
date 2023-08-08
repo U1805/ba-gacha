@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import type { resultItem } from '@/assets/utils/interface'
-import { inject } from 'vue'
+import type { Ref } from 'vue'
+import { inject, ref } from 'vue'
 
 const getStudents_ = inject('getStudents') as Function
 const changeVisible = inject('changeVisible') as Function
@@ -23,6 +24,14 @@ function backgroundColor(star: number) {
     else if (star == 3) return 'pink'
     else return null
 }
+
+var isModal: Ref<boolean> = ref(false)
+function showModal() {
+    isModal.value = true
+}
+function hideModal() {
+    isModal.value = false
+}
 </script>
 
 <template>
@@ -40,7 +49,7 @@ function backgroundColor(star: number) {
             <div class="gacha-button button-blue" @click="confirm">
                 <div>确定</div>
             </div>
-            <div class="gacha-button button-yellow" @click="getStudents(result.length)">
+            <div class="gacha-button button-yellow" @click="showModal()">
                 <div>再来一次</div>
             </div>
             <div class="point-container">
@@ -51,11 +60,32 @@ function backgroundColor(star: number) {
                 </div>
             </div>
         </div>
+        <!-- Modal begin -->
+        <div class="modal-backdrop" v-show="isModal">
+            <div class="modal">
+                <div class="modal-header">
+                    <span>通知</span>
+                </div>
+                <div class="modal-body">
+                    <p>再次招募？</p>
+                </div>
+                <div class="modal-footer">
+                    <div class="gacha-button button-gray" @click="hideModal()">
+                        <div>取消</div>
+                    </div>
+                    <div class="gacha-button button-yellow" @click="getStudents(result.length)">
+                        <div>OK</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal end -->
     </div>
 </template>
 
 <style scoped lang="scss">
 @import '@/assets/styles/result-card.scss';
+@import '@/assets/styles/modal.scss';
 
 .result {
     @include center;
@@ -71,38 +101,5 @@ function backgroundColor(star: number) {
     flex-wrap: wrap;
     width: 1180px;
     height: 800px;
-}
-
-.button-container {
-    width: 670px;
-    height: 95px;
-    display: flex;
-    justify-content: space-evenly;
-    margin-bottom: 100px;
-
-    .gacha-button {
-        position: relative;
-        overflow: hidden;
-        box-shadow: 0px 5px 5px -5px rgb(0 0 0/0.6);
-        @include skew;
-        @include center;
-
-        div {
-            @include noskew;
-            @include font-big;
-        }
-
-        &:active {
-            transform: scale(0.95) skewX(-10deg);
-        }
-    }
-
-    .button-blue {
-        @include gacha-button($blue, '/ButtonBlueBg0.png', '/ButtonBlueBg1.png');
-    }
-
-    .button-yellow {
-        @include gacha-button($golden, '/ButtonYellowBg0.png', '/ButtonYellowBg1.png');
-    }
 }
 </style>

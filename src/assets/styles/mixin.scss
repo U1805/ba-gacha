@@ -43,7 +43,7 @@
 }
 
 @mixin font-big {
-    font-size: 32px;
+    font-size: 34px;
     font-weight: 700;
 }
 
@@ -80,12 +80,16 @@
     &::before {
         left: -20px;
         top: -20px;
-        background: url($url0) no-repeat;
+        background: url($url0) left top no-repeat;
+        -webkit-filter: opacity(0.5);
+        filter: opacity(0.5);
     }
 
     &::after {
         right: -25px;
         bottom: -20px;
         background: url($url1) right bottom no-repeat;
+        -webkit-filter: opacity(0.5);
+        filter: opacity(0.5);
     }
 }

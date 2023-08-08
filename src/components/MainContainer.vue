@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import { inject } from 'vue'
+import type { Ref } from 'vue'
+import { inject, ref } from 'vue'
 
 const getStudents_ = inject('getStudents') as Function
 const changeVisible = inject('changeVisible') as Function
@@ -9,6 +10,14 @@ function getStudents(num: number) {
     getStudents_(num)
     changeVisible(0)
     changeVisible(1)
+}
+
+var isModal: Ref<boolean[]> = ref([false, false])
+function showModal(index: number) {
+    isModal.value[index] = true
+}
+function hideModal(index: number) {
+    isModal.value[index] = false
 }
 </script>
 
@@ -47,7 +56,7 @@ function getStudents(num: number) {
                     </div>
                     <!-- Button-container begin -->
                     <div class="button-container">
-                        <div class="gacha-button button-blue" @click="getStudents(1)">
+                        <div class="gacha-button button-blue" @click="showModal(0)">
                             <img src="/Gacha0.png" class="gacha_icon" />
                             <div class="right">
                                 <img src="/Stone.png" class="stone_icon" />
@@ -55,7 +64,7 @@ function getStudents(num: number) {
                                 <div class="text">招募 1 次</div>
                             </div>
                         </div>
-                        <div class="gacha-button button-yellow" @click="getStudents(10)">
+                        <div class="gacha-button button-yellow" @click="showModal(1)">
                             <img src="/Gacha1.png" class="gacha_icon" />
                             <div class="right">
                                 <img src="/Stone.png" class="stone_icon" />
@@ -76,11 +85,32 @@ function getStudents(num: number) {
                 </div>
             </div>
         </div>
+        <!-- Modal begin -->
+        <div class="modal-backdrop" v-show="isModal[index]" v-for="(num, index) in [1, 10]">
+            <div class="modal">
+                <div class="modal-header">
+                    <span>通知</span>
+                </div>
+                <div class="modal-body">
+                    <p>招募 {{ num }} 次？</p>
+                </div>
+                <div class="modal-footer">
+                    <div class="gacha-button button-gray" @click="hideModal(index)">
+                        <div>取消</div>
+                    </div>
+                    <div class="gacha-button button-blue" @click="getStudents(num)">
+                        <div>OK</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal end -->
     </div>
 </template>
 
 <style scoped lang="scss">
 @import '@/assets/styles/gacha-tab.scss';
+@import '@/assets/styles/modal.scss';
 
 .table-container {
     display: grid;

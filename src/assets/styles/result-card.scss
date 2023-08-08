@@ -106,3 +106,36 @@
         border-radius: 0 0 10px 10px;
     }
 }
+
+.button-container {
+    width: 670px;
+    height: 95px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 100px;
+
+    .gacha-button {
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0px 5px 5px -5px rgb(0 0 0/0.6);
+        @include skew;
+        @include center;
+
+        div {
+            @include noskew;
+            @include font-big;
+        }
+
+        &:active {
+            transform: scale(0.95) skewX(-10deg);
+        }
+    }
+
+    .button-blue {
+        @include gacha-button($blue, '/ButtonBlueBg0.png', '/ButtonBlueBg1.png');
+    }
+
+    .button-yellow {
+        @include gacha-button($golden, '/ButtonYellowBg0.png', '/ButtonYellowBg1.png');
+    }
+}
