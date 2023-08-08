@@ -34,8 +34,8 @@ const sign_ended = () => {
             autoplay
             :src="
                 flag === flag2
-                    ? '/blue-archive-gacha-simulator/arona_normal.mp4'
-                    : '/blue-archive-gacha-simulator/arona_special.mp4'
+                    ? 'https://fs-im-kefu.7moor-fs1.com/29397395/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1691494911014/arona_normal.mp3'
+                    : 'https://fs-im-kefu.7moor-fs1.com/29397395/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1691494911146/arona_special.mp3'
             "
             v-show="layerVisible[0]"
             @ended="arona_ended()"
@@ -46,8 +46,8 @@ const sign_ended = () => {
             autoplay
             :src="
                 flag === flag2
-                    ? '/blue-archive-gacha-simulator/wait_normal.mp4'
-                    : '/blue-archive-gacha-simulator/wait_special.mp4'
+                    ? 'https://fs-im-kefu.7moor-fs1.com/29397395/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1691494975709/wait_normal.mp3'
+                    : 'https://fs-im-kefu.7moor-fs1.com/29397395/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1691494975556/wait_special.mp3'
             "
             loop="true"
             v-show="layerVisible[1]"
@@ -57,9 +57,9 @@ const sign_ended = () => {
             muted
             autoplay
             :src="
-                (flag2 && '/blue-archive-gacha-simulator/sign_special2.mp4') ||
-                (flag && '/blue-archive-gacha-simulator/sign_special.mp4') ||
-                '/blue-archive-gacha-simulator/sign_normal.mp4'
+                (flag2 && 'https://fs-im-kefu.7moor-fs1.com/29397395/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1691495023077/sign_special2.mp3') ||
+                (flag && 'https://fs-im-kefu.7moor-fs1.com/29397395/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1691495022938/sign_special.mp3') ||
+                'https://fs-im-kefu.7moor-fs1.com/29397395/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1691495022800/sign_normal.mp3'
             "
             v-show="layerVisible[2]"
             @ended="sign_ended()"

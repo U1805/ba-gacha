@@ -29,11 +29,19 @@ function hideModal(index: number) {
             <div class="crash">999,999,999</div>
             <div class="stone">999,999</div>
             <a class="link" href="https://github.com/U1805/blue-archive-gacha-simulator"></a>
-            <a class="help" href="https://github.com/U1805/blue-archive-gacha-simulator/blob/main/README-zh.md" ></a>
+            <a
+                class="help"
+                href="https://github.com/U1805/blue-archive-gacha-simulator/blob/main/README-zh.md"
+            ></a>
         </div>
 
         <div class="preview">
-            <video muted autoplay loop="true" src="/Preview0.mp4"></video>
+            <video
+                muted
+                autoplay
+                loop="true"
+                src="https://fs-im-kefu.7moor-fs1.com/29397395/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1691494716332/Preview0.mp3"
+            ></video>
         </div>
         <div class="gradient"></div>
 
