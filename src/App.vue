@@ -23,7 +23,7 @@ function changeVisible(layer: number) {
 // gacha
 const one_star: number = 0.79
 const two_star: number = 0.185
-const three_star: number = 0.025
+// const three_star: number = 0.025
 const special: number = 0.05
 function getRandomInt(len: number) {
     return Math.floor(Math.random() * len)
@@ -55,22 +55,23 @@ function getStudents(num: number) {
             student = getRandomGacha() // 十连保底
         }
         if (student.StarGrade == 3) flag.value = true
-
-        let res: resultItem = {
-            Id: student.Id,
-            Name: student.Name,
-            Avatar: student.Avatar,
-            StarGrade: student.StarGrade,
-            isNew: false
-        }
+        var { Id, Name, Avatar, StarGrade, PathName } = student
+        let res: resultItem = { PathName: PathName, Avatar: Avatar, StarGrade: StarGrade, isNew: false }
         let studentIdx = history.value.findIndex((element) => element.Id == student.Id)
         if (studentIdx > -1) {
             result.value.push(res)
             history.value[studentIdx].Cnt++
-        } else {
+        } else { // new
             res.isNew = true
             result.value.push(res)
-            let item: historyItem = { Id: student.Id, Cnt: 1 }
+            let item: historyItem = {
+                Id: Id,
+                Name: Name,
+                PathName: PathName,
+                Avatar: Avatar,
+                StarGrade: StarGrade,
+                Cnt: 1
+            }
             history.value.push(item)
         }
     }

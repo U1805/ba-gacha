@@ -1,16 +1,19 @@
 interface myStudent {
     Id: number
     Name: string
+    PathName: string
     StarGrade: number
     Avatar: string
 }
 
-interface resultItem extends myStudent {
+interface resultItem {
+    PathName: string
+    StarGrade: number
+    Avatar: string
     isNew: boolean
 }
 
-interface historyItem {
-    Id: number
+interface historyItem extends myStudent {
     Cnt: number
 }
 

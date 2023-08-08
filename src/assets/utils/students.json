@@ -3,906 +3,1057 @@
         "Id": 10000,
         "Name": "阿露",
         "StarGrade": 3,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/d/de/Aru_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/d/de/Aru_Icon.png",
+        "PathName": "Aru"
     },
     {
         "Id": 10001,
         "Name": "艾米",
         "StarGrade": 3,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/e/e3/Eimi_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/e/e3/Eimi_Icon.png",
+        "PathName": "Eimi"
     },
     {
         "Id": 10002,
         "Name": "晴奈",
         "StarGrade": 3,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/e/e7/Haruna_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/e/e7/Haruna_Icon.png",
+        "PathName": "Haruna"
     },
     {
         "Id": 10003,
         "Name": "日富美",
         "StarGrade": 3,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/4/4c/Hifumi_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/4/4c/Hifumi_Icon.png",
+        "PathName": "Hifumi"
     },
     {
         "Id": 10004,
         "Name": "日奈",
         "StarGrade": 3,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/a/a0/Hina_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/a/a0/Hina_Icon.png",
+        "PathName": "Hina"
     },
     {
         "Id": 10005,
         "Name": "星野",
         "StarGrade": 3,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/d/de/Hoshino_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/d/de/Hoshino_Icon.png",
+        "PathName": "Hoshino"
     },
     {
         "Id": 10006,
         "Name": "伊织",
         "StarGrade": 3,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/1/16/Iori_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/1/16/Iori_Icon.png",
+        "PathName": "Iori"
     },
     {
         "Id": 10007,
         "Name": "真纪",
         "StarGrade": 3,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/e/e9/Maki_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/e/e9/Maki_Icon.png",
+        "PathName": "Maki"
     },
     {
         "Id": 10008,
         "Name": "尼禄",
         "StarGrade": 3,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/0/0f/Neru_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/0/0f/Neru_Icon.png",
+        "PathName": "Neru"
     },
     {
         "Id": 10009,
         "Name": "泉",
         "StarGrade": 3,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/0/03/Izumi_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/0/03/Izumi_Icon.png",
+        "PathName": "Izumi"
     },
     {
         "Id": 10010,
         "Name": "白子",
         "StarGrade": 3,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/7/79/Shiroko_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/7/79/Shiroko_Icon.png",
+        "PathName": "Shiroko"
     },
     {
         "Id": 10011,
         "Name": "瞬",
         "StarGrade": 3,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/f/fa/Shun_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/f/fa/Shun_Icon.png",
+        "PathName": "Shun"
     },
     {
         "Id": 10012,
         "Name": "堇",
         "StarGrade": 3,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/e/e5/Sumire_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/e/e5/Sumire_Icon.png",
+        "PathName": "Sumire"
     },
     {
         "Id": 10013,
         "Name": "鹤城",
         "StarGrade": 3,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/f/fb/Tsurugi_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/f/fb/Tsurugi_Icon.png",
+        "PathName": "Tsurugi"
     },
     {
         "Id": 13000,
         "Name": "茜",
         "StarGrade": 2,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/4/47/Akane_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/4/47/Akane_Icon.png",
+        "PathName": "Akane"
     },
     {
         "Id": 13001,
         "Name": "千世",
         "StarGrade": 2,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/c/c2/Chise_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/c/c2/Chise_Icon.png",
+        "PathName": "Chise"
     },
     {
         "Id": 13002,
         "Name": "明里",
         "StarGrade": 2,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/1/1b/Akari_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/1/1b/Akari_Icon.png",
+        "PathName": "Akari"
     },
     {
         "Id": 13003,
         "Name": "莲见",
         "StarGrade": 2,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/a/a3/Hasumi_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/a/a3/Hasumi_Icon.png",
+        "PathName": "Hasumi"
     },
     {
         "Id": 13004,
         "Name": "野宫",
         "StarGrade": 2,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/7/7b/Nonomi_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/7/7b/Nonomi_Icon.png",
+        "PathName": "Nonomi"
     },
     {
         "Id": 13005,
         "Name": "佳代子",
         "StarGrade": 2,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/a/ad/Kayoko_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/a/ad/Kayoko_Icon.png",
+        "PathName": "Kayoko"
     },
     {
         "Id": 13006,
         "Name": "睦月",
         "StarGrade": 2,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/8/83/Mutsuki_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/8/83/Mutsuki_Icon.png",
+        "PathName": "Mutsuki"
     },
     {
         "Id": 13007,
         "Name": "淳子",
         "StarGrade": 2,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/9/97/Junko_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/9/97/Junko_Icon.png",
+        "PathName": "Junko"
     },
     {
         "Id": 13008,
         "Name": "芹香",
         "StarGrade": 2,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/5/5f/Serika_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/5/5f/Serika_Icon.png",
+        "PathName": "Serika"
     },
     {
         "Id": 13009,
         "Name": "椿",
         "StarGrade": 2,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/1/1b/Tsubaki_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/1/1b/Tsubaki_Icon.png",
+        "PathName": "Tsubaki"
     },
     {
         "Id": 13010,
         "Name": "优香",
         "StarGrade": 2,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/7/7b/Yuuka_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/7/7b/Yuuka_Icon.png",
+        "PathName": "Yuuka"
     },
     {
         "Id": 16000,
         "Name": "遥香",
         "StarGrade": 1,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/b/bd/Haruka_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/b/bd/Haruka_Icon.png",
+        "PathName": "Haruka"
     },
     {
         "Id": 16001,
         "Name": "明日奈",
         "StarGrade": 1,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/0/0a/Asuna_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/0/0a/Asuna_Icon.png",
+        "PathName": "Asuna"
     },
     {
         "Id": 16002,
         "Name": "柯托莉",
         "StarGrade": 1,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/9/93/Kotori_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/9/93/Kotori_Icon.png",
+        "PathName": "Kotori"
     },
     {
         "Id": 16003,
         "Name": "铃美",
         "StarGrade": 1,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/d/d8/Suzumi_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/d/d8/Suzumi_Icon.png",
+        "PathName": "Suzumi"
     },
     {
         "Id": 16004,
         "Name": "菲娜",
         "StarGrade": 1,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/8/8e/Pina_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/8/8e/Pina_Icon.png",
+        "PathName": "Pina"
     },
     {
         "Id": 20000,
         "Name": "响",
         "StarGrade": 3,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/8/88/Hibiki_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/8/88/Hibiki_Icon.png",
+        "PathName": "Hibiki"
     },
     {
         "Id": 20001,
         "Name": "花凛",
         "StarGrade": 3,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/7/75/Karin_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/7/75/Karin_Icon.png",
+        "PathName": "Karin"
     },
     {
         "Id": 20002,
         "Name": "纱绫",
         "StarGrade": 3,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/a/a3/Saya_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/a/a3/Saya_Icon.png",
+        "PathName": "Saya"
     },
     {
         "Id": 23000,
         "Name": "爱莉",
         "StarGrade": 2,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/2/23/Airi_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/2/23/Airi_Icon.png",
+        "PathName": "Airi"
     },
     {
         "Id": 23001,
         "Name": "枫香",
         "StarGrade": 2,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/7/77/Fuuka_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/7/77/Fuuka_Icon.png",
+        "PathName": "Fuuka"
     },
     {
         "Id": 23002,
         "Name": "花江",
         "StarGrade": 2,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/0/08/Hanae_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/0/08/Hanae_Icon.png",
+        "PathName": "Hanae"
     },
     {
         "Id": 23003,
         "Name": "晴",
         "StarGrade": 2,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/7/7b/Hare_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/7/7b/Hare_Icon.png",
+        "PathName": "Hare"
     },
     {
         "Id": 23004,
         "Name": "歌原",
         "StarGrade": 2,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/8/8b/Utaha_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/8/8b/Utaha_Icon.png",
+        "PathName": "Utaha"
     },
     {
         "Id": 23005,
         "Name": "绫音",
         "StarGrade": 2,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/f/f8/Ayane_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/f/f8/Ayane_Icon.png",
+        "PathName": "Ayane"
     },
     {
         "Id": 26000,
         "Name": "千夏",
         "StarGrade": 1,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/a/a7/Chinatsu_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/a/a7/Chinatsu_Icon.png",
+        "PathName": "Chinatsu"
     },
     {
         "Id": 26001,
         "Name": "小玉",
         "StarGrade": 1,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/4/41/Kotama_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/4/41/Kotama_Icon.png",
+        "PathName": "Kotama"
     },
     {
         "Id": 26002,
         "Name": "茱莉",
         "StarGrade": 1,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/1/15/Juri_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/1/15/Juri_Icon.png",
+        "PathName": "Juri"
     },
     {
         "Id": 26003,
         "Name": "芹娜",
         "StarGrade": 1,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/c/c7/Serina_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/c/c7/Serina_Icon.png",
+        "PathName": "Serina"
     },
     {
         "Id": 26004,
         "Name": "志美子",
         "StarGrade": 1,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/c/c6/Shimiko_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/c/c6/Shimiko_Icon.png",
+        "PathName": "Shimiko"
     },
     {
         "Id": 26005,
         "Name": "好美",
         "StarGrade": 1,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/8/84/Yoshimi_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/8/84/Yoshimi_Icon.png",
+        "PathName": "Yoshimi"
     },
     {
         "Id": 20003,
         "Name": "真白",
         "StarGrade": 3,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/0/0e/Mashiro_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/0/0e/Mashiro_Icon.png",
+        "PathName": "Mashiro"
     },
     {
         "Id": 10014,
         "Name": "泉奈",
         "StarGrade": 3,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/9/9b/Izuna_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/9/9b/Izuna_Icon.png",
+        "PathName": "Izuna"
     },
     {
         "Id": 23006,
         "Name": "静子",
         "StarGrade": 2,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/0/04/Shizuko_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/0/04/Shizuko_Icon.png",
+        "PathName": "Shizuko"
     },
     {
         "Id": 10015,
         "Name": "爱丽丝",
         "StarGrade": 3,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/7/7b/Alice_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/7/7b/Alice_Icon.png",
+        "PathName": "Aris"
     },
     {
         "Id": 10016,
         "Name": "绿",
         "StarGrade": 3,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/a/ae/Midori_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/a/ae/Midori_Icon.png",
+        "PathName": "Midori"
     },
     {
         "Id": 13011,
         "Name": "桃井",
         "StarGrade": 2,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/7/72/Momoi_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/7/72/Momoi_Icon.png",
+        "PathName": "Momoi"
     },
     {
         "Id": 10017,
         "Name": "切里诺",
         "StarGrade": 3,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/6/6a/Cherino_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/6/6a/Cherino_Icon.png",
+        "PathName": "Cherino"
     },
     {
         "Id": 26006,
         "Name": "和香",
         "StarGrade": 1,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/2/2a/Nodoka_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/2/2a/Nodoka_Icon.png",
+        "PathName": "Nodoka"
     },
     {
         "Id": 10018,
         "Name": "柚子",
         "StarGrade": 3,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/0/09/Yuzu_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/0/09/Yuzu_Icon.png",
+        "PathName": "Yuzu"
     },
     {
         "Id": 10019,
         "Name": "梓",
         "StarGrade": 3,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/6/61/Azusa_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/6/61/Azusa_Icon.png",
+        "PathName": "Azusa"
     },
     {
         "Id": 23007,
         "Name": "花子",
         "StarGrade": 2,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/f/f1/Hanako_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/f/f1/Hanako_Icon.png",
+        "PathName": "Hanako"
     },
     {
         "Id": 10020,
         "Name": "小春",
         "StarGrade": 3,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/7/7a/Koharu_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/7/7a/Koharu_Icon.png",
+        "PathName": "Koharu"
     },
     {
         "Id": 10021,
         "Name": "梓(泳装)",
         "StarGrade": 3,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/6/61/Azusa_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/6/61/Azusa_Icon.png",
+        "PathName": "Azusa_Swimsuit"
     },
     {
         "Id": 20004,
         "Name": "真白(泳装)",
         "StarGrade": 3,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/3/30/Mashiro_Swimsuit_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/3/30/Mashiro_Swimsuit_Icon.png",
+        "PathName": "Mashiro_Swimsuit"
     },
     {
         "Id": 16005,
         "Name": "鹤城(泳装)",
         "StarGrade": 1,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/f/fc/Tsurugi_Swimsuit_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/f/fc/Tsurugi_Swimsuit_Icon.png",
+        "PathName": "Tsurugi_Swimsuit"
     },
     {
         "Id": 20005,
         "Name": "日富美(泳装)",
         "StarGrade": 3,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/d/d5/Hifumi_Swimsuit_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/d/d5/Hifumi_Swimsuit_Icon.png",
+        "PathName": "Hifumi_Swimsuit"
     },
     {
         "Id": 10022,
         "Name": "日奈(泳装)",
         "StarGrade": 3,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/3/3b/Hina_Swimsuit_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/3/3b/Hina_Swimsuit_Icon.png",
+        "PathName": "Hina_Swimsuit"
     },
     {
         "Id": 10023,
         "Name": "伊织(泳装)",
         "StarGrade": 3,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/3/34/Iori_Swimsuit_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/3/34/Iori_Swimsuit_Icon.png",
+        "PathName": "Iori_Swimsuit"
     },
     {
         "Id": 16006,
         "Name": "泉(泳装)",
         "StarGrade": 1,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/e/e1/Izumi_Swimsuit_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/e/e1/Izumi_Swimsuit_Icon.png",
+        "PathName": "Izumi_Swimsuit"
     },
     {
         "Id": 10024,
         "Name": "白子(单车)",
         "StarGrade": 3,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/b/bd/Shiroko_Riding_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/b/bd/Shiroko_Riding_Icon.png",
+        "PathName": "Shiroko_Cycling"
     },
     {
         "Id": 10025,
         "Name": "瞬(幼女)",
         "StarGrade": 3,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/4/47/Shun_Young_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/4/47/Shun_Young_Icon.png",
+        "PathName": "Shun_Small"
     },
     {
         "Id": 13012,
         "Name": "桐乃",
         "StarGrade": 2,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/f/fa/Kirino_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/f/fa/Kirino_Icon.png",
+        "PathName": "Kirino"
     },
     {
         "Id": 20006,
         "Name": "纱绫(私服)",
         "StarGrade": 3,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/a/a7/Saya_Casual_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/a/a7/Saya_Casual_Icon.png",
+        "PathName": "Saya_Casual"
     },
     {
         "Id": 10026,
         "Name": "尼禄(兔女郎)",
         "StarGrade": 3,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/1/1e/Neru_Bunny_Girl_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/1/1e/Neru_Bunny_Girl_Icon.png",
+        "PathName": "Neru_Bunny"
     },
     {
         "Id": 10027,
         "Name": "花凛(兔女郎)",
         "StarGrade": 3,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/1/12/Karin_Bunny_Girl_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/1/12/Karin_Bunny_Girl_Icon.png",
+        "PathName": "Karin_Bunny"
     },
     {
         "Id": 10028,
         "Name": "明日奈(兔女郎)",
         "StarGrade": 3,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/8/81/Asuna_Bunny_Girl_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/8/81/Asuna_Bunny_Girl_Icon.png",
+        "PathName": "Asuna_Bunny"
     },
     {
         "Id": 10029,
         "Name": "夏",
         "StarGrade": 3,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/5/5b/Natsu_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/5/5b/Natsu_Icon.png",
+        "PathName": "Natsu"
     },
     {
         "Id": 23008,
         "Name": "玛丽",
         "StarGrade": 2,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/e/e0/Mari_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/e/e0/Mari_Icon.png",
+        "PathName": "Mari"
     },
     {
         "Id": 20007,
         "Name": "初音未来",
         "StarGrade": 3,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/3/39/Miku_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/3/39/Miku_Icon.png",
+        "PathName": "Hatsune_Miku"
     },
     {
         "Id": 20008,
         "Name": "亚子",
         "StarGrade": 3,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/b/bf/Ako_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/b/bf/Ako_Icon.png",
+        "PathName": "Ako"
     },
     {
         "Id": 20009,
         "Name": "切里诺(温泉)",
         "StarGrade": 3,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/9/96/Cherino_Hot_Spring_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/9/96/Cherino_Hot_Spring_Icon.png",
+        "PathName": "Cherino_HotSpring"
     },
     {
         "Id": 10030,
         "Name": "千夏(温泉)",
         "StarGrade": 3,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/3/34/Chinatsu_Hot_Spring_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/3/34/Chinatsu_Hot_Spring_Icon.png",
+        "PathName": "Chinatsu_HotSpring"
     },
     {
         "Id": 16007,
         "Name": "智惠",
         "StarGrade": 1,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/3/3d/Tomoe_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/3/3d/Tomoe_Icon.png",
+        "PathName": "Tomoe"
     },
     {
         "Id": 20010,
         "Name": "和香(温泉)",
         "StarGrade": 3,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/d/d7/Nodoka_Hot_Spring_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/d/d7/Nodoka_Hot_Spring_Icon.png",
+        "PathName": "Nodoka_HotSpring"
     },
     {
         "Id": 10031,
         "Name": "阿露(正月)",
         "StarGrade": 3,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/6/60/Aru_New_Year_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/6/60/Aru_New_Year_Icon.png",
+        "PathName": "Aru_NewYear"
     },
     {
         "Id": 10032,
         "Name": "睦月(正月)",
         "StarGrade": 3,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/b/bf/Mutsuki_New_Year_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/b/bf/Mutsuki_New_Year_Icon.png",
+        "PathName": "Mutsuki_NewYear"
     },
     {
         "Id": 20011,
         "Name": "芹香(正月)",
         "StarGrade": 3,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/b/be/Serika_New_Year_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/b/be/Serika_New_Year_Icon.png",
+        "PathName": "Serika_NewYear"
     },
     {
         "Id": 10033,
         "Name": "若藻",
         "StarGrade": 3,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/3/35/Wakamo_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/3/35/Wakamo_Icon.png",
+        "PathName": "Wakamo"
     },
     {
         "Id": 16008,
         "Name": "吹雪",
         "StarGrade": 1,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/b/bd/Fubuki_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/b/bd/Fubuki_Icon.png",
+        "PathName": "Fubuki"
     },
     {
         "Id": 20012,
         "Name": "濑名",
         "StarGrade": 3,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/3/37/Sena_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/3/37/Sena_Icon.png",
+        "PathName": "Sena"
     },
     {
         "Id": 20013,
         "Name": "千寻",
         "StarGrade": 3,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/a/aa/Chihiro_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/a/aa/Chihiro_Icon.png",
+        "PathName": "Chihiro"
     },
     {
         "Id": 10034,
         "Name": "三森",
         "StarGrade": 3,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/8/84/Mimori_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/8/84/Mimori_Icon.png",
+        "PathName": "Mimori"
     },
     {
         "Id": 10035,
         "Name": "忧",
         "StarGrade": 3,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/f/f8/Ui_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/f/f8/Ui_Icon.png",
+        "PathName": "Ui"
     },
     {
         "Id": 10036,
         "Name": "日向",
         "StarGrade": 3,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/1/13/Hinata_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/1/13/Hinata_Icon.png",
+        "PathName": "Hinata"
     },
     {
         "Id": 10037,
         "Name": "玛利娜",
         "StarGrade": 3,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/b/b0/Marina_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/b/b0/Marina_Icon.png",
+        "PathName": "Marina"
     },
     {
         "Id": 10038,
         "Name": "宫子",
         "StarGrade": 3,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/f/f7/Miyako_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/f/f7/Miyako_Icon.png",
+        "PathName": "Miyako"
     },
     {
         "Id": 20014,
         "Name": "咲",
         "StarGrade": 3,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/5/50/Saki_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/5/50/Saki_Icon.png",
+        "PathName": "Saki"
     },
     {
         "Id": 10039,
         "Name": "美游",
         "StarGrade": 3,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/2/23/Miyu_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/2/23/Miyu_Icon.png",
+        "PathName": "Miyu"
     },
     {
         "Id": 20015,
         "Name": "枫",
         "StarGrade": 3,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/c/c1/Kaede_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/c/c1/Kaede_Icon.png",
+        "PathName": "Kaede"
     },
     {
         "Id": 20016,
         "Name": "伊吕波",
         "StarGrade": 3,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/6/6a/Iroha_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/6/6a/Iroha_Icon.png",
+        "PathName": "Iroha"
     },
     {
         "Id": 16009,
         "Name": "满",
         "StarGrade": 1,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/2/24/Michiru_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/2/24/Michiru_Icon.png",
+        "PathName": "Michiru"
     },
     {
         "Id": 10040,
         "Name": "月咏",
         "StarGrade": 3,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/5/54/Tsukuyo_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/5/54/Tsukuyo_Icon.png",
+        "PathName": "Tsukuyo"
     },
     {
         "Id": 10041,
         "Name": "美咲",
         "StarGrade": 3,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/7/78/Misaki_Unmask_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/7/78/Misaki_Unmask_Icon.png",
+        "PathName": "Misaki"
     },
     {
         "Id": 20017,
         "Name": "日和",
         "StarGrade": 3,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/a/af/Hiyori_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/a/af/Hiyori_Icon.png",
+        "PathName": "Hiyori"
     },
     {
         "Id": 10042,
         "Name": "亚津子",
         "StarGrade": 3,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/f/f7/Atsuko_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/f/f7/Atsuko_Icon.png",
+        "PathName": "Atsuko"
     },
     {
         "Id": 10043,
         "Name": "若藻(泳装)",
         "StarGrade": 3,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/6/62/Wakamo_Swimsuit_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/6/62/Wakamo_Swimsuit_Icon.png",
+        "PathName": "Wakamo_Swimsuit"
     },
     {
         "Id": 10044,
         "Name": "野宫(泳装)",
         "StarGrade": 3,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/e/e9/Nonomi_Swimsuit_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/e/e9/Nonomi_Swimsuit_Icon.png",
+        "PathName": "Nonomi_Swimsuit"
     },
     {
         "Id": 26007,
         "Name": "绫音(泳装)",
         "StarGrade": 1,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/a/af/Ayane_Swimsuit_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/a/af/Ayane_Swimsuit_Icon.png",
+        "PathName": "Ayane_Swimsuit"
     },
     {
         "Id": 10045,
         "Name": "星野(泳装)",
         "StarGrade": 3,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/e/ef/Hoshino_Swimsuit_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/e/ef/Hoshino_Swimsuit_Icon.png",
+        "PathName": "Hoshino_Swimsuit"
     },
     {
         "Id": 26008,
         "Name": "静子(泳装)",
         "StarGrade": 1,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/4/4f/Shizuko_Swimsuit_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/4/4f/Shizuko_Swimsuit_Icon.png",
+        "PathName": "Shizuko_Swimsuit"
     },
     {
         "Id": 10046,
         "Name": "泉奈(泳装)",
         "StarGrade": 3,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/f/f6/Izuna_Swimsuit_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/f/f6/Izuna_Swimsuit_Icon.png",
+        "PathName": "Izuna_Swimsuit"
     },
     {
         "Id": 10047,
         "Name": "千世(泳装)",
         "StarGrade": 3,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/1/11/Chise_Swimsuit_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/1/11/Chise_Swimsuit_Icon.png",
+        "PathName": "Chise_Swimsuit"
     },
     {
         "Id": 10048,
         "Name": "纱织",
         "StarGrade": 3,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/7/70/Saori_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/7/70/Saori_Icon.png",
+        "PathName": "Saori"
     },
     {
         "Id": 20018,
         "Name": "萌绘",
         "StarGrade": 3,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/0/06/Moe_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/0/06/Moe_Icon.png",
+        "PathName": "Moe"
     },
     {
         "Id": 10049,
         "Name": "和纱",
         "StarGrade": 3,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/c/cb/Kazusa_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/c/cb/Kazusa_Icon.png",
+        "PathName": "Kazusa"
     },
     {
         "Id": 10050,
         "Name": "心奈",
         "StarGrade": 3,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/4/4a/Kokona_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/4/4a/Kokona_Icon.png",
+        "PathName": "Kokona"
     },
     {
         "Id": 10051,
         "Name": "歌原(应援团)",
         "StarGrade": 3,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/b/bd/Utaha_Cheerleader_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/b/bd/Utaha_Cheerleader_Icon.png",
+        "PathName": "Utaha_Cheerleader"
     },
     {
         "Id": 10052,
         "Name": "诺亚",
         "StarGrade": 3,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/3/31/Noa_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/3/31/Noa_Icon.png",
+        "PathName": "Noa"
     },
     {
         "Id": 16010,
         "Name": "响(应援团)",
         "StarGrade": 1,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/a/ab/Hibiki_Cheerleader_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/a/ab/Hibiki_Cheerleader_Icon.png",
+        "PathName": "Hibiki_Cheerleader"
     },
     {
         "Id": 20019,
         "Name": "茜(兔女郎)",
         "StarGrade": 3,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/7/7f/Akane_Bunny_Girl_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/7/7f/Akane_Bunny_Girl_Icon.png",
+        "PathName": "Akane_Bunny"
     },
     {
         "Id": 10053,
         "Name": "优香(运动服)",
         "StarGrade": 3,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/9/95/Yuuka_Gym_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/9/95/Yuuka_Gym_Icon.png",
+        "PathName": "Yuuka_Track"
     },
     {
         "Id": 10054,
         "Name": "玛丽(运动服)",
         "StarGrade": 3,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/9/99/Mari_Gym_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/9/99/Mari_Gym_Icon.png",
+        "PathName": "Mari_Track"
     },
     {
         "Id": 16011,
         "Name": "莲见(运动服)",
         "StarGrade": 1,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/9/9e/Hasumi_Gym_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/9/9e/Hasumi_Gym_Icon.png",
+        "PathName": "Hasumi_Track"
     },
     {
         "Id": 20020,
         "Name": "日鞠",
         "StarGrade": 3,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/e/e4/Himari_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/e/e4/Himari_Icon.png",
+        "PathName": "Himari"
     },
     {
         "Id": 10055,
         "Name": "时雨",
         "StarGrade": 3,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/0/0c/Shigure_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/0/0c/Shigure_Icon.png",
+        "PathName": "Shigure"
     },
     {
         "Id": 10056,
         "Name": "芹娜(圣诞)",
         "StarGrade": 3,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/d/d9/Serina_Christmas_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/d/d9/Serina_Christmas_Icon.png",
+        "PathName": "Serina_Christmas"
     },
     {
         "Id": 20021,
         "Name": "花江(圣诞)",
         "StarGrade": 3,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/0/0a/Hanae_Christmas_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/0/0a/Hanae_Christmas_Icon.png",
+        "PathName": "Hanae_Christmas"
     },
     {
         "Id": 10057,
         "Name": "晴奈(正月)",
         "StarGrade": 3,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/4/4b/Haruna_New_Year_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/4/4b/Haruna_New_Year_Icon.png",
+        "PathName": "Haruna_NewYear"
     },
     {
         "Id": 20022,
         "Name": "枫香(正月)",
         "StarGrade": 3,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/f/f9/Fuuka_New_Year_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/f/f9/Fuuka_New_Year_Icon.png",
+        "PathName": "Fuuka_NewYear"
     },
     {
         "Id": 16012,
         "Name": "淳子(正月)",
         "StarGrade": 1,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/3/31/Junko_New_Year_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/3/31/Junko_New_Year_Icon.png",
+        "PathName": "Junko_NewYear"
     },
     {
         "Id": 10058,
         "Name": "美弥",
         "StarGrade": 3,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/b/b1/Mine_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/b/b1/Mine_Icon.png",
+        "PathName": "Mine"
     },
     {
         "Id": 10059,
         "Name": "未花",
         "StarGrade": 3,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/d/dd/Mika_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/d/dd/Mika_Icon.png",
+        "PathName": "Mika"
     },
     {
         "Id": 10060,
         "Name": "惠",
         "StarGrade": 3,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/9/9b/Megu_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/9/9b/Megu_Icon.png",
+        "PathName": "Megu"
     },
     {
         "Id": 20023,
         "Name": "叶渚",
         "StarGrade": 3,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/b/ba/Kanna_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/b/ba/Kanna_Icon.png",
+        "PathName": "Kanna"
     },
     {
         "Id": 10061,
         "Name": "樱子",
         "StarGrade": 3,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/8/87/Sakurako_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/8/87/Sakurako_Icon.png",
+        "PathName": "Sakurako"
     },
     {
         "Id": 10062,
         "Name": "时",
         "StarGrade": 3,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/5/5f/Toki_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/5/5f/Toki_Icon.png",
+        "PathName": "Toki"
     },
     {
         "Id": 20024,
         "Name": "渚",
         "StarGrade": 3,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/0/04/Nagisa_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/0/04/Nagisa_Icon.png",
+        "PathName": "Nagisa"
     },
     {
         "Id": 10063,
         "Name": "小雪",
         "StarGrade": 3,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/9/97/Koyuki_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/9/97/Koyuki_Icon.png",
+        "PathName": "Koyuki"
     },
     {
         "Id": 10064,
         "Name": "佳代子(正月)",
         "StarGrade": 3,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/2/23/Kayoko_New_Year_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/2/23/Kayoko_New_Year_Icon.png",
+        "PathName": "Kayoko_NewYear"
     },
     {
         "Id": 20025,
         "Name": "遥香(正月)",
         "StarGrade": 3,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/2/2d/Haruka_New_Year_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/2/2d/Haruka_New_Year_Icon.png",
+        "PathName": "Haruka_NewYear"
     },
     {
         "Id": 10065,
         "Name": "果穗",
         "StarGrade": 3,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/b/be/Kaho_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/b/be/Kaho_Icon.png",
+        "PathName": "Kaho"
     },
     {
         "Id": 10066,
         "Name": "爱丽丝(女仆)",
         "StarGrade": 3,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/4/48/Alice_Maid_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/4/48/Alice_Maid_Icon.png",
+        "PathName": "Aris_Maid"
     },
     {
         "Id": 10067,
         "Name": "时(兔女郎)",
         "StarGrade": 3,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/f/ff/Toki_Bunny_Girl_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/f/ff/Toki_Bunny_Girl_Icon.png",
+        "PathName": "Toki_Bunny"
     },
     {
         "Id": 26009,
         "Name": "柚子(女仆)",
         "StarGrade": 1,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/e/e1/Yuzu_Maid_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/e/e1/Yuzu_Maid_Icon.png",
+        "PathName": "Yuzu_Maid"
     },
     {
         "Id": 10068,
         "Name": "玲纱",
         "StarGrade": 3,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/e/e5/Reisa_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/e/e5/Reisa_Icon.png",
+        "PathName": "Reisa"
     },
     {
         "Id": 10069,
         "Name": "瑠美",
         "StarGrade": 3,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/b/bc/Rumi_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/b/bc/Rumi_Icon.png",
+        "PathName": "Rumi"
     },
     {
         "Id": 10070,
         "Name": "弥奈",
         "StarGrade": 3,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/8/8f/Mina_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/8/8f/Mina_Icon.png",
+        "PathName": "Mina"
     },
     {
         "Id": 20026,
         "Name": "实里",
         "StarGrade": 3,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/4/43/Minori_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/4/43/Minori_Icon.png",
+        "PathName": "Minori"
     },
     {
         "Id": 10071,
         "Name": "宫子(泳装)",
         "StarGrade": 3,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/8/8e/Miyako_Swimsuit_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/8/8e/Miyako_Swimsuit_Icon.png",
+        "PathName": "Miyako_Swimsuit"
     },
     {
         "Id": 10072,
         "Name": "咲(泳装)",
         "StarGrade": 3,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/e/e5/Saki_Swimsuit_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/e/e5/Saki_Swimsuit_Icon.png",
+        "PathName": "Saki_Swimsuit"
     },
     {
         "Id": 26010,
         "Name": "美游(泳装)",
         "StarGrade": 1,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/9/9b/Miyu_Swimsuit_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/9/9b/Miyu_Swimsuit_Icon.png",
+        "PathName": "Miyu_Swimsuit"
     },
     {
         "Id": 20027,
         "Name": "白子(泳装)",
         "StarGrade": 3,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/c/c8/Shiroko_Swimsuit_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/c/c8/Shiroko_Swimsuit_Icon.png",
+        "PathName": "Shiroko_Swimsuit"
     },
     {
         "Id": 10073,
         "Name": "忧(泳装)",
         "StarGrade": 3,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/5/53/Ui_Swimsuit_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/5/53/Ui_Swimsuit_Icon.png",
+        "PathName": "Ui_Swimsuit"
     },
     {
         "Id": 20028,
         "Name": "日向(泳装)",
         "StarGrade": 3,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/c/cd/Hinata_Swimsuit_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/c/cd/Hinata_Swimsuit_Icon.png",
+        "PathName": "Hinata_Swimsuit"
     },
     {
         "Id": 16013,
         "Name": "小春(泳装)",
         "StarGrade": 1,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/0/03/Koharu_Swimsuit_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/0/03/Koharu_Swimsuit_Icon.png",
+        "PathName": "Koharu_Swimsuit"
     },
     {
         "Id": 10074,
         "Name": "花子(泳装)",
         "StarGrade": 3,
-        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/9/96/Hanako_Swimsuit_Icon.png"
+        "Avatar": "https://static.wikia.nocookie.net/blue-archive/images/9/96/Hanako_Swimsuit_Icon.png",
+        "PathName": "Hanako_Swimsuit"
     }
 ]

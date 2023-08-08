@@ -25,6 +25,23 @@ const sign_ended = () => {
     changeVisibleParent(1)
     changeVisibleParent(2)
 }
+
+const videoPaths = ref({
+    arona_normal:
+        'https://fs-im-kefu.7moor-fs1.com/29397395/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1691494911014/arona_normal.mp3',
+    arona_special:
+        'https://fs-im-kefu.7moor-fs1.com/29397395/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1691494911146/arona_special.mp3',
+    wait_normal:
+        'https://fs-im-kefu.7moor-fs1.com/29397395/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1691494975709/wait_normal.mp3',
+    wait_special:
+        'https://fs-im-kefu.7moor-fs1.com/29397395/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1691494975556/wait_special.mp3',
+    sign_normal:
+        'https://fs-im-kefu.7moor-fs1.com/29397395/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1691495022800/sign_normal.mp3',
+    sign_special:
+        'https://fs-im-kefu.7moor-fs1.com/29397395/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1691495022938/sign_special.mp3',
+    sign_special2:
+        'https://fs-im-kefu.7moor-fs1.com/29397395/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1691495023077/sign_special2.mp3'
+})
 </script>
 
 <template>
@@ -32,11 +49,7 @@ const sign_ended = () => {
         <video
             muted
             autoplay
-            :src="
-                flag === flag2
-                    ? 'https://fs-im-kefu.7moor-fs1.com/29397395/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1691494911014/arona_normal.mp3'
-                    : 'https://fs-im-kefu.7moor-fs1.com/29397395/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1691494911146/arona_special.mp3'
-            "
+            :src="flag === flag2 ? videoPaths.arona_normal : videoPaths.arona_special"
             v-show="layerVisible[0]"
             @ended="arona_ended()"
             @click="arona_ended()"
@@ -44,11 +57,7 @@ const sign_ended = () => {
         <video
             muted
             autoplay
-            :src="
-                flag === flag2
-                    ? 'https://fs-im-kefu.7moor-fs1.com/29397395/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1691494975709/wait_normal.mp3'
-                    : 'https://fs-im-kefu.7moor-fs1.com/29397395/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1691494975556/wait_special.mp3'
-            "
+            :src="flag === flag2 ? videoPaths.wait_normal : videoPaths.wait_special"
             loop="true"
             v-show="layerVisible[1]"
             @click="wait_ended()"
@@ -57,9 +66,9 @@ const sign_ended = () => {
             muted
             autoplay
             :src="
-                (flag2 && 'https://fs-im-kefu.7moor-fs1.com/29397395/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1691495023077/sign_special2.mp3') ||
-                (flag && 'https://fs-im-kefu.7moor-fs1.com/29397395/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1691495022938/sign_special.mp3') ||
-                'https://fs-im-kefu.7moor-fs1.com/29397395/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1691495022800/sign_normal.mp3'
+                (flag2 && videoPaths.sign_special2) ||
+                (flag && videoPaths.sign_special) ||
+                videoPaths.sign_normal
             "
             v-show="layerVisible[2]"
             @ended="sign_ended()"
