@@ -4,7 +4,6 @@ import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 
 import pxtovw from 'postcss-px-to-viewport'
-import stylePxToVw from './style-px-to-vw'
 
 // https://vitejs.dev/config/
 export default defineConfig({

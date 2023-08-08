@@ -37,12 +37,12 @@ function hideModal() {
 <template>
     <div class="result">
         <div class="result-container">
-            <div class="card" :class="backgroundColor(item['StarGrade'])" v-for="item in result">
-                <div class="char">
-                    <img :src="item['Avatar']" />
+            <div class="shadow-box" :class="{ shadow: item['StarGrade'] > 1 }" v-for="item in result">
+                <div class="card" :class="backgroundColor(item['StarGrade'])">
+                    <div class="char"><img :src="item['Avatar']" /></div>
+                    <div class="new" v-show="item['isNew']"><img src="/New.png" /></div>
+                    <div class="star"><img src="/Star.png" v-for="n in item['StarGrade']" /></div>
                 </div>
-                <div class="new" v-show="item['isNew']"><img src="/New.png" /></div>
-                <div class="star"><img src="/Star.png" v-for="n in item['StarGrade']" /></div>
             </div>
         </div>
         <div class="button-container">
@@ -99,7 +99,25 @@ function hideModal() {
     @include center;
     align-content: center;
     flex-wrap: wrap;
-    width: 1180px;
+    width: 1280px;
     height: 800px;
+}
+
+.shadow-box {
+    height: 300px;
+    margin: 0 5px;
+    @include skew;
+
+    &.shadow {
+        background: linear-gradient(
+            to top,
+            rgb(255 255 255/0.1) 10%,
+            rgb(250 250 250/0.5) 25%,
+            rgb(245 245 245/0.9) 45%,
+            rgb(245 245 245/0.9) 55%,
+            rgb(250 250 250/0.5) 75%,
+            rgb(255 255 255/0.1) 90%
+        );
+    }
 }
 </style>
