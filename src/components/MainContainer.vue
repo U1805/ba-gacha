@@ -28,11 +28,15 @@ function hideModal(index: number) {
             <div class="ap">999/999</div>
             <div class="crash">999,999,999</div>
             <div class="stone">999,999</div>
+            <a class="link" href="https://github.com/U1805/blue-archive-gacha-simulator"></a>
+            <a class="help" href="https://github.com/U1805/blue-archive-gacha-simulator/blob/main/README-zh.md" ></a>
         </div>
+
         <div class="preview">
             <video muted autoplay loop="true" src="/Preview0.mp4"></video>
         </div>
         <div class="gradient"></div>
+
         <div class="gacha-wrapper">
             <div class="event-banner">
                 <img src="/EventBanner0.png" />
@@ -111,6 +115,7 @@ function hideModal(index: number) {
 <style scoped lang="scss">
 @import '@/assets/styles/gacha-tab.scss';
 @import '@/assets/styles/modal.scss';
+@import '@/assets/styles/link-icon.scss';
 
 .table-container {
     display: grid;
@@ -193,7 +198,6 @@ function hideModal(index: number) {
         display: flex;
         justify-content: flex-start;
         height: 140px;
-
         overflow: hidden;
 
         img {

@@ -1,4 +1,4 @@
-<h1 align="center">BA Gacha Simulator</h1>
+<h1 align="center">碧蓝档案抽卡模拟器</h1>
 
 <div align="center">
     <img src="https://img.shields.io/github/last-commit/u1805/blue-archive-gacha-simulator/main">
@@ -9,40 +9,38 @@
 </div>
 
 <div align="center">
-  <strong>A web application for simulating gacha pulls in Blue Archive</strong><br>
-  <sub>Feeling bored? Come and try your luck with gacha pulls!</sub>
+  <strong>在线吃井模拟器</strong><br>
+  <sub>无聊了就来抽抽卡吧</sub>
 </div>
 
-[中文说明](./README-zh.md) 
+## 预览
 
-## Preview
-
-[Give it a try!](https://u1805.github.io/blue-archive-gacha-simulator)
+[小抽一井!](https://u1805.github.io/blue-archive-gacha-simulator)
 
 ![Preview Image 1](./assets/Screenshot1.webp)
 ![Preview Image 2](./assets/Screenshot2.webp)
 
-## How to Use
+## 使用方法
 
-**Feel free to click as you like.**
+**随便点**
 
-The gacha results are generated solely for entertainment purposes.
+<small>（抽卡结果仅供娱乐，切勿当真）</small>
 
-## Star History
+## 🌟
 
 [![Star History Chart](https://api.star-history.com/svg?repos=U1805/blue-archive-gacha-simulator)](https://star-history.com/#U1805/blue-archive-gacha-simulator)
 
-## Contributing
+## 贡献
 
-Contributions from all are welcome! If you encounter any issues or have ideas for enhancements, please open an issue on GitHub. Additionally, we encourage you to submit pull requests to address problems or implement new features.
+Issue 和 PR 大欢迎！如果你遇到任何问题或者有好想法，请开一个 issue。另外也欢迎提交 pull request 来解决问题或者实现新功能。
 
-## Credits
+## 感谢
 
-This project drew inspiration from:
+项目灵感来自:
 
 - [Genshin Impact Wish Simulator](https://github.com/uzair-ashraf/genshin-impact-wish-simulator/)
 
-Character metadata sourced from:
+角色数据来自:
 
 - [lonqie/SchaleDB](https://github.com/lonqie/SchaleDB)
 - [Bluearchive.Fandom](https://bluearchive.fandom.com)
@@ -52,4 +50,4 @@ Character metadata sourced from:
 
 ## Copyrights
 
-All assets within this application were obtained from third-party websites, and some were captured directly from the game.
+本应用中的资源均来自第三方网站获取，部分视频是游戏内录屏。
