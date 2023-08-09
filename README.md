@@ -15,18 +15,30 @@
 
 [中文说明](./README-zh.md) 
 
+## Features
+
+- **Gacha Pull**: This application is created for fun 🎃
+- **Recruitment History**: View or reset recruitment history (local storage) at any time 📕
+- **Internationalization**: Switch between Chinese, English, and Japanese languages 🎨
+
+[Try it!](https://u1805.github.io/blue-archive-gacha-simulator)
+
 ## Preview
 
-[Give it a try!](https://u1805.github.io/blue-archive-gacha-simulator)
+- Gacha Pull
+  ![Preview Image 1](https://fs-im-kefu.7moor-fs1.com/29397395/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1691579639271/gacha1.gif)
 
-![Preview Image 1](./assets/Screenshot1.webp)
-![Preview Image 2](./assets/Screenshot2.webp)
+- Recruitment History
+  ![Preview Image 2](https://fs-im-kefu.7moor-fs1.com/29397395/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1691579979314/history.gif)
+
+- I18n(Internationalization)
+  ![Preview Image 3](https://fs-im-kefu.7moor-fs1.com/29397395/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1691580242033/i18n.gif)
+
+The gacha results are generated solely for entertainment purposes.
 
 ## How to Use
 
-**Feel free to click as you like.**
-
-The gacha results are generated solely for entertainment purposes.
+Feel free to **click as you like**.
 
 ## Star History
 
