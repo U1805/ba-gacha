@@ -109,6 +109,14 @@ onMounted(() => {
     getData()
 })
 
+onMounted(() => {
+    document.onreadystatechange = () => {
+        if (document.readyState === 'complete') {
+            document.querySelector("#app > div:nth-child(1)")?.remove()
+        }
+    }
+})
+
 // provide & inject
 
 provide('getStudents', getStudents)
@@ -122,12 +130,20 @@ provide('flag2', flag2)
 </script>
 
 <template>
+    <div class="load-bg"><div class="loader"></div></div>
     <MainContainer style="position: absolute; z-index: 10" v-if="layerVisible[0]"></MainContainer>
     <VideoContainer style="position: absolute; z-index: 20" v-if="layerVisible[1]"></VideoContainer>
     <ResultContainer style="position: absolute; z-index: 30" v-if="layerVisible[2]"></ResultContainer>
 </template>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+.load-bg{
+    @include center;
+    @include full-screen;
+    z-index:1000;
+    background:white;
+}
+</style>
 
 <script lang="ts">
 // import { clickEffect } from '@/assets/utils/cursorEffect'
