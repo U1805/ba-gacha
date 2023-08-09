@@ -1,15 +1,18 @@
 <script setup lang="ts">
+import CloseIcon from './icons/CloseIcon.vue'
+
 import type { historyItem } from '@/assets/utils/interface'
 import { getSchaledbAvatar, getSchaledbInfo, getPreviewVideo } from '@/assets/utils/api'
 import type { Ref } from 'vue'
 import { inject, ref } from 'vue'
-import CloseIcon from './icons/CloseIcon.vue'
 
 const getStudents_ = inject('getStudents') as Function
 const changeVisible = inject('changeVisible') as Function
 const resetHistory = inject('resetHistory') as Function
 const history = inject('history') as historyItem[]
 const totalCnt = inject('totalCnt') as number
+const home = ref('https://github.com/U1805/blue-archive-gacha-simulator')
+
 function getStudents(num: number) {
     getStudents_(num)
     changeVisible(0)
@@ -24,19 +27,28 @@ function hideModal(index: number) {
     isModal.value[index] = false
 }
 
-const home = ref('https://github.com/U1805/blue-archive-gacha-simulator')
+import { useI18n } from 'vue-i18n'
+import i18n from '@/assets/utils/i18n'
+const { t } = useI18n()
+
+function switchLocale() {
+    let list = i18n.global.availableLocales
+    let index = list.findIndex((element) => element === i18n.global.locale.value)
+    i18n.global.locale.value = list[(index + 1) % list.length]
+}
 </script>
 
 <template>
     <div class="table-container">
         <div class="header">
-            <div class="title">学生招募</div>
+            <div class="title">{{ $t('mainTitle') }}</div>
             <div class="ap">999/999</div>
             <div class="crash">999,999,999</div>
             <div class="stone">999,999</div>
             <a class="icon link" :href="home"></a>
             <a class="icon help" :href="home + '/blob/main/README-zh.md'"></a>
             <a class="icon history" @click="showModal(2)"></a>
+            <a class="icon locale" @click="switchLocale()"></a>
         </div>
 
         <div class="preview">
@@ -59,12 +71,9 @@ const home = ref('https://github.com/U1805/blue-archive-gacha-simulator')
             <div class="tab-container">
                 <div class="tab-body">
                     <div class="duration">2023/08/09 From 10:00 ~ 2099/01/01 Until 09:59</div>
-                    <div class="title">通常招募</div>
-                    <div class="subtitle">来招募更多性格迥异的学生吧!<br /></div>
-                    <div class="notice">
-                        选择招募 10 次，必定获得 1 名 3★ 学生!<br />
-                        ※ 点击右上角按钮查看招募记录
-                    </div>
+                    <div class="title">{{ $t('title') }}</div>
+                    <div class="subtitle">{{ $t('subtitle') }}</div>
+                    <div class="notice">{{ $t('notice') }}</div>
                     <!-- Button-container begin -->
                     <div class="button-container">
                         <div class="gacha-button button-blue" @click="showModal(0)">
@@ -72,7 +81,7 @@ const home = ref('https://github.com/U1805/blue-archive-gacha-simulator')
                             <div class="right">
                                 <img src="/Stone.png" class="stone_icon" />
                                 <div class="cost"><span>120</span></div>
-                                <div class="text">招募 1 次</div>
+                                <div class="text">{{ $t('gacha1') }}</div>
                             </div>
                         </div>
                         <div class="gacha-button button-yellow" @click="showModal(1)">
@@ -80,7 +89,7 @@ const home = ref('https://github.com/U1805/blue-archive-gacha-simulator')
                             <div class="right">
                                 <img src="/Stone.png" class="stone_icon" />
                                 <div class="cost"><span>1200</span></div>
-                                <div class="text">招募 10 次</div>
+                                <div class="text">{{ $t('gacha10') }}</div>
                             </div>
                         </div>
                     </div>
@@ -88,11 +97,15 @@ const home = ref('https://github.com/U1805/blue-archive-gacha-simulator')
                 </div>
                 <div class="tab-foot">
                     <img src="/Point.png" draggable="false" class="point_icon" />
-                    <div class="text"><span>招募点数</span></div>
+                    <div class="text">
+                        <span>{{ $t('recruitPoint') }}</span>
+                    </div>
                     <div class="point">
                         <span>{{ totalCnt }}</span>
                     </div>
-                    <div class="select" @click="resetHistory()"><span>重置</span></div>
+                    <div class="select" @click="resetHistory()">
+                        <span>{{ $t('reset') }}</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -100,18 +113,18 @@ const home = ref('https://github.com/U1805/blue-archive-gacha-simulator')
         <div class="modal-backdrop" v-show="isModal[index]" v-for="(num, index) in [1, 10]">
             <div class="modal">
                 <div class="modal-header">
-                    <span>通知</span>
+                    <span>{{ $t('modalTitle') }}</span>
                     <CloseIcon class="icon close" @click="hideModal(index)" />
                 </div>
                 <div class="modal-body">
-                    <p>招募 {{ num }} 次？</p>
+                    <p>{{ $t('modalBody').replace('%num', num.toString()) }}</p>
                 </div>
                 <div class="modal-footer">
                     <div class="gacha-button button-gray" @click="hideModal(index)">
-                        <div>取消</div>
+                        <div>{{ $t('cancel') }}</div>
                     </div>
                     <div class="gacha-button button-blue" @click="getStudents(num)">
-                        <div>OK</div>
+                        <div>{{ $t('confirm') }}</div>
                     </div>
                 </div>
             </div>
@@ -121,7 +134,7 @@ const home = ref('https://github.com/U1805/blue-archive-gacha-simulator')
         <div class="modal-backdrop" v-show="isModal[2]">
             <div class="modal history">
                 <div class="modal-header">
-                    <span>招募记录</span>
+                    <span>{{ $t('history') }}</span>
                     <CloseIcon class="icon close" @click="hideModal(2)" />
                 </div>
                 <div class="modal-body">
@@ -156,7 +169,6 @@ const home = ref('https://github.com/U1805/blue-archive-gacha-simulator')
 
 .header {
     grid-area: 1 / 1 / 2 / 3;
-    display: flex;
     background: url('/Header.png') top no-repeat;
     background-size: cover;
     filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.441));
@@ -165,7 +177,7 @@ const home = ref('https://github.com/U1805/blue-archive-gacha-simulator')
     z-index: 5;
 
     div {
-        position: relative;
+        position: fixed;
         top: 5px;
         font-size: 30px;
         font-weight: 500;
@@ -177,15 +189,15 @@ const home = ref('https://github.com/U1805/blue-archive-gacha-simulator')
     }
 
     .ap {
-        left: 620px;
+        left: 750px;
     }
 
     .crash {
-        left: 770px;
+        left: 1010px;
     }
 
     .stone {
-        left: 860px;
+        left: 1260px;
     }
 }
 

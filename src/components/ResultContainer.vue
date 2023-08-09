@@ -33,6 +33,9 @@ function showModal() {
 function hideModal() {
     isModal.value = false
 }
+
+import { useI18n } from 'vue-i18n'
+const { t } = useI18n()
 </script>
 
 <template>
@@ -50,14 +53,16 @@ function hideModal() {
         </div>
         <div class="button-container">
             <div class="gacha-button button-blue" @click="confirm">
-                <div>确定</div>
+                <div>{{ $t('confirm') }}</div>
             </div>
             <div class="gacha-button button-yellow" @click="showModal()">
-                <div>再来一次</div>
+                <div>{{ $t('again') }}</div>
             </div>
             <div class="point-container">
                 <img src="/Point.png" />
-                <div class="text"><span>招募点数</span></div>
+                <div class="text">
+                    <span>{{ $t('recruitPoint') }}</span>
+                </div>
                 <div class="num">
                     <span>{{ totalCnt }}</span>
                 </div>
@@ -67,17 +72,17 @@ function hideModal() {
         <div class="modal-backdrop" v-show="isModal">
             <div class="modal">
                 <div class="modal-header">
-                    <span>通知</span>
+                    <span>{{ $t('modalTitle') }}</span>
                 </div>
                 <div class="modal-body">
-                    <p>再次招募？</p>
+                    <p>{{ $t('modalAgain') }}</p>
                 </div>
                 <div class="modal-footer">
                     <div class="gacha-button button-gray" @click="hideModal()">
-                        <div>取消</div>
+                        <div>{{ $t('cancel') }}</div>
                     </div>
                     <div class="gacha-button button-yellow" @click="getStudents(result.length)">
-                        <div>OK</div>
+                        <div>{{ $t('confirm') }}</div>
                     </div>
                 </div>
             </div>
