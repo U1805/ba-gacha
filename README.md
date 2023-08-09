@@ -25,14 +25,17 @@
 
 ## Preview
 
-- Gacha Pull
-  ![Preview Image 1](https://fs-im-kefu.7moor-fs1.com/29397395/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1691579639271/gacha1.gif)
+- **Gacha Pull**
+  ![gacha1](https://github.com/U1805/blue-archive-gacha-simulator/assets/45514638/4e758b1d-71b0-4364-ace4-953bf6eeb91f)
 
-- Recruitment History
-  ![Preview Image 2](https://fs-im-kefu.7moor-fs1.com/29397395/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1691579979314/history.gif)
 
-- I18n(Internationalization)
-  ![Preview Image 3](https://fs-im-kefu.7moor-fs1.com/29397395/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1691580242033/i18n.gif)
+- **Recruitment History**
+  ![history](https://github.com/U1805/blue-archive-gacha-simulator/assets/45514638/a77b0dee-abd9-4c57-a749-69f3b25cb3d0)
+
+
+- **I18n(Internationalization)**
+  ![i18n](https://github.com/U1805/blue-archive-gacha-simulator/assets/45514638/71d3a0d3-bad4-48fe-a36e-151de37cac3a)
+
 
 The gacha results are generated solely for entertainment purposes.
 
