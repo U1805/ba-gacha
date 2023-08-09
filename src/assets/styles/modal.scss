@@ -5,6 +5,7 @@
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 100;
 }
+
 .modal {
     width: 640px;
     height: 480px;
@@ -25,7 +26,7 @@
         background-size: contain;
         border-radius: 10px 10px 0 0;
         border-bottom: 1px solid rgb(218, 221, 220);
-        span {
+        & > span:first-child {
             border-bottom: 8px solid rgb(255, 244, 126);
             @include font-big;
             padding: 5px;
@@ -77,5 +78,49 @@
         .button-yellow {
             @include gacha-button($golden, '/ButtonYellowBg0.png', '/ButtonYellowBg1.png');
         }
+    }
+}
+
+.modal.history {
+    background: rgb(242, 242, 242);
+    height: 83vh;
+    width: 1450px;
+
+    .modal-body {
+        height: 75vh;
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        padding: 20px 50px;
+        @include hide-scrollbar;
+        .card {
+            width: 16.66%;
+        }
+        .card > a {
+            @include center;
+            flex-direction: column;
+            padding: 0 15px;
+        }
+    }
+    $img-height: 220px;
+    .char img {
+        height: $img-height;
+    }
+    .star {
+        position: relative;
+        bottom: -$img-height;
+        width: 100%;
+        height: 40px;
+        background-color: $black-shadow-opacity;
+        @include center;
+        img {
+            height: 25px;
+            opacity: 1;
+        }
+    }
+    .name {
+        @include font-regular;
+        color: $black-shadow;
+        text-decoration: underline $golden-card;
     }
 }

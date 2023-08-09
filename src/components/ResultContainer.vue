@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import type { resultItem } from '@/assets/utils/interface'
+import { getFandomAvatar, getSchaledbInfo } from '@/assets/utils/api'
 import type { Ref } from 'vue'
 import { inject, ref } from 'vue'
 
@@ -38,9 +39,9 @@ function hideModal() {
     <div class="result">
         <div class="result-container">
             <div class="shadow-box" :class="{ shadow: item['StarGrade'] > 1 }" v-for="item in result">
-                <a :href="'https://schale.gg/?chara=' + item['PathName']" target="_blank">
+                <a :href="getSchaledbInfo(item['PathName'])" target="_blank">
                     <div class="card" :class="backgroundColor(item['StarGrade'])">
-                        <div class="char"><img :src="item['Avatar']" /></div>
+                        <div class="char"><img :src="getFandomAvatar(item['Avatar'])" /></div>
                         <div class="new" v-show="item['isNew']"><img src="/New.png" /></div>
                         <div class="star"><img src="/Star.png" v-for="n in item['StarGrade']" /></div>
                     </div>

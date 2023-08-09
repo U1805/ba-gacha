@@ -55,13 +55,14 @@ function getStudents(num: number) {
             student = getRandomGacha() // 十连保底
         }
         if (student.StarGrade == 3) flag.value = true
-        var { Id, Name, Avatar, StarGrade, PathName } = student
+        var { Id, Name, Avatar, StarGrade, PathName, Collection } = student
         let res: resultItem = { PathName: PathName, Avatar: Avatar, StarGrade: StarGrade, isNew: false }
         let studentIdx = history.value.findIndex((element) => element.Id == student.Id)
         if (studentIdx > -1) {
             result.value.push(res)
             history.value[studentIdx].Cnt++
-        } else { // new
+        } else {
+            // new
             res.isNew = true
             result.value.push(res)
             let item: historyItem = {
@@ -70,6 +71,7 @@ function getStudents(num: number) {
                 PathName: PathName,
                 Avatar: Avatar,
                 StarGrade: StarGrade,
+                Collection: Collection,
                 Cnt: 1
             }
             history.value.push(item)
@@ -113,6 +115,7 @@ provide('getStudents', getStudents)
 provide('resetHistory', resetData)
 provide('changeVisible', changeVisible)
 provide('result', result)
+provide('history', history)
 provide('totalCnt', totalCnt)
 provide('flag', flag)
 provide('flag2', flag2)

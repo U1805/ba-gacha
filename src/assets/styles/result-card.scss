@@ -134,10 +134,6 @@
             @include noskew;
             @include font-big;
         }
-
-        &:active {
-            transform: scale(0.95) skewX(-10deg);
-        }
     }
 
     .button-blue {

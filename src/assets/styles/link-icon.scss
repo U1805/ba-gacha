@@ -1,19 +1,43 @@
-.link {
-    position: fixed;
-    left: 60px;
-    top: 7px;
-    height: 80px;
-    width: 80px;
-    border-radius: 50%;
-    z-index: 10;
-}
+.icon {
+    &.link {
+        position: fixed;
+        left: 60px;
+        top: 7px;
+        height: 80px;
+        width: 80px;
+        border-radius: 50%;
+        z-index: 10;
+    }
 
-.help {
-    position: fixed;
-    left: 303px;
-    top: 14px;
-    width: 31px;
-    height: 31px;
-    border-radius: 10px;
-    z-index: 10;
+    &.help {
+        position: fixed;
+        left: 303px;
+        top: 14px;
+        width: 31px;
+        height: 31px;
+        border-radius: 10px;
+        z-index: 10;
+    }
+
+    &.history {
+        position: fixed;
+        left: 1563px;
+        top: 8px;
+        width: 45px;
+        height: 45px;
+        border-radius: 10px;
+        z-index: 10;
+        cursor: pointer;
+    }
+
+    &.close {
+        position: absolute;
+        right: -50px;
+        height: 50px;
+        z-index: 10;
+        cursor: pointer;
+        &:active {
+            transform: scale(0.9);
+        }
+    }
 }

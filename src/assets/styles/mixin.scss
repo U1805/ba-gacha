@@ -67,6 +67,7 @@
     width: 40%;
     border-radius: 10px;
     background: $color;
+    cursor: pointer;
 
     &::before,
     &::after {
@@ -91,5 +92,20 @@
         background: url($url1) right bottom no-repeat;
         -webkit-filter: opacity(0.5);
         filter: opacity(0.5);
+    }
+
+    &:active {
+        transform: scale(0.95) skewX(-10deg);
+    }
+}
+
+// scroll bar
+
+@mixin hide-scrollbar {
+    overflow-y: scroll;
+    -ms-overflow-style: none; /* IE 和 Edge */
+    scrollbar-width: none; /* Firefox */
+    &::-webkit-scrollbar {
+        display: none;
     }
 }

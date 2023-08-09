@@ -93,9 +93,6 @@
                 box-shadow: 0px 5px 5px -5px rgb(0 0 0/0.6);
                 @include skew;
                 @include center;
-                &:active {
-                    transform: scale(0.95) skewX(-10deg);
-                }
 
                 .right {
                     flex-wrap: wrap;
@@ -186,6 +183,7 @@
             box-shadow: 0px 5px 5px -5px rgb(0 0 0/0.5);
             @include center;
             @include skew;
+            cursor: pointer;
 
             span {
                 @include font-regular;
