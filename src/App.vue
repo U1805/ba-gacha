@@ -55,7 +55,7 @@ function getStudents(num: number) {
             student = getRandomGacha() // 十连保底
         }
         if (student.StarGrade == 3) flag.value = true
-        var { Id, Name, Avatar, StarGrade, PathName, Collection } = student
+        var { Id, Name, Avatar, StarGrade, PathName } = student
         let res: resultItem = { PathName: PathName, Avatar: Avatar, StarGrade: StarGrade, isNew: false }
         let studentIdx = history.value.findIndex((element) => element.Id == student.Id)
         if (studentIdx > -1) {
@@ -71,7 +71,6 @@ function getStudents(num: number) {
                 PathName: PathName,
                 Avatar: Avatar,
                 StarGrade: StarGrade,
-                Collection: Collection,
                 Cnt: 1
             }
             history.value.push(item)
@@ -145,7 +144,3 @@ provide('flag2', flag2)
 }
 </style>
 
-<script lang="ts">
-// import { clickEffect } from '@/assets/utils/cursorEffect'
-// clickEffect()
-</script>

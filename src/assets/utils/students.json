@@ -4,1207 +4,1056 @@
         "Name": "阿露",
         "StarGrade": 3,
         "Avatar": "d/de/Aru_Icon",
-        "PathName": "Aru",
-        "Collection": "Student_Portrait_Aru_Collection"
+        "PathName": "Aru"
     },
     {
         "Id": 10001,
         "Name": "艾米",
         "StarGrade": 3,
         "Avatar": "e/e3/Eimi_Icon",
-        "PathName": "Eimi",
-        "Collection": "Student_Portrait_Eimi_Collection"
+        "PathName": "Eimi"
     },
     {
         "Id": 10002,
         "Name": "晴奈",
         "StarGrade": 3,
         "Avatar": "e/e7/Haruna_Icon",
-        "PathName": "Haruna",
-        "Collection": "Student_Portrait_Haruna_Collection"
+        "PathName": "Haruna"
     },
     {
         "Id": 10003,
         "Name": "日富美",
         "StarGrade": 3,
         "Avatar": "4/4c/Hifumi_Icon",
-        "PathName": "Hifumi",
-        "Collection": "Student_Portrait_Hihumi_Collection"
+        "PathName": "Hifumi"
     },
     {
         "Id": 10004,
         "Name": "日奈",
         "StarGrade": 3,
         "Avatar": "a/a0/Hina_Icon",
-        "PathName": "Hina",
-        "Collection": "Student_Portrait_Hina_Collection"
+        "PathName": "Hina"
     },
     {
         "Id": 10005,
         "Name": "星野",
         "StarGrade": 3,
         "Avatar": "d/de/Hoshino_Icon",
-        "PathName": "Hoshino",
-        "Collection": "Student_Portrait_Hoshino_Collection"
+        "PathName": "Hoshino"
     },
     {
         "Id": 10006,
         "Name": "伊织",
         "StarGrade": 3,
         "Avatar": "1/16/Iori_Icon",
-        "PathName": "Iori",
-        "Collection": "Student_Portrait_Iori_Collection"
+        "PathName": "Iori"
     },
     {
         "Id": 10007,
         "Name": "真纪",
         "StarGrade": 3,
         "Avatar": "e/e9/Maki_Icon",
-        "PathName": "Maki",
-        "Collection": "Student_Portrait_Maki_Collection"
+        "PathName": "Maki"
     },
     {
         "Id": 10008,
         "Name": "尼禄",
         "StarGrade": 3,
         "Avatar": "0/0f/Neru_Icon",
-        "PathName": "Neru",
-        "Collection": "Student_Portrait_Neru_Collection"
+        "PathName": "Neru"
     },
     {
         "Id": 10009,
         "Name": "泉",
         "StarGrade": 3,
         "Avatar": "0/03/Izumi_Icon",
-        "PathName": "Izumi",
-        "Collection": "Student_Portrait_Izumi_Collection"
+        "PathName": "Izumi"
     },
     {
         "Id": 10010,
         "Name": "白子",
         "StarGrade": 3,
         "Avatar": "7/79/Shiroko_Icon",
-        "PathName": "Shiroko",
-        "Collection": "Student_Portrait_Shiroko_Collection"
+        "PathName": "Shiroko"
     },
     {
         "Id": 10011,
         "Name": "瞬",
         "StarGrade": 3,
         "Avatar": "f/fa/Shun_Icon",
-        "PathName": "Shun",
-        "Collection": "Student_Portrait_Shun_Collection"
+        "PathName": "Shun"
     },
     {
         "Id": 10012,
         "Name": "堇",
         "StarGrade": 3,
         "Avatar": "e/e5/Sumire_Icon",
-        "PathName": "Sumire",
-        "Collection": "Student_Portrait_Sumire_Collection"
+        "PathName": "Sumire"
     },
     {
         "Id": 10013,
         "Name": "鹤城",
         "StarGrade": 3,
         "Avatar": "f/fb/Tsurugi_Icon",
-        "PathName": "Tsurugi",
-        "Collection": "Student_Portrait_Tsurugi_Collection"
+        "PathName": "Tsurugi"
     },
     {
         "Id": 13000,
         "Name": "茜",
         "StarGrade": 2,
         "Avatar": "4/47/Akane_Icon",
-        "PathName": "Akane",
-        "Collection": "Student_Portrait_Akane_Collection"
+        "PathName": "Akane"
     },
     {
         "Id": 13001,
         "Name": "千世",
         "StarGrade": 2,
         "Avatar": "c/c2/Chise_Icon",
-        "PathName": "Chise",
-        "Collection": "Student_Portrait_Chise_Collection"
+        "PathName": "Chise"
     },
     {
         "Id": 13002,
         "Name": "明里",
         "StarGrade": 2,
         "Avatar": "1/1b/Akari_Icon",
-        "PathName": "Akari",
-        "Collection": "Student_Portrait_Akari_Collection"
+        "PathName": "Akari"
     },
     {
         "Id": 13003,
         "Name": "莲见",
         "StarGrade": 2,
         "Avatar": "a/a3/Hasumi_Icon",
-        "PathName": "Hasumi",
-        "Collection": "Student_Portrait_Hasumi_Collection"
+        "PathName": "Hasumi"
     },
     {
         "Id": 13004,
         "Name": "野宫",
         "StarGrade": 2,
         "Avatar": "7/7b/Nonomi_Icon",
-        "PathName": "Nonomi",
-        "Collection": "Student_Portrait_Nonomi_Collection"
+        "PathName": "Nonomi"
     },
     {
         "Id": 13005,
         "Name": "佳代子",
         "StarGrade": 2,
         "Avatar": "a/ad/Kayoko_Icon",
-        "PathName": "Kayoko",
-        "Collection": "Student_Portrait_Kayoko_Collection"
+        "PathName": "Kayoko"
     },
     {
         "Id": 13006,
         "Name": "睦月",
         "StarGrade": 2,
         "Avatar": "8/83/Mutsuki_Icon",
-        "PathName": "Mutsuki",
-        "Collection": "Student_Portrait_Mutsuki_Collection"
+        "PathName": "Mutsuki"
     },
     {
         "Id": 13007,
         "Name": "淳子",
         "StarGrade": 2,
         "Avatar": "9/97/Junko_Icon",
-        "PathName": "Junko",
-        "Collection": "Student_Portrait_Zunko_Collection"
+        "PathName": "Junko"
     },
     {
         "Id": 13008,
         "Name": "芹香",
         "StarGrade": 2,
         "Avatar": "5/5f/Serika_Icon",
-        "PathName": "Serika",
-        "Collection": "Student_Portrait_Serika_Collection"
+        "PathName": "Serika"
     },
     {
         "Id": 13009,
         "Name": "椿",
         "StarGrade": 2,
         "Avatar": "1/1b/Tsubaki_Icon",
-        "PathName": "Tsubaki",
-        "Collection": "Student_Portrait_Tsubaki_Collection"
+        "PathName": "Tsubaki"
     },
     {
         "Id": 13010,
         "Name": "优香",
         "StarGrade": 2,
         "Avatar": "7/7b/Yuuka_Icon",
-        "PathName": "Yuuka",
-        "Collection": "Student_Portrait_Yuuka_Collection"
+        "PathName": "Yuuka"
     },
     {
         "Id": 16000,
         "Name": "遥香",
         "StarGrade": 1,
         "Avatar": "b/bd/Haruka_Icon",
-        "PathName": "Haruka",
-        "Collection": "Student_Portrait_Haruka_Collection"
+        "PathName": "Haruka"
     },
     {
         "Id": 16001,
         "Name": "明日奈",
         "StarGrade": 1,
         "Avatar": "0/0a/Asuna_Icon",
-        "PathName": "Asuna",
-        "Collection": "Student_Portrait_Asuna_Collection"
+        "PathName": "Asuna"
     },
     {
         "Id": 16002,
         "Name": "柯托莉",
         "StarGrade": 1,
         "Avatar": "9/93/Kotori_Icon",
-        "PathName": "Kotori",
-        "Collection": "Student_Portrait_Kotori_Collection"
+        "PathName": "Kotori"
     },
     {
         "Id": 16003,
         "Name": "铃美",
         "StarGrade": 1,
         "Avatar": "d/d8/Suzumi_Icon",
-        "PathName": "Suzumi",
-        "Collection": "Student_Portrait_Suzumi_Collection"
+        "PathName": "Suzumi"
     },
     {
         "Id": 16004,
         "Name": "菲娜",
         "StarGrade": 1,
         "Avatar": "8/8e/Pina_Icon",
-        "PathName": "Pina",
-        "Collection": "Student_Portrait_Pina_Collection"
+        "PathName": "Pina"
     },
     {
         "Id": 20000,
         "Name": "响",
         "StarGrade": 3,
         "Avatar": "8/88/Hibiki_Icon",
-        "PathName": "Hibiki",
-        "Collection": "Student_Portrait_Hibiki_Collection"
+        "PathName": "Hibiki"
     },
     {
         "Id": 20001,
         "Name": "花凛",
         "StarGrade": 3,
         "Avatar": "7/75/Karin_Icon",
-        "PathName": "Karin",
-        "Collection": "Student_Portrait_Karin_Collection"
+        "PathName": "Karin"
     },
     {
         "Id": 20002,
         "Name": "纱绫",
         "StarGrade": 3,
         "Avatar": "a/a3/Saya_Icon",
-        "PathName": "Saya",
-        "Collection": "Student_Portrait_Saya_Collection"
+        "PathName": "Saya"
     },
     {
         "Id": 23000,
         "Name": "爱莉",
         "StarGrade": 2,
         "Avatar": "2/23/Airi_Icon",
-        "PathName": "Airi",
-        "Collection": "Student_Portrait_Airi_Collection"
+        "PathName": "Airi"
     },
     {
         "Id": 23001,
         "Name": "枫香",
         "StarGrade": 2,
         "Avatar": "7/77/Fuuka_Icon",
-        "PathName": "Fuuka",
-        "Collection": "Student_Portrait_Fuuka_Collection"
+        "PathName": "Fuuka"
     },
     {
         "Id": 23002,
         "Name": "花江",
         "StarGrade": 2,
         "Avatar": "0/08/Hanae_Icon",
-        "PathName": "Hanae",
-        "Collection": "Student_Portrait_Hanae_Collection"
+        "PathName": "Hanae"
     },
     {
         "Id": 23003,
         "Name": "晴",
         "StarGrade": 2,
         "Avatar": "7/7b/Hare_Icon",
-        "PathName": "Hare",
-        "Collection": "Student_Portrait_Hare_Collection"
+        "PathName": "Hare"
     },
     {
         "Id": 23004,
         "Name": "歌原",
         "StarGrade": 2,
         "Avatar": "8/8b/Utaha_Icon",
-        "PathName": "Utaha",
-        "Collection": "Student_Portrait_Utaha_Collection"
+        "PathName": "Utaha"
     },
     {
         "Id": 23005,
         "Name": "绫音",
         "StarGrade": 2,
         "Avatar": "f/f8/Ayane_Icon",
-        "PathName": "Ayane",
-        "Collection": "Student_Portrait_Ayane_Collection"
+        "PathName": "Ayane"
     },
     {
         "Id": 26000,
         "Name": "千夏",
         "StarGrade": 1,
         "Avatar": "a/a7/Chinatsu_Icon",
-        "PathName": "Chinatsu",
-        "Collection": "Student_Portrait_Chinatsu_Collection"
+        "PathName": "Chinatsu"
     },
     {
         "Id": 26001,
         "Name": "小玉",
         "StarGrade": 1,
         "Avatar": "4/41/Kotama_Icon",
-        "PathName": "Kotama",
-        "Collection": "Student_Portrait_Kotama_Collection"
+        "PathName": "Kotama"
     },
     {
         "Id": 26002,
         "Name": "茱莉",
         "StarGrade": 1,
         "Avatar": "1/15/Juri_Icon",
-        "PathName": "Juri",
-        "Collection": "Student_Portrait_Juri_Collection"
+        "PathName": "Juri"
     },
     {
         "Id": 26003,
         "Name": "芹娜",
         "StarGrade": 1,
         "Avatar": "c/c7/Serina_Icon",
-        "PathName": "Serina",
-        "Collection": "Student_Portrait_Serina_Collection"
+        "PathName": "Serina"
     },
     {
         "Id": 26004,
         "Name": "志美子",
         "StarGrade": 1,
         "Avatar": "c/c6/Shimiko_Icon",
-        "PathName": "Shimiko",
-        "Collection": "Student_Portrait_Shimiko_Collection"
+        "PathName": "Shimiko"
     },
     {
         "Id": 26005,
         "Name": "好美",
         "StarGrade": 1,
         "Avatar": "8/84/Yoshimi_Icon",
-        "PathName": "Yoshimi",
-        "Collection": "Student_Portrait_Yoshimi_Collection"
+        "PathName": "Yoshimi"
     },
     {
         "Id": 20003,
         "Name": "真白",
         "StarGrade": 3,
         "Avatar": "0/0e/Mashiro_Icon",
-        "PathName": "Mashiro",
-        "Collection": "Student_Portrait_Mashiro_Collection"
+        "PathName": "Mashiro"
     },
     {
         "Id": 10014,
         "Name": "泉奈",
         "StarGrade": 3,
         "Avatar": "9/9b/Izuna_Icon",
-        "PathName": "Izuna",
-        "Collection": "Student_Portrait_Izuna_Collection"
+        "PathName": "Izuna"
     },
     {
         "Id": 23006,
         "Name": "静子",
         "StarGrade": 2,
         "Avatar": "0/04/Shizuko_Icon",
-        "PathName": "Shizuko",
-        "Collection": "Student_Portrait_Shizuko_Collection"
+        "PathName": "Shizuko"
     },
     {
         "Id": 10015,
         "Name": "爱丽丝",
         "StarGrade": 3,
         "Avatar": "7/7b/Alice_Icon",
-        "PathName": "Aris",
-        "Collection": "Student_Portrait_Aris_Collection"
+        "PathName": "Aris"
     },
     {
         "Id": 10016,
         "Name": "绿",
         "StarGrade": 3,
         "Avatar": "a/ae/Midori_Icon",
-        "PathName": "Midori",
-        "Collection": "Student_Portrait_Midori_Collection"
+        "PathName": "Midori"
     },
     {
         "Id": 13011,
         "Name": "桃井",
         "StarGrade": 2,
         "Avatar": "7/72/Momoi_Icon",
-        "PathName": "Momoi",
-        "Collection": "Student_Portrait_Momoi_Collection"
+        "PathName": "Momoi"
     },
     {
         "Id": 10017,
         "Name": "切里诺",
         "StarGrade": 3,
         "Avatar": "6/6a/Cherino_Icon",
-        "PathName": "Cherino",
-        "Collection": "Student_Portrait_Cherino_Collection"
+        "PathName": "Cherino"
     },
     {
         "Id": 26006,
         "Name": "和香",
         "StarGrade": 1,
         "Avatar": "2/2a/Nodoka_Icon",
-        "PathName": "Nodoka",
-        "Collection": "Student_Portrait_Nodoka_Collection"
+        "PathName": "Nodoka"
     },
     {
         "Id": 10018,
         "Name": "柚子",
         "StarGrade": 3,
         "Avatar": "0/09/Yuzu_Icon",
-        "PathName": "Yuzu",
-        "Collection": "Student_Portrait_Yuzu_Collection"
+        "PathName": "Yuzu"
     },
     {
         "Id": 10019,
         "Name": "梓",
         "StarGrade": 3,
         "Avatar": "6/61/Azusa_Icon",
-        "PathName": "Azusa",
-        "Collection": "Student_Portrait_Azusa_Collection"
+        "PathName": "Azusa"
     },
     {
         "Id": 23007,
         "Name": "花子",
         "StarGrade": 2,
         "Avatar": "f/f1/Hanako_Icon",
-        "PathName": "Hanako",
-        "Collection": "Student_Portrait_Hanako_Collection"
+        "PathName": "Hanako"
     },
     {
         "Id": 10020,
         "Name": "小春",
         "StarGrade": 3,
         "Avatar": "7/7a/Koharu_Icon",
-        "PathName": "Koharu",
-        "Collection": "Student_Portrait_Koharu_Collection"
+        "PathName": "Koharu"
     },
     {
         "Id": 10021,
         "Name": "梓(泳装)",
         "StarGrade": 3,
         "Avatar": "6/61/Azusa_Icon",
-        "PathName": "Azusa_Swimsuit",
-        "Collection": "Student_Portrait_azusa_swimsuit_Collection"
+        "PathName": "Azusa_Swimsuit"
     },
     {
         "Id": 20004,
         "Name": "真白(泳装)",
         "StarGrade": 3,
         "Avatar": "3/30/Mashiro_Swimsuit_Icon",
-        "PathName": "Mashiro_Swimsuit",
-        "Collection": "Student_Portrait_mashiro_swimsuit_Collection"
+        "PathName": "Mashiro_Swimsuit"
     },
     {
         "Id": 16005,
         "Name": "鹤城(泳装)",
         "StarGrade": 1,
         "Avatar": "f/fc/Tsurugi_Swimsuit_Icon",
-        "PathName": "Tsurugi_Swimsuit",
-        "Collection": "Student_Portrait_CH0060_Collection"
+        "PathName": "Tsurugi_Swimsuit"
     },
     {
         "Id": 20005,
         "Name": "日富美(泳装)",
         "StarGrade": 3,
         "Avatar": "d/d5/Hifumi_Swimsuit_Icon",
-        "PathName": "Hifumi_Swimsuit",
-        "Collection": "Student_Portrait_CH0058_Collection"
+        "PathName": "Hifumi_Swimsuit"
     },
     {
         "Id": 10022,
         "Name": "日奈(泳装)",
         "StarGrade": 3,
         "Avatar": "3/3b/Hina_Swimsuit_Icon",
-        "PathName": "Hina_Swimsuit",
-        "Collection": "Student_Portrait_CH0063_Collection"
+        "PathName": "Hina_Swimsuit"
     },
     {
         "Id": 10023,
         "Name": "伊织(泳装)",
         "StarGrade": 3,
         "Avatar": "3/34/Iori_Swimsuit_Icon",
-        "PathName": "Iori_Swimsuit",
-        "Collection": "Student_Portrait_CH0064_Collection"
+        "PathName": "Iori_Swimsuit"
     },
     {
         "Id": 16006,
         "Name": "泉(泳装)",
         "StarGrade": 1,
         "Avatar": "e/e1/Izumi_Swimsuit_Icon",
-        "PathName": "Izumi_Swimsuit",
-        "Collection": "Student_Portrait_Izumi_swimsuit_Collection"
+        "PathName": "Izumi_Swimsuit"
     },
     {
         "Id": 10024,
         "Name": "白子(单车)",
         "StarGrade": 3,
         "Avatar": "b/bd/Shiroko_Riding_Icon",
-        "PathName": "Shiroko_Cycling",
-        "Collection": "Student_Portrait_Shiroko_ridingsuit_Collection"
+        "PathName": "Shiroko_Cycling"
     },
     {
         "Id": 10025,
         "Name": "瞬(幼女)",
         "StarGrade": 3,
         "Avatar": "4/47/Shun_Young_Icon",
-        "PathName": "Shun_Small",
-        "Collection": "Student_Portrait_CH0066_Collection"
+        "PathName": "Shun_Small"
     },
     {
         "Id": 13012,
         "Name": "桐乃",
         "StarGrade": 2,
         "Avatar": "f/fa/Kirino_Icon",
-        "PathName": "Kirino",
-        "Collection": "Student_Portrait_Kirino_Collection"
+        "PathName": "Kirino"
     },
     {
         "Id": 20006,
         "Name": "纱绫(私服)",
         "StarGrade": 3,
         "Avatar": "a/a7/Saya_Casual_Icon",
-        "PathName": "Saya_Casual",
-        "Collection": "Student_Portrait_Saya_Casual_Collection"
+        "PathName": "Saya_Casual"
     },
     {
         "Id": 10026,
         "Name": "尼禄(兔女郎)",
         "StarGrade": 3,
         "Avatar": "1/1e/Neru_Bunny_Girl_Icon",
-        "PathName": "Neru_Bunny",
-        "Collection": "Student_Portrait_CH0101_Collection"
+        "PathName": "Neru_Bunny"
     },
     {
         "Id": 10027,
         "Name": "花凛(兔女郎)",
         "StarGrade": 3,
         "Avatar": "1/12/Karin_Bunny_Girl_Icon",
-        "PathName": "Karin_Bunny",
-        "Collection": "Student_Portrait_CH0100_Collection"
+        "PathName": "Karin_Bunny"
     },
     {
         "Id": 10028,
         "Name": "明日奈(兔女郎)",
         "StarGrade": 3,
         "Avatar": "8/81/Asuna_Bunny_Girl_Icon",
-        "PathName": "Asuna_Bunny",
-        "Collection": "Student_Portrait_CH0098_Collection"
+        "PathName": "Asuna_Bunny"
     },
     {
         "Id": 10029,
         "Name": "夏",
         "StarGrade": 3,
         "Avatar": "5/5b/Natsu_Icon",
-        "PathName": "Natsu",
-        "Collection": "Student_Portrait_CH0155_Collection"
+        "PathName": "Natsu"
     },
     {
         "Id": 23008,
         "Name": "玛丽",
         "StarGrade": 2,
         "Avatar": "e/e0/Mari_Icon",
-        "PathName": "Mari",
-        "Collection": "Student_Portrait_Mari_Collection"
+        "PathName": "Mari"
     },
     {
         "Id": 20007,
         "Name": "初音未来",
         "StarGrade": 3,
         "Avatar": "3/39/Miku_Icon",
-        "PathName": "Hatsune_Miku",
-        "Collection": "Student_Portrait_CH9999_Collection"
+        "PathName": "Hatsune_Miku"
     },
     {
         "Id": 20008,
         "Name": "亚子",
         "StarGrade": 3,
         "Avatar": "b/bf/Ako_Icon",
-        "PathName": "Ako",
-        "Collection": "Student_Portrait_ako_Collection"
+        "PathName": "Ako"
     },
     {
         "Id": 20009,
         "Name": "切里诺(温泉)",
         "StarGrade": 3,
         "Avatar": "9/96/Cherino_Hot_Spring_Icon",
-        "PathName": "Cherino_HotSpring",
-        "Collection": "Student_Portrait_CH0164_Collection"
+        "PathName": "Cherino_HotSpring"
     },
     {
         "Id": 10030,
         "Name": "千夏(温泉)",
         "StarGrade": 3,
         "Avatar": "3/34/Chinatsu_Hot_Spring_Icon",
-        "PathName": "Chinatsu_HotSpring",
-        "Collection": "Student_Portrait_CH0163_Collection"
+        "PathName": "Chinatsu_HotSpring"
     },
     {
         "Id": 16007,
         "Name": "智惠",
         "StarGrade": 1,
         "Avatar": "3/3d/Tomoe_Icon",
-        "PathName": "Tomoe",
-        "Collection": "Student_Portrait_Tomoe_Collection"
+        "PathName": "Tomoe"
     },
     {
         "Id": 20010,
         "Name": "和香(温泉)",
         "StarGrade": 3,
         "Avatar": "d/d7/Nodoka_Hot_Spring_Icon",
-        "PathName": "Nodoka_HotSpring",
-        "Collection": "Student_Portrait_CH0165_Collection"
+        "PathName": "Nodoka_HotSpring"
     },
     {
         "Id": 10031,
         "Name": "阿露(正月)",
         "StarGrade": 3,
         "Avatar": "6/60/Aru_New_Year_Icon",
-        "PathName": "Aru_NewYear",
-        "Collection": "Student_Portrait_Aru_newyear_Collection"
+        "PathName": "Aru_NewYear"
     },
     {
         "Id": 10032,
         "Name": "睦月(正月)",
         "StarGrade": 3,
         "Avatar": "b/bf/Mutsuki_New_Year_Icon",
-        "PathName": "Mutsuki_NewYear",
-        "Collection": "Student_Portrait_Mutsuki_newyear_Collection"
+        "PathName": "Mutsuki_NewYear"
     },
     {
         "Id": 20011,
         "Name": "芹香(正月)",
         "StarGrade": 3,
         "Avatar": "b/be/Serika_New_Year_Icon",
-        "PathName": "Serika_NewYear",
-        "Collection": "Student_Portrait_Serika_newyear_Collection"
+        "PathName": "Serika_NewYear"
     },
     {
         "Id": 10033,
         "Name": "若藻",
         "StarGrade": 3,
         "Avatar": "3/35/Wakamo_Icon",
-        "PathName": "Wakamo",
-        "Collection": "Student_Portrait_Wakamo_Collection"
+        "PathName": "Wakamo"
     },
     {
         "Id": 16008,
         "Name": "吹雪",
         "StarGrade": 1,
         "Avatar": "b/bd/Fubuki_Icon",
-        "PathName": "Fubuki",
-        "Collection": "Student_Portrait_CH0141_Collection"
+        "PathName": "Fubuki"
     },
     {
         "Id": 20012,
         "Name": "濑名",
         "StarGrade": 3,
         "Avatar": "3/37/Sena_Icon",
-        "PathName": "Sena",
-        "Collection": "Student_Portrait_Sena_Collection"
+        "PathName": "Sena"
     },
     {
         "Id": 20013,
         "Name": "千寻",
         "StarGrade": 3,
         "Avatar": "a/aa/Chihiro_Icon",
-        "PathName": "Chihiro",
-        "Collection": "Student_Portrait_CH0160_Collection"
+        "PathName": "Chihiro"
     },
     {
         "Id": 10034,
         "Name": "三森",
         "StarGrade": 3,
         "Avatar": "8/84/Mimori_Icon",
-        "PathName": "Mimori",
-        "Collection": "Student_Portrait_Mimori_Collection"
+        "PathName": "Mimori"
     },
     {
         "Id": 10035,
         "Name": "忧",
         "StarGrade": 3,
         "Avatar": "f/f8/Ui_Icon",
-        "PathName": "Ui",
-        "Collection": "Student_Portrait_CH0169_Collection"
+        "PathName": "Ui"
     },
     {
         "Id": 10036,
         "Name": "日向",
         "StarGrade": 3,
         "Avatar": "1/13/Hinata_Icon",
-        "PathName": "Hinata",
-        "Collection": "Student_Portrait_Hinata_Collection"
+        "PathName": "Hinata"
     },
     {
         "Id": 10037,
         "Name": "玛利娜",
         "StarGrade": 3,
         "Avatar": "b/b0/Marina_Icon",
-        "PathName": "Marina",
-        "Collection": "Student_Portrait_Marina_Collection"
+        "PathName": "Marina"
     },
     {
         "Id": 10038,
         "Name": "宫子",
         "StarGrade": 3,
         "Avatar": "f/f7/Miyako_Icon",
-        "PathName": "Miyako",
-        "Collection": "Student_Portrait_Miyako_Collection"
+        "PathName": "Miyako"
     },
     {
         "Id": 20014,
         "Name": "咲",
         "StarGrade": 3,
         "Avatar": "5/50/Saki_Icon",
-        "PathName": "Saki",
-        "Collection": "Student_Portrait_CH0144_Collection"
+        "PathName": "Saki"
     },
     {
         "Id": 10039,
         "Name": "美游",
         "StarGrade": 3,
         "Avatar": "2/23/Miyu_Icon",
-        "PathName": "Miyu",
-        "Collection": "Student_Portrait_CH0145_Collection"
+        "PathName": "Miyu"
     },
     {
         "Id": 20015,
         "Name": "枫",
         "StarGrade": 3,
         "Avatar": "c/c1/Kaede_Icon",
-        "PathName": "Kaede",
-        "Collection": "Student_Portrait_Kaede_Collection"
+        "PathName": "Kaede"
     },
     {
         "Id": 20016,
         "Name": "伊吕波",
         "StarGrade": 3,
         "Avatar": "6/6a/Iroha_Icon",
-        "PathName": "Iroha",
-        "Collection": "Student_Portrait_CH0156_Collection"
+        "PathName": "Iroha"
     },
     {
         "Id": 16009,
         "Name": "满",
         "StarGrade": 1,
         "Avatar": "2/24/Michiru_Icon",
-        "PathName": "Michiru",
-        "Collection": "Student_Portrait_CH0113_Collection"
+        "PathName": "Michiru"
     },
     {
         "Id": 10040,
         "Name": "月咏",
         "StarGrade": 3,
         "Avatar": "5/54/Tsukuyo_Icon",
-        "PathName": "Tsukuyo",
-        "Collection": "Student_Portrait_CH0114_Collection"
+        "PathName": "Tsukuyo"
     },
     {
         "Id": 10041,
         "Name": "美咲",
         "StarGrade": 3,
         "Avatar": "7/78/Misaki_Unmask_Icon",
-        "PathName": "Misaki",
-        "Collection": "Student_Portrait_Misaki_Collection"
+        "PathName": "Misaki"
     },
     {
         "Id": 20017,
         "Name": "日和",
         "StarGrade": 3,
         "Avatar": "a/af/Hiyori_Icon",
-        "PathName": "Hiyori",
-        "Collection": "Student_Portrait_Hiyori_Collection"
+        "PathName": "Hiyori"
     },
     {
         "Id": 10042,
         "Name": "亚津子",
         "StarGrade": 3,
         "Avatar": "f/f7/Atsuko_Icon",
-        "PathName": "Atsuko",
-        "Collection": "Student_Portrait_Atsuko_Collection"
+        "PathName": "Atsuko"
     },
     {
         "Id": 10043,
         "Name": "若藻(泳装)",
         "StarGrade": 3,
         "Avatar": "6/62/Wakamo_Swimsuit_Icon",
-        "PathName": "Wakamo_Swimsuit",
-        "Collection": "Student_Portrait_CH0175_Collection"
+        "PathName": "Wakamo_Swimsuit"
     },
     {
         "Id": 10044,
         "Name": "野宫(泳装)",
         "StarGrade": 3,
         "Avatar": "e/e9/Nonomi_Swimsuit_Icon",
-        "PathName": "Nonomi_Swimsuit",
-        "Collection": "Student_Portrait_CH0092_Collection"
+        "PathName": "Nonomi_Swimsuit"
     },
     {
         "Id": 26007,
         "Name": "绫音(泳装)",
         "StarGrade": 1,
         "Avatar": "a/af/Ayane_Swimsuit_Icon",
-        "PathName": "Ayane_Swimsuit",
-        "Collection": "Student_Portrait_CH0176_Collection"
+        "PathName": "Ayane_Swimsuit"
     },
     {
         "Id": 10045,
         "Name": "星野(泳装)",
         "StarGrade": 3,
         "Avatar": "e/ef/Hoshino_Swimsuit_Icon",
-        "PathName": "Hoshino_Swimsuit",
-        "Collection": "Student_Portrait_Hoshino_Swimsuit_Collection"
+        "PathName": "Hoshino_Swimsuit"
     },
     {
         "Id": 26008,
         "Name": "静子(泳装)",
         "StarGrade": 1,
         "Avatar": "4/4f/Shizuko_Swimsuit_Icon",
-        "PathName": "Shizuko_Swimsuit",
-        "Collection": "Student_Portrait_CH0180_Collection"
+        "PathName": "Shizuko_Swimsuit"
     },
     {
         "Id": 10046,
         "Name": "泉奈(泳装)",
         "StarGrade": 3,
         "Avatar": "f/f6/Izuna_Swimsuit_Icon",
-        "PathName": "Izuna_Swimsuit",
-        "Collection": "Student_Portrait_CH0179_Collection"
+        "PathName": "Izuna_Swimsuit"
     },
     {
         "Id": 10047,
         "Name": "千世(泳装)",
         "StarGrade": 3,
         "Avatar": "1/11/Chise_Swimsuit_Icon",
-        "PathName": "Chise_Swimsuit",
-        "Collection": "Student_Portrait_CH0178_Collection"
+        "PathName": "Chise_Swimsuit"
     },
     {
         "Id": 10048,
         "Name": "纱织",
         "StarGrade": 3,
         "Avatar": "7/70/Saori_Icon",
-        "PathName": "Saori",
-        "Collection": "Student_Portrait_Saori_Collection"
+        "PathName": "Saori"
     },
     {
         "Id": 20018,
         "Name": "萌绘",
         "StarGrade": 3,
         "Avatar": "0/06/Moe_Icon",
-        "PathName": "Moe",
-        "Collection": "Student_Portrait_Moe_Collection"
+        "PathName": "Moe"
     },
     {
         "Id": 10049,
         "Name": "和纱",
         "StarGrade": 3,
         "Avatar": "c/cb/Kazusa_Icon",
-        "PathName": "Kazusa",
-        "Collection": "Student_Portrait_Kazusa_Collection"
+        "PathName": "Kazusa"
     },
     {
         "Id": 10050,
         "Name": "心奈",
         "StarGrade": 3,
         "Avatar": "4/4a/Kokona_Icon",
-        "PathName": "Kokona",
-        "Collection": "Student_Portrait_CH0137_Collection"
+        "PathName": "Kokona"
     },
     {
         "Id": 10051,
         "Name": "歌原(应援团)",
         "StarGrade": 3,
         "Avatar": "b/bd/Utaha_Cheerleader_Icon",
-        "PathName": "Utaha_Cheerleader",
-        "Collection": "Student_Portrait_CH0182_Collection"
+        "PathName": "Utaha_Cheerleader"
     },
     {
         "Id": 10052,
         "Name": "诺亚",
         "StarGrade": 3,
         "Avatar": "3/31/Noa_Icon",
-        "PathName": "Noa",
-        "Collection": "Student_Portrait_CH0095_Collection"
+        "PathName": "Noa"
     },
     {
         "Id": 16010,
         "Name": "响(应援团)",
         "StarGrade": 1,
         "Avatar": "a/ab/Hibiki_Cheerleader_Icon",
-        "PathName": "Hibiki_Cheerleader",
-        "Collection": "Student_Portrait_CH0181_Collection"
+        "PathName": "Hibiki_Cheerleader"
     },
     {
         "Id": 20019,
         "Name": "茜(兔女郎)",
         "StarGrade": 3,
         "Avatar": "7/7f/Akane_Bunny_Girl_Icon",
-        "PathName": "Akane_Bunny",
-        "Collection": "Student_Portrait_CH0099_Collection"
+        "PathName": "Akane_Bunny"
     },
     {
         "Id": 10053,
         "Name": "优香(运动服)",
         "StarGrade": 3,
         "Avatar": "9/95/Yuuka_Gym_Icon",
-        "PathName": "Yuuka_Track",
-        "Collection": "Student_Portrait_CH0184_Collection"
+        "PathName": "Yuuka_Track"
     },
     {
         "Id": 10054,
         "Name": "玛丽(运动服)",
         "StarGrade": 3,
         "Avatar": "9/99/Mari_Gym_Icon",
-        "PathName": "Mari_Track",
-        "Collection": "Student_Portrait_CH0186_Collection"
+        "PathName": "Mari_Track"
     },
     {
         "Id": 16011,
         "Name": "莲见(运动服)",
         "StarGrade": 1,
         "Avatar": "9/9e/Hasumi_Gym_Icon",
-        "PathName": "Hasumi_Track",
-        "Collection": "Student_Portrait_CH0190_Collection"
+        "PathName": "Hasumi_Track"
     },
     {
         "Id": 20020,
         "Name": "日鞠",
         "StarGrade": 3,
         "Avatar": "e/e4/Himari_Icon",
-        "PathName": "Himari",
-        "Collection": "Student_Portrait_CH0159_Collection"
+        "PathName": "Himari"
     },
     {
         "Id": 10055,
         "Name": "时雨",
         "StarGrade": 3,
         "Avatar": "0/0c/Shigure_Icon",
-        "PathName": "Shigure",
-        "Collection": "Student_Portrait_Shigure_Collection"
+        "PathName": "Shigure"
     },
     {
         "Id": 10056,
         "Name": "芹娜(圣诞)",
         "StarGrade": 3,
         "Avatar": "d/d9/Serina_Christmas_Icon",
-        "PathName": "Serina_Christmas",
-        "Collection": "Student_Portrait_CH0194_Collection"
+        "PathName": "Serina_Christmas"
     },
     {
         "Id": 20021,
         "Name": "花江(圣诞)",
         "StarGrade": 3,
         "Avatar": "0/0a/Hanae_Christmas_Icon",
-        "PathName": "Hanae_Christmas",
-        "Collection": "Student_Portrait_CH0195_Collection"
+        "PathName": "Hanae_Christmas"
     },
     {
         "Id": 10057,
         "Name": "晴奈(正月)",
         "StarGrade": 3,
         "Avatar": "4/4b/Haruna_New_Year_Icon",
-        "PathName": "Haruna_NewYear",
-        "Collection": "Student_Portrait_CH0191_Collection"
+        "PathName": "Haruna_NewYear"
     },
     {
         "Id": 20022,
         "Name": "枫香(正月)",
         "StarGrade": 3,
         "Avatar": "f/f9/Fuuka_New_Year_Icon",
-        "PathName": "Fuuka_NewYear",
-        "Collection": "Student_Portrait_CH0177_Collection"
+        "PathName": "Fuuka_NewYear"
     },
     {
         "Id": 16012,
         "Name": "淳子(正月)",
         "StarGrade": 1,
         "Avatar": "3/31/Junko_New_Year_Icon",
-        "PathName": "Junko_NewYear",
-        "Collection": "Student_Portrait_CH0192_Collection"
+        "PathName": "Junko_NewYear"
     },
     {
         "Id": 10058,
         "Name": "美弥",
         "StarGrade": 3,
         "Avatar": "b/b1/Mine_Icon",
-        "PathName": "Mine",
-        "Collection": "Student_Portrait_CH0152_Collection"
+        "PathName": "Mine"
     },
     {
         "Id": 10059,
         "Name": "未花",
         "StarGrade": 3,
         "Avatar": "d/dd/Mika_Icon",
-        "PathName": "Mika",
-        "Collection": "Student_Portrait_CH0069_Collection"
+        "PathName": "Mika"
     },
     {
         "Id": 10060,
         "Name": "惠",
         "StarGrade": 3,
         "Avatar": "9/9b/Megu_Icon",
-        "PathName": "Megu",
-        "Collection": "Student_Portrait_CH0088_Collection"
+        "PathName": "Megu"
     },
     {
         "Id": 20023,
         "Name": "叶渚",
         "StarGrade": 3,
         "Avatar": "b/ba/Kanna_Icon",
-        "PathName": "Kanna",
-        "Collection": "Student_Portrait_CH0170_Collection"
+        "PathName": "Kanna"
     },
     {
         "Id": 10061,
         "Name": "樱子",
         "StarGrade": 3,
         "Avatar": "8/87/Sakurako_Icon",
-        "PathName": "Sakurako",
-        "Collection": "Student_Portrait_Sakurako_Collection"
+        "PathName": "Sakurako"
     },
     {
         "Id": 10062,
         "Name": "时",
         "StarGrade": 3,
         "Avatar": "5/5f/Toki_Icon",
-        "PathName": "Toki",
-        "Collection": "Student_Portrait_CH0187_Collection"
+        "PathName": "Toki"
     },
     {
         "Id": 20024,
         "Name": "渚",
         "StarGrade": 3,
         "Avatar": "0/04/Nagisa_Icon",
-        "PathName": "Nagisa",
-        "Collection": "Student_Portrait_Nagisa_Collection"
+        "PathName": "Nagisa"
     },
     {
         "Id": 10063,
         "Name": "小雪",
         "StarGrade": 3,
         "Avatar": "9/97/Koyuki_Icon",
-        "PathName": "Koyuki",
-        "Collection": "Student_Portrait_CH0198_Collection"
+        "PathName": "Koyuki"
     },
     {
         "Id": 10064,
         "Name": "佳代子(正月)",
         "StarGrade": 3,
         "Avatar": "2/23/Kayoko_New_Year_Icon",
-        "PathName": "Kayoko_NewYear",
-        "Collection": "Student_Portrait_CH0086_Collection"
+        "PathName": "Kayoko_NewYear"
     },
     {
         "Id": 20025,
         "Name": "遥香(正月)",
         "StarGrade": 3,
         "Avatar": "2/2d/Haruka_New_Year_Icon",
-        "PathName": "Haruka_NewYear",
-        "Collection": "Student_Portrait_CH0087_Collection"
+        "PathName": "Haruka_NewYear"
     },
     {
         "Id": 10065,
         "Name": "果穗",
         "StarGrade": 3,
         "Avatar": "b/be/Kaho_Icon",
-        "PathName": "Kaho",
-        "Collection": "Student_Portrait_CH0107_Collection"
+        "PathName": "Kaho"
     },
     {
         "Id": 10066,
         "Name": "爱丽丝(女仆)",
         "StarGrade": 3,
         "Avatar": "4/48/Alice_Maid_Icon",
-        "PathName": "Aris_Maid",
-        "Collection": "Student_Portrait_CH0200_Collection"
+        "PathName": "Aris_Maid"
     },
     {
         "Id": 10067,
         "Name": "时(兔女郎)",
         "StarGrade": 3,
         "Avatar": "f/ff/Toki_Bunny_Girl_Icon",
-        "PathName": "Toki_Bunny",
-        "Collection": "Student_Portrait_CH0211_Collection"
+        "PathName": "Toki_Bunny"
     },
     {
         "Id": 26009,
         "Name": "柚子(女仆)",
         "StarGrade": 1,
         "Avatar": "e/e1/Yuzu_Maid_Icon",
-        "PathName": "Yuzu_Maid",
-        "Collection": "Student_Portrait_CH0203_Collection"
+        "PathName": "Yuzu_Maid"
     },
     {
         "Id": 10068,
         "Name": "玲纱",
         "StarGrade": 3,
         "Avatar": "e/e5/Reisa_Icon",
-        "PathName": "Reisa",
-        "Collection": "Student_Portrait_CH0167_Collection"
+        "PathName": "Reisa"
     },
     {
         "Id": 10069,
         "Name": "瑠美",
         "StarGrade": 3,
         "Avatar": "b/bc/Rumi_Icon",
-        "PathName": "Rumi",
-        "Collection": "Student_Portrait_CH0135_Collection"
+        "PathName": "Rumi"
     },
     {
         "Id": 10070,
         "Name": "弥奈",
         "StarGrade": 3,
         "Avatar": "8/8f/Mina_Icon",
-        "PathName": "Mina",
-        "Collection": "Student_Portrait_CH0138_Collection"
+        "PathName": "Mina"
     },
     {
         "Id": 20026,
         "Name": "实里",
         "StarGrade": 3,
         "Avatar": "4/43/Minori_Icon",
-        "PathName": "Minori",
-        "Collection": "Student_Portrait_CH0214_Collection"
+        "PathName": "Minori"
     },
     {
         "Id": 10071,
         "Name": "宫子(泳装)",
         "StarGrade": 3,
         "Avatar": "8/8e/Miyako_Swimsuit_Icon",
-        "PathName": "Miyako_Swimsuit",
-        "Collection": "Student_Portrait_CH0215_Collection"
+        "PathName": "Miyako_Swimsuit"
     },
     {
         "Id": 10072,
         "Name": "咲(泳装)",
         "StarGrade": 3,
         "Avatar": "e/e5/Saki_Swimsuit_Icon",
-        "PathName": "Saki_Swimsuit",
-        "Collection": "Student_Portrait_CH0217_Collection"
+        "PathName": "Saki_Swimsuit"
     },
     {
         "Id": 26010,
         "Name": "美游(泳装)",
         "StarGrade": 1,
         "Avatar": "9/9b/Miyu_Swimsuit_Icon",
-        "PathName": "Miyu_Swimsuit",
-        "Collection": "Student_Portrait_CH0218_Collection"
+        "PathName": "Miyu_Swimsuit"
     },
     {
         "Id": 20027,
         "Name": "白子(泳装)",
         "StarGrade": 3,
         "Avatar": "c/c8/Shiroko_Swimsuit_Icon",
-        "PathName": "Shiroko_Swimsuit",
-        "Collection": "Student_Portrait_CH0188_Collection"
+        "PathName": "Shiroko_Swimsuit"
     },
     {
         "Id": 10073,
         "Name": "忧(泳装)",
         "StarGrade": 3,
         "Avatar": "5/53/Ui_Swimsuit_Icon",
-        "PathName": "Ui_Swimsuit",
-        "Collection": "Student_Portrait_CH0204_Collection"
+        "PathName": "Ui_Swimsuit"
     },
     {
         "Id": 20028,
         "Name": "日向(泳装)",
         "StarGrade": 3,
         "Avatar": "c/cd/Hinata_Swimsuit_Icon",
-        "PathName": "Hinata_Swimsuit",
-        "Collection": "Student_Portrait_CH0210_Collection"
+        "PathName": "Hinata_Swimsuit"
     },
     {
         "Id": 16013,
         "Name": "小春(泳装)",
         "StarGrade": 1,
         "Avatar": "0/03/Koharu_Swimsuit_Icon",
-        "PathName": "Koharu_Swimsuit",
-        "Collection": "Student_Portrait_CH0205_Collection"
+        "PathName": "Koharu_Swimsuit"
     },
     {
         "Id": 10074,
         "Name": "花子(泳装)",
         "StarGrade": 3,
         "Avatar": "9/96/Hanako_Swimsuit_Icon",
-        "PathName": "Hanako_Swimsuit",
-        "Collection": "Student_Portrait_CH0209_Collection"
+        "PathName": "Hanako_Swimsuit"
     }
 ]

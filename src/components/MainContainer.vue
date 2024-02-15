@@ -2,7 +2,7 @@
 import CloseIcon from './icons/CloseIcon.vue'
 
 import type { historyItem } from '@/assets/utils/interface'
-import { getSchaledbAvatar, getSchaledbInfo, getPreviewVideo } from '@/assets/utils/api'
+import { getSchaledbAvatar, getSchaledbInfo, getVideoPaths } from '@/assets/utils/api'
 import type { Ref } from 'vue'
 import { inject, ref } from 'vue'
 
@@ -36,6 +36,8 @@ function switchLocale() {
     let index = list.findIndex((element) => element === i18n.global.locale.value)
     i18n.global.locale.value = list[(index + 1) % list.length]
 }
+
+const videoPaths = getVideoPaths()
 </script>
 
 <template>
@@ -52,7 +54,9 @@ function switchLocale() {
         </div>
 
         <div class="preview">
-            <video muted autoplay loop="true" :src="getPreviewVideo()"></video>
+            <video muted loop autoplay>
+                <source :src="videoPaths.preview" type="video/mp4" />
+            </video>
         </div>
         <div class="gradient"></div>
 
@@ -141,7 +145,7 @@ function switchLocale() {
                     <div class="card" v-for="item in history">
                         <a :href="getSchaledbInfo(item['PathName'])" target="_blank">
                             <div class="star"><img src="/Star.png" v-for="_ in item['StarGrade']" /></div>
-                            <div class="char"><img :src="getSchaledbAvatar(item['Collection'])" /></div>
+                            <div class="char"><img :src="getSchaledbAvatar(item['Id'].toString())" /></div>
                             <div class="name">{{ item['Name'] }} * {{ item['Cnt'] }}</div>
                         </a>
                     </div>
