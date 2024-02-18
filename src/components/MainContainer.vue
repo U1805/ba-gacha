@@ -1,25 +1,18 @@
 <script setup lang="ts">
-import CloseIcon from './icons/CloseIcon.vue'
-
-import type { historyItem } from '@/assets/utils/interface'
-import { getSchaledbAvatar, getSchaledbInfo, getVideoPaths } from '@/assets/utils/api'
+import { getVideoPaths } from '@/assets/utils/api'
 import type { Ref } from 'vue'
-import { inject, ref } from 'vue'
+import { provide, ref } from 'vue'
+import { store } from '@/assets/utils/store'
 
-const getStudents_ = inject('getStudents') as Function
-const changeVisible = inject('changeVisible') as Function
-const resetHistory = inject('resetHistory') as Function
-const history = inject('history') as historyItem[]
-const totalCnt = inject('totalCnt') as number
+import GachaModal from './GachaModal.vue'
+import HistoryModal from './HistoryModal.vue'
+import SettingModal from './SettingModal.vue'
+import HelpModal from './HelpModal.vue'
+
 const home = ref('https://github.com/U1805/blue-archive-gacha-simulator')
+console.log(home.value + '/blob/main/README-zh.md')
 
-function getStudents(num: number) {
-    getStudents_(num)
-    changeVisible(0)
-    changeVisible(1)
-}
-
-var isModal: Ref<boolean[]> = ref([false, false, false]) // 单抽 十连 历史
+var isModal: Ref<boolean[]> = ref([false, false, false, false, false]) // 单抽 十连 历史 设置 帮助
 function showModal(index: number) {
     isModal.value[index] = true
 }
@@ -27,17 +20,9 @@ function hideModal(index: number) {
     isModal.value[index] = false
 }
 
-import { useI18n } from 'vue-i18n'
-import i18n from '@/assets/utils/i18n'
-const { t } = useI18n()
-
-function switchLocale() {
-    let list = i18n.global.availableLocales
-    let index = list.findIndex((element) => element === i18n.global.locale.value)
-    i18n.global.locale.value = list[(index + 1) % list.length]
-}
-
 const videoPaths = getVideoPaths()
+provide('isModal', isModal)
+provide('hideModal', hideModal)
 </script>
 
 <template>
@@ -48,9 +33,9 @@ const videoPaths = getVideoPaths()
             <div class="crash">999,999,999</div>
             <div class="stone">999,999</div>
             <a class="icon link" :href="home"></a>
-            <a class="icon help" :href="home + '/blob/main/README-zh.md'"></a>
+            <a class="icon help" @click="showModal(4)"></a>
             <a class="icon history" @click="showModal(2)"></a>
-            <a class="icon locale" @click="switchLocale()"></a>
+            <a class="icon setting" @click="showModal(3)"></a>
         </div>
 
         <div class="preview">
@@ -105,178 +90,23 @@ const videoPaths = getVideoPaths()
                         <span>{{ $t('recruitPoint') }}</span>
                     </div>
                     <div class="point">
-                        <span>{{ totalCnt }}</span>
+                        <span>{{ store.totalCnt }}</span>
                     </div>
-                    <div class="select" @click="resetHistory()">
+                    <div class="select" @click="store.resetData()">
                         <span>{{ $t('reset') }}</span>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Gacha Modal begin -->
-        <div class="modal-backdrop" v-show="isModal[index]" v-for="(num, index) in [1, 10]">
-            <div class="modal">
-                <div class="modal-header">
-                    <span>{{ $t('modalTitle') }}</span>
-                    <CloseIcon class="icon close" @click="hideModal(index)" />
-                </div>
-                <div class="modal-body">
-                    <p>{{ $t('modalBody').replace('%num', num.toString()) }}</p>
-                </div>
-                <div class="modal-footer">
-                    <div class="gacha-button button-gray" @click="hideModal(index)">
-                        <div>{{ $t('cancel') }}</div>
-                    </div>
-                    <div class="gacha-button button-blue" @click="getStudents(num)">
-                        <div>{{ $t('confirm') }}</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Gacha Modal end -->
-        <!-- History Modal begin -->
-        <div class="modal-backdrop" v-show="isModal[2]">
-            <div class="modal history">
-                <div class="modal-header">
-                    <span>{{ $t('history') }}</span>
-                    <CloseIcon class="icon close" @click="hideModal(2)" />
-                </div>
-                <div class="modal-body">
-                    <div class="card" v-for="item in history">
-                        <a :href="getSchaledbInfo(item['PathName'])" target="_blank">
-                            <div class="star"><img src="/Star.png" v-for="_ in item['StarGrade']" /></div>
-                            <div class="char"><img :src="getSchaledbAvatar(item['Id'].toString())" /></div>
-                            <div class="name">{{ item['Name'] }} * {{ item['Cnt'] }}</div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- History Modal end -->
+        <GachaModal></GachaModal>
+        <HistoryModal></HistoryModal>
+        <SettingModal></SettingModal>
+        <HelpModal></HelpModal>
     </div>
 </template>
 
 <style scoped lang="scss">
 @import '@/assets/styles/gacha-tab.scss';
-@import '@/assets/styles/modal.scss';
 @import '@/assets/styles/link-icon.scss';
-
-.table-container {
-    display: grid;
-    grid-template-columns: 45vw 55vw;
-    grid-template-rows: $header_hight 1fr;
-
-    background: url('/Background.png') no-repeat;
-    background-size: cover;
-    overflow: hidden;
-}
-
-.header {
-    grid-area: 1 / 1 / 2 / 3;
-    background: url('/Header.png') top no-repeat;
-    background-size: cover;
-    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.441));
-    background-size: contain;
-    position: relative;
-    z-index: 5;
-
-    div {
-        position: fixed;
-        top: 5px;
-        font-size: 30px;
-        font-weight: 500;
-    }
-
-    .title {
-        left: 150px;
-        font-weight: 700;
-    }
-
-    .ap {
-        left: 750px;
-    }
-
-    .crash {
-        left: 1010px;
-    }
-
-    .stone {
-        left: 1260px;
-    }
-}
-
-.preview {
-    grid-area: 1 / 1 / 3 / 2;
-    height: 100vh;
-
-    video {
-        height: 100%;
-    }
-}
-
-.gradient {
-    grid-area: 1 / 2 / 3 / 3;
-    display: flex;
-    height: 100vh;
-    position: relative;
-    width: 1111px;
-    z-index: 3;
-    content: url('/Background.png');
-    mask-image: linear-gradient(to left, #fff 70%, transparent 100%);
-    -webkit-mask-image: linear-gradient(to left, #fff 70%, transparent 100%);
-}
-
-.gacha-wrapper {
-    grid-area: 1 / 2 / 3 / 3;
-    height: 100vh;
-    z-index: 4;
-    @include center;
-    flex-direction: column;
-
-    div {
-        width: 844px;
-    }
-
-    .event-banner {
-        display: flex;
-        justify-content: flex-start;
-        height: 140px;
-        overflow: hidden;
-
-        img {
-            height: 140px;
-            margin: 0 5px;
-        }
-    }
-
-    .event-scroll {
-        background-color: #ffffffba;
-        height: 13.5px;
-        width: fit-content;
-        padding: 0 10px;
-        margin: 8px;
-        border-radius: 20px;
-        @include center;
-
-        .dot {
-            cursor: pointer;
-            height: 5px;
-            width: 5px;
-            margin: 0 2px;
-            background-color: $black-shadow;
-            border-radius: 50%;
-            display: inline-block;
-            transition: background-color 0.6s ease;
-        }
-
-        .active,
-        .dot:hover {
-            background-color: $blue;
-        }
-    }
-
-    .tab-container {
-        height: 520px;
-    }
-}
+@import '@/assets/styles/main.scss';
 </style>

@@ -40,6 +40,16 @@
             background: url(/HeaderBg.png) no-repeat left top;
             background-size: contain;
         }
+        button {
+            margin-left: 8px;
+            height: 35px;
+            width: 35px;
+            background-color: $black-shadow;
+            border-radius: 5px;
+            border: 0 solid;
+            color: white;
+            font-size: x-large;
+        }
     }
     .modal-body {
         height: 270px;
@@ -53,6 +63,7 @@
         height: 90px;
         display: flex;
         justify-content: space-evenly;
+        margin-bottom: 45px;
         .gacha-button {
             position: relative;
             overflow: hidden;
@@ -123,4 +134,9 @@
         color: $black-shadow;
         text-decoration: underline $golden-card;
     }
+}
+
+.modal.setting {
+    height: 70vh;
+    width: 1050px;
 }

@@ -17,6 +17,7 @@
         height: 31px;
         border-radius: 10px;
         z-index: 10;
+        cursor: pointer;
     }
 
     &.history {
@@ -30,7 +31,7 @@
         cursor: pointer;
     }
 
-    &.locale {
+    &.setting {
         position: fixed;
         left: 1473px;
         top: 8px;
