@@ -1,5 +1,8 @@
 import { createApp } from 'vue'
 import App from './App.vue'
-import i18n from '@/assets/utils/i18n'
+import { createPinia } from 'pinia'
 
-createApp(App).use(i18n).mount('#app')
+const pinia = createPinia()
+createApp(App)
+    .use(pinia)
+    .mount('#app')

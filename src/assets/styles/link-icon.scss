@@ -53,3 +53,37 @@
         }
     }
 }
+
+.header {
+    grid-area: 1 / 1 / 2 / 3;
+    background: url('/Header.png') top no-repeat;
+    background-size: cover;
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.441));
+    background-size: contain;
+    position: relative;
+    z-index: 5;
+
+    div {
+        position: fixed;
+        top: 8px;
+        font-size: 30px;
+        font-weight: 500;
+    }
+
+    .title {
+        left: 150px;
+        font-weight: 700;
+    }
+
+    .ap {
+        left: 750px;
+    }
+
+    .crash {
+        left: 1005px;
+    }
+
+    .stone {
+        left: 1260px;
+    }
+}

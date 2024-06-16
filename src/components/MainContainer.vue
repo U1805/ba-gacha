@@ -1,46 +1,18 @@
 <script setup lang="ts">
-import { getVideoPaths } from '@/assets/utils/api'
-import type { Ref } from 'vue'
-import { provide, ref } from 'vue'
-import { store } from '@/assets/utils/store'
 
-import GachaModal from './GachaModal.vue'
-import HistoryModal from './HistoryModal.vue'
-import SettingModal from './SettingModal.vue'
-import HelpModal from './HelpModal.vue'
 
-const home = ref('https://github.com/U1805/blue-archive-gacha-simulator')
-console.log(home.value + '/blob/main/README-zh.md')
-
-var isModal: Ref<boolean[]> = ref([false, false, false, false, false]) // 单抽 十连 历史 设置 帮助
-function showModal(index: number) {
-    isModal.value[index] = true
-}
-function hideModal(index: number) {
-    isModal.value[index] = false
-}
-
-const videoPaths = getVideoPaths()
-provide('isModal', isModal)
-provide('hideModal', hideModal)
+import { useGachaStore } from '@/stores/index'
+const gachaStore = useGachaStore()
+const props = defineProps(['infos', 'preview'])
 </script>
 
 <template>
-    <div class="table-container">
-        <div class="header">
-            <div class="title">{{ $t('mainTitle') }}</div>
-            <div class="ap">999/999</div>
-            <div class="crash">999,999,999</div>
-            <div class="stone">999,999</div>
-            <a class="icon link" :href="home"></a>
-            <a class="icon help" @click="showModal(4)"></a>
-            <a class="icon history" @click="showModal(2)"></a>
-            <a class="icon setting" @click="showModal(3)"></a>
-        </div>
+    <div class="table-container" style="position: absolute; z-index: 10">
+        <slot name="header"></slot>
 
         <div class="preview">
             <video muted loop autoplay>
-                <source :src="videoPaths.preview" type="video/mp4" />
+                <source :src="props.preview" type="video/mp4" />
             </video>
         </div>
         <div class="gradient"></div>
@@ -49,7 +21,7 @@ provide('hideModal', hideModal)
             <div class="event-banner">
                 <img src="/EventBanner0.png" />
                 <img src="/EventBanner0.png" />
-                <img src="/EventBanner1.png" />
+                <img src="/EventBanner0.png" />
             </div>
             <div class="event-scroll">
                 <span class="dot active"></span>
@@ -59,54 +31,66 @@ provide('hideModal', hideModal)
 
             <div class="tab-container">
                 <div class="tab-body">
-                    <div class="duration">2023/08/09 From 10:00 ~ 2099/01/01 Until 09:59</div>
-                    <div class="title">{{ $t('title') }}</div>
-                    <div class="subtitle">{{ $t('subtitle') }}</div>
-                    <div class="notice">{{ $t('notice') }}</div>
-                    <!-- Button-container begin -->
-                    <div class="button-container">
-                        <div class="gacha-button button-blue" @click="showModal(0)">
-                            <img src="/Gacha0.png" class="gacha_icon" />
-                            <div class="right">
-                                <img src="/Stone.png" class="stone_icon" />
-                                <div class="cost"><span>120</span></div>
-                                <div class="text">{{ $t('gacha1') }}</div>
-                            </div>
-                        </div>
-                        <div class="gacha-button button-yellow" @click="showModal(1)">
-                            <img src="/Gacha1.png" class="gacha_icon" />
-                            <div class="right">
-                                <img src="/Stone.png" class="stone_icon" />
-                                <div class="cost"><span>1200</span></div>
-                                <div class="text">{{ $t('gacha10') }}</div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Button-container end -->
+                    <div class="duration">{{ props.infos.duration }}</div>
+                    <div class="title">{{ props.infos.title }}</div>
+                    <div class="subtitle">{{ props.infos.subtitle }}</div>
+                    <div class="notice">{{ props.infos.notice }}</div>
+                    <slot name="button-group"></slot>
                 </div>
                 <div class="tab-foot">
                     <img src="/Point.png" draggable="false" class="point_icon" />
                     <div class="text">
-                        <span>{{ $t('recruitPoint') }}</span>
+                        <span>招募点数</span>
                     </div>
                     <div class="point">
-                        <span>{{ store.totalCnt }}</span>
+                        <span>{{ gachaStore.totalCnt }}</span>
                     </div>
-                    <div class="select" @click="store.resetData()">
-                        <span>{{ $t('reset') }}</span>
+                    <div class="select" @click="gachaStore.resetData()">
+                        <span>重置</span>
                     </div>
                 </div>
             </div>
         </div>
-        <GachaModal></GachaModal>
-        <HistoryModal></HistoryModal>
-        <SettingModal></SettingModal>
-        <HelpModal></HelpModal>
     </div>
 </template>
 
 <style scoped lang="scss">
 @import '@/assets/styles/gacha-tab.scss';
-@import '@/assets/styles/link-icon.scss';
-@import '@/assets/styles/main.scss';
+
+.table-container {
+    display: grid;
+    grid-template-columns: 45vw 55vw;
+    grid-template-rows: $header_hight 1fr;
+
+    background: url('/Background.png') no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.preview {
+    grid-area: 1 / 1 / 3 / 2;
+    height: 100vh;
+
+    video {
+        height: 100%;
+    }
+}
+
+.gradient {
+    grid-area: 1 / 2 / 3 / 3;
+    display: flex;
+    height: 100vh;
+    position: relative;
+    width: 1111px;
+    z-index: 3;
+    content: url('/Background.png');
+    mask-image: linear-gradient(to left, #fff 70%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to left, #fff 70%, transparent 100%);
+}
+
+.point_icon {
+    width: 110px;
+    margin: -10px -20px;
+    z-index: 1;
+}
 </style>

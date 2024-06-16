@@ -1,0 +1,137 @@
+.button-container.main {
+    width: 845px;
+    height: 110px;
+    display: flex;
+    justify-content: space-evenly;
+    @include position(0, 30px);
+
+    .gacha-button {
+        position: relative;
+        padding-left: 14px;
+        overflow: hidden;
+        box-shadow: 0px 5px 5px -5px rgb(0 0 0/0.6);
+        @include skew;
+        @include center;
+
+        .right {
+            flex-wrap: wrap;
+            margin-left: -20px;
+            @include center;
+
+            .cost {
+                width: 160px;
+                height: 35px;
+                color: white;
+                background: $black-shadow;
+                border-radius: 3px;
+                margin-left: -10px;
+                @include center;
+
+                span {
+                    @include font-regular;
+                    @include noskew;
+                }
+            }
+
+            .text {
+                width: 230px;
+                color: $black-shadow;
+                line-height: 30px;
+                text-align: right;
+                padding-right: 20px;
+                @include font-big;
+                @include noskew;
+            }
+        }
+    }
+
+    .button-blue {
+        @include gacha-button($blue, '/ButtonBlueBg0.png', '/ButtonBlueBg1.png');
+    }
+
+    .button-yellow {
+        @include gacha-button($golden, '/ButtonYellowBg0.png', '/ButtonYellowBg1.png');
+    }
+
+    .gacha_icon {
+        width: 90px;
+        margin: 10px;
+        @include noskew;
+    }
+
+    .stone_icon {
+        width: 80px;
+        margin: -10px -20px;
+        @include noskew;
+    }
+}
+
+.button-container.result {
+    width: 670px;
+    height: 95px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 100px;
+
+    .gacha-button {
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0px 5px 5px -5px rgb(0 0 0/0.6);
+        @include skew;
+        @include center;
+
+        div {
+            @include noskew;
+            @include font-big;
+        }
+    }
+
+    .button-blue {
+        @include gacha-button($blue, '/ButtonBlueBg0.png', '/ButtonBlueBg1.png');
+    }
+
+    .button-yellow {
+        @include gacha-button($golden, '/ButtonYellowBg0.png', '/ButtonYellowBg1.png');
+    }
+}
+
+.point-container {
+    position: absolute;
+    width: 250px;
+    height: 80px;
+    right: 90px;
+    border-radius: 10px;
+    @include skew;
+
+    img {
+        width: 120px;
+        position: absolute;
+        left: -70px;
+        top: -10px;
+        @include noskew;
+        z-index: 32;
+    }
+
+    .text,
+    .num {
+        height: 40px;
+        border: 2px solid $black-shadow;
+        @include center;
+
+        span {
+            @include font-regular;
+            @include noskew;
+        }
+    }
+
+    .text {
+        background-color: white;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .num {
+        color: white;
+        background-color: $black-shadow;
+        border-radius: 0 0 10px 10px;
+    }
+}

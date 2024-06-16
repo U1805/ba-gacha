@@ -1,18 +1,16 @@
 <script setup lang="ts">
-import CloseIcon from './icons/CloseIcon.vue'
-import { inject } from 'vue'
-
-const isModal = inject('isModal') as boolean[]
-const hideModal = inject('hideModal') as Function
+import { inject } from 'vue';
+import CloseIcon from '../icons/CloseIcon.vue'
+const hideModal = inject('hideHelModal') as Function
 </script>
 
 <template>
     <!-- Setting Modal begin -->
-    <div class="modal-backdrop" v-show="isModal[4]">
+    <div class="modal-backdrop">
         <div class="modal history">
             <div class="modal-header">
                 <span>帮助</span><button>?</button>
-                <CloseIcon class="icon close" @click="hideModal(4)" />
+                <CloseIcon class="icon close" @click="hideModal()" />
             </div>
             <div class="modal-body"></div>
         </div>

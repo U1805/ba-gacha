@@ -1,21 +1,3 @@
-.gacha_icon {
-    width: 90px;
-    margin: 10px;
-    @include noskew;
-}
-
-.stone_icon {
-    width: 80px;
-    margin: -10px -20px;
-    @include noskew;
-}
-
-.point_icon {
-    width: 110px;
-    margin: -10px -20px;
-    z-index: 1;
-}
-
 .tab-container {
     position: relative;
     display: flex;
@@ -79,62 +61,6 @@
             white-space: pre-wrap;
             @include font-light;
         }
-
-        .button-container {
-            width: 845px;
-            height: 110px;
-            display: flex;
-            justify-content: space-evenly;
-            @include position(0, 30px);
-
-            .gacha-button {
-                position: relative;
-                padding-left: 14px;
-                overflow: hidden;
-                box-shadow: 0px 5px 5px -5px rgb(0 0 0/0.6);
-                @include skew;
-                @include center;
-
-                .right {
-                    flex-wrap: wrap;
-                    margin-left: -20px;
-                    @include center;
-
-                    .cost {
-                        width: 160px;
-                        height: 35px;
-                        color: white;
-                        background: $black-shadow;
-                        border-radius: 3px;
-                        margin-left: -10px;
-                        @include center;
-
-                        span {
-                            @include font-regular;
-                            @include noskew;
-                        }
-                    }
-
-                    .text {
-                        width: 230px;
-                        color: $black-shadow;
-                        line-height: 30px;
-                        text-align: right;
-                        padding-right: 20px;
-                        @include font-big;
-                        @include noskew;
-                    }
-                }
-            }
-
-            .button-blue {
-                @include gacha-button($blue, '/ButtonBlueBg0.png', '/ButtonBlueBg1.png');
-            }
-
-            .button-yellow {
-                @include gacha-button($golden, '/ButtonYellowBg0.png', '/ButtonYellowBg1.png');
-            }
-        }
     }
 
     .tab-foot {
@@ -196,5 +122,59 @@
                 transform: scale(0.95) skewX(-10deg);
             }
         }
+    }
+}
+
+.gacha-wrapper {
+    grid-area: 1 / 2 / 3 / 3;
+    height: 100vh;
+    z-index: 4;
+    @include center;
+    flex-direction: column;
+
+    div {
+        width: 844px;
+    }
+
+    .event-banner {
+        display: flex;
+        justify-content: flex-start;
+        height: 140px;
+        overflow: hidden;
+
+        img {
+            height: 140px;
+            margin: 0 5px;
+        }
+    }
+
+    .event-scroll {
+        background-color: #ffffffba;
+        height: 13.5px;
+        width: fit-content;
+        padding: 0 10px;
+        margin: 8px;
+        border-radius: 20px;
+        @include center;
+
+        .dot {
+            cursor: pointer;
+            height: 5px;
+            width: 5px;
+            margin: 0 2px;
+            background-color: $black-shadow;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active,
+        .dot:hover {
+            background-color: $blue;
+        }
+    }
+
+    .tab-container {
+        height: 520px;
     }
 }

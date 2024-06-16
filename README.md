@@ -1,4 +1,4 @@
-<h1 align="center">BA Gacha Simulator</h1>
+<h1 align="center">碧蓝档案吃井模拟器</h1>
 
 <div align="center">
     <img src="https://img.shields.io/github/last-commit/u1805/blue-archive-gacha-simulator/main">
@@ -9,62 +9,47 @@
 </div>
 
 <div align="center">
-  <strong>A web application for simulating gacha pulls in Blue Archive</strong><br>
-  <sub>Feeling bored? Come and try your luck with gacha pulls!</sub>
+  <strong>在线抽卡模拟器</strong><br>
+  <sub>在，来吃井</sub>
 </div>
 
-[中文说明](./README-zh.md) 
 
-## Features
+[小抽一井!](https://u1805.github.io/blue-archive-gacha-simulator)
 
-- **Gacha Pull**: This application is created for fun 🎃
-- **Recruitment History**: View or reset recruitment history (local storage) at any time 📕
-- **Internationalization**: Switch between Chinese, English, and Japanese languages 🎨
+## 预览
 
-[Try it!](https://u1805.github.io/blue-archive-gacha-simulator)
+![gacha1](https://github.com/U1805/blue-archive-gacha-simulator/assets/45514638/4e758b1d-71b0-4364-ace4-953bf6eeb91f)
 
-## Preview
+## 使用方法
 
-- **Gacha Pull**
-  ![gacha1](https://github.com/U1805/blue-archive-gacha-simulator/assets/45514638/4e758b1d-71b0-4364-ace4-953bf6eeb91f)
+**随便点**
 
+## 贡献
 
-- **Recruitment History**
-  ![history](https://github.com/U1805/blue-archive-gacha-simulator/assets/45514638/a77b0dee-abd9-4c57-a749-69f3b25cb3d0)
+Issue 和 PR 大欢迎！如果你遇到任何问题或者有好想法，请开一个 issue。另外也欢迎提交 pull request 来解决问题或者实现新功能。
 
+## todo-list
+```
+- 多卡池切换
+  - 限时招募、长期招募、限定招募
+- 更多可以点击的地方
+- 鼠标点击效果
+- 吃井提示
+```
 
-- **I18n(Internationalization)**
-  ![i18n](https://github.com/U1805/blue-archive-gacha-simulator/assets/45514638/71d3a0d3-bad4-48fe-a36e-151de37cac3a)
+## 感谢
 
-
-The gacha results are generated solely for entertainment purposes.
-
-## How to Use
-
-Feel free to **click as you like**.
-
-## Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=U1805/blue-archive-gacha-simulator)](https://star-history.com/#U1805/blue-archive-gacha-simulator)
-
-## Contributing
-
-Contributions from all are welcome! If you encounter any issues or have ideas for enhancements, please open an issue on GitHub. Additionally, we encourage you to submit pull requests to address problems or implement new features.
-
-## Credits
-
-This project drew inspiration from:
+项目灵感来自:
 
 - [Genshin Impact Wish Simulator](https://github.com/uzair-ashraf/genshin-impact-wish-simulator/)
 
-Character metadata sourced from:
+角色数据来自:
 
 - [lonqie/SchaleDB](https://github.com/lonqie/SchaleDB)
-- [Bluearchive.Fandom](https://bluearchive.fandom.com)
 
 ## License
 [MIT License](./LICENSE)
 
 ## Copyrights
 
-All assets within this application were obtained from third-party websites, and some were captured directly from the game.
+本应用中的资源均来自第三方网站获取，部分视频是游戏内录屏。
