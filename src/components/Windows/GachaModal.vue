@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import CloseIcon from '../icons/CloseIcon.vue'
 import { useGachaStore } from '@/stores';
-import { inject, defineProps } from 'vue'
+import { inject } from 'vue'
 
 const gachaStore = useGachaStore()
 const hideModal = inject('hideModal') as Function
