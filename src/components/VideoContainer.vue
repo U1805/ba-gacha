@@ -41,7 +41,7 @@ const props = defineProps(['videoPaths'])
     overflow: hidden;
 
     video {
-        object-fit: fill;
+        object-fit: cover;
         @include full-screen;
     }
 }
