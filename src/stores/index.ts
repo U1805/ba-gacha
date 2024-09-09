@@ -4,21 +4,16 @@ import type { historyItem, myStudent, resultItem } from '@/assets/utils/interfac
 import { Gacha } from './gacha'
 
 export const useGachaStore = defineStore('counter', () => {
-    const layerVisible: Ref<boolean[]> = ref([true, false, false])
     const history: Ref<historyItem[]> = ref([])
     const gacha: Ref<Gacha> = ref(new Gacha([]))
     const gachaResult: Ref<resultItem[]> = ref([])
+    const lastGachaNum: Ref<number> = ref(1)
 
     const totalCnt = computed(() => {
         let cnt = 0
         history.value.forEach((item) => (cnt += item.Cnt))
         return cnt
     })
-
-    const changeVisible = (layer: number) => {
-        layerVisible.value = [false, false, false]
-        if (layer >= 0) layerVisible.value[layer] = true
-    }
 
     // 本地持久化
     const setData = () => {
@@ -64,11 +59,10 @@ export const useGachaStore = defineStore('counter', () => {
     }
 
     return {
-        layerVisible,
+        lastGachaNum,
         history,
         totalCnt,
         gachaResult,
-        changeVisible,
         setData,
         getData,
         resetData,

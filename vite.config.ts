@@ -3,8 +3,6 @@ import { fileURLToPath, URL } from 'node:url'
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 
-import pxtovw from 'postcss-px-to-viewport'
-
 // https://vitejs.dev/config/
 export default defineConfig({
     plugins: [vue()],
@@ -22,19 +20,10 @@ export default defineConfig({
         },
         postcss: {
             plugins: [
-                pxtovw({
-                    viewportWidth: 1680,
-                    viewportHeight: 969.33,
-                    unitPrecision: 3, 
-                    virwportUnit: 'vw', 
-                    selectorBlackList: ['.ignore'],
-                    minPixelVlaue: 1,
-                    mediaQuery: false
-                })
             ]
         }
     },
-    base: '/blue-archive-gacha-simulator/',
+    base: '/ba-gacha/',
     build: {
         outDir: 'docs'
     }

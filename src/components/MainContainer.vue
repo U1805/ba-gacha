@@ -1,15 +1,12 @@
 <script setup lang="ts">
-
-
 import { useGachaStore } from '@/stores/index'
 const gachaStore = useGachaStore()
 const props = defineProps(['infos', 'preview'])
 </script>
 
 <template>
-    <div class="table-container" style="position: absolute; z-index: 10">
+    <div class="table-container">
         <slot name="header"></slot>
-
         <div class="preview">
             <video muted loop autoplay>
                 <source :src="props.preview" type="video/mp4" />
@@ -19,14 +16,10 @@ const props = defineProps(['infos', 'preview'])
 
         <div class="gacha-wrapper">
             <div class="event-banner">
-                <img src="/EventBanner0.png" />
-                <img src="/EventBanner0.png" />
-                <img src="/EventBanner0.png" />
+                <img :src="url" v-for="(url, index) in props.infos.banners" :key="index" />
             </div>
             <div class="event-scroll">
-                <span class="dot active"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
+                <span class="dot" v-for="(_, index) in props.infos.banners" :key="index"></span>
             </div>
 
             <div class="tab-container">
@@ -55,42 +48,5 @@ const props = defineProps(['infos', 'preview'])
 </template>
 
 <style scoped lang="scss">
-@import '@/assets/styles/gacha-tab.scss';
-
-.table-container {
-    display: grid;
-    grid-template-columns: 45vw 55vw;
-    grid-template-rows: $header_hight 1fr;
-
-    background: url('/Background.png') no-repeat;
-    background-size: cover;
-    overflow: hidden;
-}
-
-.preview {
-    grid-area: 1 / 1 / 3 / 2;
-    height: 100vh;
-
-    video {
-        height: 100%;
-    }
-}
-
-.gradient {
-    grid-area: 1 / 2 / 3 / 3;
-    display: flex;
-    height: 100vh;
-    position: relative;
-    width: 1111px;
-    z-index: 3;
-    content: url('/Background.png');
-    mask-image: linear-gradient(to left, #fff 70%, transparent 100%);
-    -webkit-mask-image: linear-gradient(to left, #fff 70%, transparent 100%);
-}
-
-.point_icon {
-    width: 110px;
-    margin: -10px -20px;
-    z-index: 1;
-}
+@import url('@/assets/styles/main-view.scss');
 </style>

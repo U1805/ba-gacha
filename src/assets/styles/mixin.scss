@@ -1,23 +1,28 @@
-@mixin center {
+@mixin display-center {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-@mixin full {
-    width: 100%;
-    height: 100%;
+@mixin hw($height, $width){
+    height: $height;
+    width: $width;
 }
 
-@mixin full-screen {
-    width: 100vw;
-    height: 100vh;
+@mixin hw-filled {
+    @include hw(100%, 100%);
 }
 
-@mixin position($left, $bottom) {
-    position: absolute;
-    left: $left;
+@mixin hw-filled-screen {
+    @include hw(100vh, 100vw);
+}
+
+@mixin position($top:auto, $right:auto, $bottom:auto, $left:auto, $position:absolute) {
+    position: $position;
+    top: $top;
+    right: $right;
     bottom: $bottom;
+    left: $left;
 }
 
 @mixin skew {
@@ -30,15 +35,14 @@
     -webkit-transform: skewX(10deg);
 }
 
+@mixin active {
+    transform: scale(0.95) skewX(-10deg);
+}
+
 // font
 
 @mixin font($size) {
     font-size: $size;
-    font-weight: 700;
-}
-
-@mixin font-large {
-    font-size: 48px;
     font-weight: 700;
 }
 
@@ -47,18 +51,23 @@
     font-weight: 700;
 }
 
+@mixin font-large {
+    font-size: 40px;
+    font-weight: 700;
+}
+
 @mixin font-heavy {
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 1400;
 }
 
 @mixin font-regular {
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 700;
 }
 
 @mixin font-light {
-    font-size: 22px;
+    font-size: 18px;
 }
 
 // button
@@ -75,27 +84,25 @@
         position: absolute;
         background-size: contain;
         z-index: -1;
-        @include full;
+        @include hw-filled;
     }
 
     &::before {
-        left: -20px;
-        top: -20px;
+        @include position(-10px, auto, auto, -20px);
         background: url($url0) left top no-repeat;
         -webkit-filter: opacity(0.5);
         filter: opacity(0.5);
     }
 
     &::after {
-        right: -25px;
-        bottom: -20px;
+        @include position(auto, -20px, -10px, auto);
         background: url($url1) right bottom no-repeat;
         -webkit-filter: opacity(0.5);
         filter: opacity(0.5);
     }
 
     &:active {
-        transform: scale(0.95) skewX(-10deg);
+        @include active;
     }
 }
 

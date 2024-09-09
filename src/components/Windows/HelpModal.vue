@@ -1,11 +1,10 @@
 <script setup lang="ts">
 import { inject } from 'vue';
 import CloseIcon from '../icons/CloseIcon.vue'
-const hideModal = inject('hideHelModal') as Function
+const hideModal = inject('hideHelpModal') as Function
 </script>
 
 <template>
-    <!-- Setting Modal begin -->
     <div class="modal-backdrop">
         <div class="modal history">
             <div class="modal-header">
@@ -15,10 +14,8 @@ const hideModal = inject('hideHelModal') as Function
             <div class="modal-body"></div>
         </div>
     </div>
-    <!-- Setting Modal end -->
 </template>
 
 <style scoped lang="scss">
 @import '@/assets/styles/modal.scss';
-@import '@/assets/styles/link-icon.scss';
 </style>

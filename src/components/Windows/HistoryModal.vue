@@ -4,11 +4,10 @@ import { getAvatarBg } from '@/assets/utils/api';
 import CloseIcon from '../icons/CloseIcon.vue'
 import { useGachaStore } from '@/stores/index'
 const gachaStore = useGachaStore()
-const hideModal = inject('hideHisModal') as Function
+const hideModal = inject('hideHistoryModal') as Function
 </script>
 
 <template>
-    <!-- History Modal begin -->
     <div class="modal-backdrop">
         <div class="modal history">
             <div class="modal-header">
@@ -25,10 +24,8 @@ const hideModal = inject('hideHisModal') as Function
             </div>
         </div>
     </div>
-    <!-- History Modal end -->
 </template>
 
 <style scoped lang="scss">
 @import '@/assets/styles/modal.scss';
-@import '@/assets/styles/link-icon.scss';
 </style>
