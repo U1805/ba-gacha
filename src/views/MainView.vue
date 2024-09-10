@@ -3,6 +3,7 @@ import MainContainer from '@/components/MainContainer.vue'
 import GachaModal from '@/components/Windows/GachaModal.vue'
 import HistoryModal from '@/components/Windows/HistoryModal.vue'
 import HelpModal from '@/components/Windows/HelpModal.vue'
+import ProbModal from '@/components/Windows/ProbModal.vue'
 
 import { provide, reactive, ref } from 'vue'
 import { getVideoPaths } from '@/assets/utils/api'
@@ -35,13 +36,19 @@ const hideHelpModal = () => (isHelpModalShow.value = false)
 const showHelpModal = () => (isHelpModalShow.value = true)
 provide('hideHelpModal', hideHelpModal)
 
+// 概率情报
+const isProbModalShow = ref(false)
+const hideProbModal = () => (isProbModalShow.value = false)
+const showProbModal = () => (isProbModalShow.value = true)
+provide('hideProbModal', hideProbModal)
+
 //主界面卡池信息
 const infos = reactive({
     duration: '2023/08/09 From 10:00 ~ 2099/01/01 Until 09:59',
     title: '通常招募',
     subtitle: '来招募更多性格迥异的学生吧!',
     notice: '选择招募 10 次，必定获得 1 名 3★ 学生! \n※ 点击右上角按钮查看招募记录',
-    banners: ['/EventBanner0.png', '/EventBanner0.png', '/EventBanner0.png']
+    banners: ['/ba-gacha/EventBanner0.png', '/ba-gacha/EventBanner0.png', '/ba-gacha/EventBanner0.png']
 })
 </script>
 
@@ -57,6 +64,8 @@ const infos = reactive({
         <HistoryModal v-show="isHistoryModalShow"></HistoryModal>
         <!-- 说明弹窗 -->
         <HelpModal v-show="isHelpModalShow"></HelpModal>
+        <!-- 概率情报 -->
+        <ProbModal v-show="isProbModalShow"></ProbModal>
         <!-- 主界面 -->
         <MainContainer :infos="infos" :preview="videoPaths.preview">
             <template #header>
@@ -88,6 +97,13 @@ const infos = reactive({
                             <div class="cost"><span>1200</span></div>
                             <div class="text">招募 10 次</div>
                         </div>
+                    </div>
+                </div>
+            </template>
+            <template #extra>
+                <div class="left-bottom">
+                    <div class="text" @click="showProbModal">
+                        <span>概率情报</span>
                     </div>
                 </div>
             </template>

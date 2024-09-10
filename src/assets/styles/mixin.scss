@@ -44,30 +44,36 @@
 @mixin font($size) {
     font-size: $size;
     font-weight: 700;
+    user-select:none;
 }
 
 @mixin font-big {
-    font-size: 34px;
+    font-size: 1.7vw;
     font-weight: 700;
+    user-select:none;
 }
 
 @mixin font-large {
-    font-size: 40px;
+    font-size: 2.5vw;
     font-weight: 700;
+    user-select:none;
 }
 
 @mixin font-heavy {
-    font-size: 18px;
+    font-size: 1vw;
     font-weight: 1400;
+    user-select:none;
 }
 
 @mixin font-regular {
-    font-size: 18px;
+    font-size: 1vw;
     font-weight: 700;
+    user-select:none;
 }
 
 @mixin font-light {
-    font-size: 18px;
+    font-size: 1vw;
+    user-select:none;
 }
 
 // button

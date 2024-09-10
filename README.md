@@ -1,10 +1,10 @@
 <h1 align="center">碧蓝档案吃井模拟器</h1>
 
 <div align="center">
-    <img src="https://img.shields.io/github/last-commit/u1805/blue-archive-gacha-simulator/main">
-    <img src="https://img.shields.io/github/languages/top/U1805/blue-archive-gacha-simulator" >
-    <a href="https://star-history.com/#U1805/blue-archive-gacha-simulator"> 
-      <img src="https://img.shields.io/github/stars/U1805/blue-archive-gacha-simulator" alt="stars"> 
+    <img src="https://img.shields.io/github/last-commit/u1805/ba-gacha/main">
+    <img src="https://img.shields.io/github/languages/top/U1805/ba-gacha" >
+    <a href="https://star-history.com/#U1805/ba-gacha"> 
+      <img src="https://img.shields.io/github/stars/U1805/ba-gacha" alt="stars"> 
     </a>
 </div>
 
@@ -14,7 +14,7 @@
 </div>
 
 
-[小抽一井!](https://u1805.github.io/blue-archive-gacha-simulator)
+[小抽一井!](https://u1805.github.io/ba-gacha)
 
 ## 预览
 

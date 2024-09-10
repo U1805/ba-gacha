@@ -1,7 +1,7 @@
 .button-container.main {
     display: flex;
     justify-content: space-evenly;
-    @include position(auto, auto, 8%, 0);
+    @include position(auto, auto, 5%, 0);
     @include hw(24%, 100%);
 
     .gacha-button {
@@ -15,14 +15,14 @@
 
         .right {
             @include display-center;
-            @include font-regular;
             flex-wrap: wrap;
 
             .cost {
                 @include display-center;
+                @include font-regular;
+                @include hw(1.8vw, 75%);
                 margin-left: -10px;
                 border-radius: 3px;
-                @include hw(30px, 75%);
                 background: $black-shadow;
                 color: white;
 
@@ -34,7 +34,9 @@
             .text {
                 @include display-center;
                 @include hw-filled;
+                @include font-big;
 
+                margin-top: 0.5vw;
                 color: $black-shadow;
                 line-height: 30px;
                 text-align: right;
@@ -52,12 +54,12 @@
     }
 
     .gacha_icon {
-        width: 30%;
+        width: 4vw;
         @include noskew;
     }
 
     .stone_icon {
-        width: 40%;
+        width: 3.5vw;
         margin: -10px -20px;
         @include noskew;
     }

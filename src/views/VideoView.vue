@@ -6,6 +6,9 @@ import type { Ref } from 'vue'
 import { ref } from 'vue'
 
 const router = useRouter()
+const wait = async (ms: number) => {
+    await new Promise((resolve) => setTimeout(resolve, ms))
+}
 
 // 抽卡视频分为三段，中间段循环播放
 const layerVisible: Ref<boolean[]> = ref([true, false, false])
@@ -18,7 +21,8 @@ const arona_ended = () => {
     changeVisible(1)
     isSigning.value = true
 }
-const wait_ended = () => {
+const wait_ended = async () => {
+    await wait(1200)
     changeVisible(2)
     isSigning.value = false
 }

@@ -6,8 +6,7 @@ const getAvatarBg = (id: string|number) => `https://schale.gg/images/student/col
 const getAvatarNoBg = (id: string|number) => `https://beta.schaledb.com/images/student/icon/${id}.webp`
 
 const getVideoPaths = () => {
-    // const base_url = 'https://BlueArcbox.github.io/resources/Gacha/'
-    const base_url = '/Gacha/'
+    const base_url = '/ba-gacha/Gacha/'
     const videos = {
         preview: base_url + 'Preview0.mp4',
         arona: [
@@ -30,7 +29,7 @@ const getVideoPaths = () => {
 }
 
 const fetchData = async ()=>{
-    const data = (await axios.get("/non_limited_students.json")).data as any[]
+    const data = (await axios.get("/ba-gacha/non_limited_students.json")).data as any[]
     
     return data.map(item => {
         return {

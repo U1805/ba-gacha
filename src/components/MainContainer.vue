@@ -44,6 +44,8 @@ const props = defineProps(['infos', 'preview'])
                 </div>
             </div>
         </div>
+
+        <slot name="extra"></slot>
     </div>
 </template>
 
