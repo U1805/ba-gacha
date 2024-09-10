@@ -1,20 +1,16 @@
 <script setup lang="ts">
 import ResultContainer from '@/components/ResultContainer.vue'
-import GachaModal from '@/components/Windows/GachaModal.vue'
+import CustomModal from '@/components/CustomModal.vue'
 import { useGachaStore } from '@/stores/index'
 import { useRouter } from 'vue-router'
-import { provide, ref } from 'vue'
+import { ref } from 'vue'
 
 // 抽卡弹窗
 const showGachaModal = ref(false)
-const bodyGachaModal = ref('再次招募？')
-const hideModal = () => {
-    showGachaModal.value = false
+function getStudents() {
+    gachaStore.gachaStudents(gachaStore.lastGachaNum)
+    router.push('/gacha')
 }
-const showModal = () => {
-    showGachaModal.value = true
-}
-provide('hideModal', hideModal)
 
 const router = useRouter()
 const gachaStore = useGachaStore()
@@ -22,11 +18,25 @@ const gachaStore = useGachaStore()
 
 <template>
     <!-- 抽卡弹窗 -->
-    <GachaModal v-show="showGachaModal">
-        <template #body>
-            <p>{{ bodyGachaModal }}</p>
-        </template>
-    </GachaModal>
+    <CustomModal
+        v-model="showGachaModal"
+        :title="'通知'"
+        :width="'40vw'"
+        :height="'28vw'"
+        :footer="true"
+        @ok="getStudents()"
+    >
+        <div class="gacha">
+            <p>再次招募？</p>
+            <div style="margin: 20px 0; font-weight: 500; font-size: 20px">青耀石消耗数量</div>
+            <div class="point">
+                <img src="/Stone.png" />
+                <div class="num">
+                    <span>{{ gachaStore.lastGachaNum * 120 }}</span>
+                </div>
+            </div>
+        </div>
+    </CustomModal>
     <!-- 结算界面 -->
     <ResultContainer>
         <template #button-group>
@@ -34,7 +44,7 @@ const gachaStore = useGachaStore()
                 <div class="gacha-button button-blue" @click="router.push('/')">
                     <div>确定</div>
                 </div>
-                <div class="gacha-button button-yellow" @click="showModal()">
+                <div class="gacha-button button-yellow" @click="showGachaModal = true">
                     <div>再来一次</div>
                 </div>
                 <div class="point-container">
@@ -51,6 +61,7 @@ const gachaStore = useGachaStore()
 
 <style scoped lang="scss">
 @import url('@/assets/styles/button-group.scss');
+@import url('@/assets/styles/modal.scss');
 
 .button-container {
     z-index: 3;

@@ -68,14 +68,19 @@
         @include font(24px);
         flex-direction: column;
         height: 45%;
-        padding: 5%;
+        padding: 3%;
         color: black;
+
+        &.modal-body--filled {
+            height: 100%;
+            overflow: hidden;
+        }
     }
     .modal-footer {
         @include hw(18%, 100%);
         display: flex;
         justify-content: space-evenly;
-        margin-bottom: 45px;
+        margin: 2.5vw 0 2.5vw 0;
 
         .gacha-button {
             position: relative;
@@ -106,49 +111,54 @@
     }
 }
 
-.modal .point-container {
-    @include hw(15%, 25%);
-    @include skew;
-    @include display-center;
-    border-radius: 10px;
-
-    img {
-        @include position(auto, auto, auto, -2.5vw);
-        @include noskew;
-        width: 5vw;
-        z-index: 32;
-    }
-
-    .num {
-        height: 2vw;
-        width: 100%;
-        border: 2px solid $black-shadow;
+.modal{
+    .gacha{
         @include display-center;
-        color: white;
-        background-color: $black-shadow;
-        border-radius: 5px;
-
-        span {
-            @include font-regular;
+        flex-direction: column;
+    }
+    
+    .point {
+        @include hw(15%, 25%);
+        @include skew;
+        @include display-center;
+        border-radius: 10px;
+    
+        img {
+            @include position(auto, auto, auto, -2.5vw);
             @include noskew;
+            width: 5vw;
+            z-index: 32;
+        }
+    
+        .num {
+            height: 2vw;
+            width: 30vw;
+            border: 2px solid $black-shadow;
+            @include display-center;
+            color: white;
+            background-color: $black-shadow;
+            border-radius: 5px;
+    
+            span {
+                @include font-regular;
+                @include noskew;
+            }
         }
     }
 }
 
-.modal.history {
-    @include hw(40vw, 60vw);
-    background: rgb(242, 242, 242);
-
-    .modal-body {
+.modal{
+    .history  {
         display: flex;
         justify-content: flex-start;
         flex-direction: row;
         flex-wrap: wrap;
-        padding: 20px 50px;
         height: 100%;
         @include hide-scrollbar;
         .card {
-            width: 16.66%;
+            @include display-center;
+            flex-direction: column;
+            margin: -20px 2px 0 2px;
         }
         .card > a {
             @include display-center;
@@ -156,7 +166,7 @@
             padding: 0 15px;
         }
     }
-    $img-height: 10vw;
+    $img-height: 10.3vw;
     .char img {
         height: $img-height;
     }
@@ -177,8 +187,4 @@
         color: $black-shadow;
         text-decoration: underline $golden-card;
     }
-}
-
-.modal.setting {
-    @include hw(40vw, 60vw);
 }

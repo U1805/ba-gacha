@@ -9,7 +9,8 @@
         },
         "moduleResolution": "node",
         "module": "ESNext",
-        "types": ["node"]
+        "types": ["node"],
+        "lib": ["DOM", "DOM.Iterable"],
     },
     "include": [
         "env.d.ts",

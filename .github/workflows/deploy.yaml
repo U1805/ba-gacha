@@ -38,7 +38,7 @@ jobs:
       - name: Install dependencies
         run: npm install
       - name: Build
-        run: npm run build-only
+        run: npm run build
       - name: Copy 404.html
         run: npm run deploy
       - name: Setup Pages

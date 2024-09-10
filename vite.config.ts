@@ -15,12 +15,11 @@ export default defineConfig({
         // css预处理器
         preprocessorOptions: {
             scss: {
-                additionalData: '@import "@/assets/styles/mixin.scss";@import "@/assets/styles/color.scss";'
+                additionalData: '@import "@/assets/styles/mixin.scss";'
             }
         },
         postcss: {
-            plugins: [
-            ]
+            plugins: []
         }
     },
     base: '/ba-gacha/',

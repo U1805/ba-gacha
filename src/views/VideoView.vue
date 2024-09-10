@@ -1,8 +1,9 @@
 <script setup lang="ts">
+import VueEsign from '@/components/SignBoard.vue'
+
 import { useGachaStore } from '@/stores/index'
-import { getVideoPaths } from '../assets/utils/api'
+import { getVideoPaths } from '@/assets/utils/api'
 import { useRouter } from 'vue-router'
-import type { Ref } from 'vue'
 import { ref } from 'vue'
 
 const router = useRouter()
@@ -11,7 +12,7 @@ const wait = async (ms: number) => {
 }
 
 // 抽卡视频分为三段，中间段循环播放
-const layerVisible: Ref<boolean[]> = ref([true, false, false])
+const layerVisible = ref([true, false, false])
 const changeVisible = (layer: number) => {
     layerVisible.value = [false, false, false]
     if (layer >= 0) layerVisible.value[layer] = true

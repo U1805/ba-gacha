@@ -68,7 +68,7 @@
 // 主界面整体，左侧卡池预览，中间渐变过渡，右侧卡池卡片，左下角其他信息
 .table-container {
     display: grid;
-    grid-template-rows: $header_hight 1fr;
+    grid-template-rows: 5vw 1fr;
 
     @include hw-filled;
     background: url('/Background.png') no-repeat;

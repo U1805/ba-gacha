@@ -11,25 +11,6 @@ const colorTable: { [key: number]: string } = {
 </script>
 
 <template>
-    <!-- <div class="result">
-        <div class="result-container">
-            <div
-                class="shadow-box"
-                :class="{ shadow: item.StarGrade > 1 }"
-                :key="index"
-                v-for="(item, index) in gachaStore.gachaResult"
-            >
-                <div class="card" :class="colorTable[item.StarGrade]">
-                    <div class="char"><img :src="getAvatarNoBg(item.Id)" /></div>
-                    <div class="new" v-show="item['isNew']"><img src="/New.png" /></div>
-                    <div class="star">
-                        <img src="/Star.png" v-for="(_, index) in item.StarGrade" :key="index" />
-                    </div>
-                </div>
-            </div>
-        </div>
-        <slot name="button-group"></slot>
-    </div> -->
     <div class="result">
         <div class="result-container">
             <div
