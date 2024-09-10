@@ -108,7 +108,13 @@
     }
 
     .left-bottom {
-        @include position(48vw, auto, auto, 13vw);
+        @include display-center;
+        grid-area: 1 / 1 / 1 / 1;
+        position: relative;
+        top: 41vw;
+        left: 4vw;
+        z-index: 4;
+        @include hw(fit-content, fit-content);
     
         .text {
             color: $black-main;
@@ -180,9 +186,9 @@
 .tab-container {
     .tab-body {
         position: relative;
-        padding: 20px;
+        padding: 1vw;
         text-indent: 2px;
-        @include hw(80%, calc(100% - 40px));
+        @include hw(80%, calc(100% - 2vw));
 
         &::before {
             @include position(auto, auto, 0, 0);
@@ -198,7 +204,7 @@
             width: 100%;
             color: $black-shadow;
             background-color: $blue-light;
-            line-height: 16px;
+            line-height: 1vw;
             padding: 2% 0;
             margin: 0;
             @include font-light;
@@ -208,9 +214,9 @@
             position: relative;
             z-index: 2;
             width: 100%;
-            line-height: 24px;
+            line-height: 1.5vw;
             color: $black-main;
-            padding: 20px 0 20px 2px;
+            padding: 1.3vw 0 1.3vw 2px;
             border-bottom: 3px solid $white-border;
             @include font-large;
         }
@@ -219,9 +225,9 @@
             position: relative;
             z-index: 2;
             width: 100%;
-            line-height: 16px;
+            line-height: 1vw;
             color: rgb(0, 126, 255);
-            padding: 9px 0 10px 2px;
+            padding: 0.6vw 0 0.6vw 2px;
             border-bottom: 3px solid $white-border;
             @include font-regular;
         }
@@ -230,7 +236,7 @@
             position: relative;
             z-index: 2;
             width: 100%;
-            line-height: 32px;
+            line-height: 1.8vw;
             color: $black-shadow;
             white-space: pre-wrap;
             @include font-light;
@@ -291,7 +297,7 @@
             @include skew;
 
             span {
-                @include font(24px);
+                @include font(1.5vw);
                 @include noskew;
             }
 

@@ -36,9 +36,9 @@
                 @include hw-filled;
                 @include font-big;
 
-                margin-top: 0.5vw;
+                margin-top: 0.3vw;
                 color: $black-shadow;
-                line-height: 30px;
+                line-height: 1.8vw;
                 text-align: right;
                 @include noskew;
             }
