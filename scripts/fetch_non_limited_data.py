@@ -161,7 +161,7 @@ class Kivo:
         return self.ba.request_kivo(url)
 
     def get_list(self):
-        students = self.ba.request_kivo_list
+        students = self.ba.request_kivo_list()
         student_list = {}
         for student in students:
             student_name = self._fix_kivo_name(student["given_name_jp"])
@@ -214,5 +214,9 @@ if __name__ == "__main__":
         }
         result.append(student)
 
-    with open("non_limited_students.json", "w", encoding="utf-8") as f:
-        json.dump(result, f, indent=4, ensure_ascii=False)
+    with open("../src/assets/data/non_limited_students_all.ts", "w", encoding="utf-8") as f:
+        f.write(
+            "import type { myStudent } from \"../utils/interface\";\n\n"
+            + "export const non_limited_students: myStudent[] = "
+            + json.dumps(result, indent=4, ensure_ascii=False)
+        )

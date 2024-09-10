@@ -2,12 +2,14 @@
 import ClickEffect from './components/ClickEffect.vue'
 import { useGachaStore } from '@/stores/index'
 import { onMounted } from 'vue'
-import { fetchData } from '@/assets/utils/api'
+import { non_limited_students } from './assets/data/non_limited_students';
 
 const gachaStore = useGachaStore()
 onMounted(async () => {
     gachaStore.getData()
-    gachaStore.setGacha(await fetchData())
+    const non_limited_students_3star = 
+        non_limited_students.filter(student => student['StarGrade'] === 3)
+    gachaStore.setGacha(non_limited_students_3star)
 })
 </script>
 

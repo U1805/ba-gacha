@@ -3,11 +3,13 @@ import MainContainer from '@/components/MainContainer.vue'
 import CustomModal from '@/components/CustomModal.vue'
 
 import { reactive, ref } from 'vue'
-import { getVideoPaths, getAvatarBg } from '@/assets/utils/api'
+import { getAvatarBg } from '@/assets/utils/api'
 import { useGachaStore } from '@/stores'
 import { useRouter } from 'vue-router'
 
-const videoPaths = getVideoPaths()
+import { non_limited_students } from '@/assets/data/non_limited_students'
+import { limited_students_1 } from '@/assets/data/limited_students_1'
+
 const gachaStore = useGachaStore()
 const router = useRouter()
 
@@ -20,7 +22,8 @@ const showModal = (num: number, msg: string) => {
     gachaStore.lastGachaNum = num
 }
 function getStudents() {
-    gachaStore.gachaStudents(gachaStore.lastGachaNum)
+    const sure = banners[select.value].title === '3★确定招募'
+    gachaStore.gachaStudents(gachaStore.lastGachaNum, sure)
     router.push('/gacha')
 }
 
@@ -32,13 +35,47 @@ const showHelpModal = ref(false)
 const showProbModal = ref(false)
 
 //主界面卡池信息
-const infos = reactive({
-    duration: '2023/08/09 From 10:00 ~ 2099/01/01 Until 09:59',
-    title: '通常招募',
-    subtitle: '来招募更多性格迥异的学生吧!',
-    notice: '选择招募 10 次，必定获得 1 名 3★ 学生! \n※ 点击右上角按钮查看招募记录',
-    banners: ['/ba-gacha/EventBanner0.png', '/ba-gacha/EventBanner0.png', '/ba-gacha/EventBanner0.png']
-})
+const banners = [
+    {
+        duration: '2023/08/09 10:00~2099/01/01 09:59截止',
+        title: '3★确定招募',
+        subtitle: '来招募更多性格迥异的学生吧!',
+        notice: '选择招募 10 次，必定获得 1 名 3★ 学生! \n※ 点击右上角按钮查看招募记录',
+        preview_img: '/ba-gacha/Banner/EventBanner1.png',
+        preview_video: '/ba-gacha/Banner/Gacha_Banner_3star_gb.mp4',
+        cards: non_limited_students.filter((item) => item['StarGrade'] === 3),
+        limit: []
+    },
+    {
+        duration: '2023/08/09 10:00~2099/01/01 09:59截止',
+        title: '限定限时招募',
+        subtitle: '【限定】泳装日奈（3★）招募概率提升!',
+        notice: '选择招募 10 次，必定获得 1 名 3★ 学生! \n※ 点击右上角按钮查看招募记录',
+        preview_img: '/ba-gacha/Banner/EventBanner2.png',
+        preview_video: '/ba-gacha/Banner/Gacha_Banner_220322_gb_1.mp4',
+        cards: non_limited_students,
+        limit: limited_students_1
+    },
+    {
+        duration: '2023/08/09 10:00~2099/01/01 09:59截止',
+        title: '通常招募',
+        subtitle: '来招募更多性格迥异的学生吧!',
+        notice: '选择招募 10 次，必定获得 1 名 3★ 学生! \n※ 点击右上角按钮查看招募记录',
+        preview_img: '/ba-gacha/Banner/EventBanner0.png',
+        preview_video: '/ba-gacha/Banner/Gacha_Banner_Normal_gb.mp4',
+        cards: non_limited_students,
+        limit: []
+    }
+]
+const infos = reactive(banners)
+const select = ref(0)
+
+const changeBanner = (index: number) => {
+    select.value = index
+    const up_list_2 = infos[index].limit.filter((item) => item.StarGrade === 2).map((item) => item.Id)
+    const up_list_3 = infos[index].limit.filter((item) => item.StarGrade === 3).map((item) => item.Id)
+    gachaStore.setGacha([...infos[index].cards, ...infos[index].limit], up_list_2, up_list_3)
+}
 </script>
 
 <template>
@@ -80,7 +117,7 @@ const infos = reactive({
         <!-- 概率情报 -->
         <CustomModal v-model="showProbModal" :title="'概率情报'"></CustomModal>
         <!-- 主界面 -->
-        <MainContainer :infos="infos" :preview="videoPaths.preview">
+        <MainContainer :infos="infos" :select="select" @change-banner="changeBanner">
             <template #header>
                 <div class="header">
                     <div class="title">学生招募</div>

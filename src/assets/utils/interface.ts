@@ -12,4 +12,9 @@ interface historyItem extends myStudent {
     Cnt: number
 }
 
-export type { myStudent, resultItem, historyItem }
+interface bannerItem extends myStudent {
+    LastProb: number
+    Prob: number
+}
+
+export type { myStudent, resultItem, historyItem, bannerItem }

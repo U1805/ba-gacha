@@ -183,7 +183,7 @@
         }
     }
     .name {
-        @include font-regular;
+        @include font(1vw);
         color: $black-shadow;
         text-decoration: underline $golden-card;
     }

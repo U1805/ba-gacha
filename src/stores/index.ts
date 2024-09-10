@@ -29,8 +29,8 @@ export const useGachaStore = defineStore('counter', () => {
     }
 
     // 抽卡相关
-    const setGacha = (data: myStudent[]) => {
-        gacha.value = new Gacha(data)
+    const setGacha = (data: myStudent[], up_list_2: number[] = [], up_list_3: number[] = []) => {
+        gacha.value = new Gacha(data, up_list_2, up_list_3)
     }
     const isNew = (id: number) => {
         const index = history.value.findIndex((ele) => ele.Id === id)
@@ -47,8 +47,8 @@ export const useGachaStore = defineStore('counter', () => {
             history.value[index].Cnt++
         }
     }
-    const gachaStudents = (num: number) => {
-        gacha.value.getStudents(num)
+    const gachaStudents = (num: number, sure: boolean = false) => {
+        gacha.value.getStudents(num, sure)
         gachaResult.value = gacha.value.result
         setData()
     }

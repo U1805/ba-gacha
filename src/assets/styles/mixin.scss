@@ -60,19 +60,19 @@
 }
 
 @mixin font-heavy {
-    font-size: 1vw;
+    font-size: 1.1vw;
     font-weight: 1400;
     user-select:none;
 }
 
 @mixin font-regular {
-    font-size: 1vw;
+    font-size: 1.1vw;
     font-weight: 700;
     user-select:none;
 }
 
 @mixin font-light {
-    font-size: 1vw;
+    font-size: 1.1vw;
     user-select:none;
 }
 

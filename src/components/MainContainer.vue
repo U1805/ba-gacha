@@ -1,33 +1,42 @@
 <script setup lang="ts">
 import { useGachaStore } from '@/stores/index'
+import { computed } from 'vue'
 const gachaStore = useGachaStore()
-const props = defineProps(['infos', 'preview'])
+const props = defineProps(['infos', 'select'])
+const emits = defineEmits(['changeBanner'])
+
+const select_info = computed(() => {
+    return props.infos[props.select]
+})
 </script>
 
 <template>
     <div class="table-container">
         <slot name="header"></slot>
         <div class="preview">
-            <video muted loop autoplay>
-                <source :src="props.preview" type="video/mp4" />
-            </video>
+            <video muted loop autoplay :src="select_info.preview_video" type="video/mp4"></video>
         </div>
         <div class="gradient"></div>
 
         <div class="gacha-wrapper">
             <div class="event-banner">
-                <img :src="url" v-for="(url, index) in props.infos.banners" :key="index" />
+                <img
+                    :src="item.preview_img"
+                    :key="index"
+                    v-for="(item, index) in props.infos"
+                    @click="emits('changeBanner', index)"
+                />
             </div>
             <div class="event-scroll">
-                <span class="dot" v-for="(_, index) in props.infos.banners" :key="index"></span>
+                <span class="dot" v-for="(_, index) in props.infos" :key="index"></span>
             </div>
 
             <div class="tab-container">
                 <div class="tab-body">
-                    <div class="duration">{{ props.infos.duration }}</div>
-                    <div class="title">{{ props.infos.title }}</div>
-                    <div class="subtitle">{{ props.infos.subtitle }}</div>
-                    <div class="notice">{{ props.infos.notice }}</div>
+                    <div class="duration">{{ select_info.duration }}</div>
+                    <div class="title">{{ select_info.title }}</div>
+                    <div class="subtitle">{{ select_info.subtitle }}</div>
+                    <div class="notice">{{ select_info.notice }}</div>
                     <slot name="button-group"></slot>
                 </div>
                 <div class="tab-foot">
