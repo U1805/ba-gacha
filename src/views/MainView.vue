@@ -3,15 +3,16 @@ import MainContainer from '@/components/MainContainer.vue'
 import CustomModal from '@/components/CustomModal.vue'
 
 import { reactive, ref } from 'vue'
-import { getAvatarBg } from '@/assets/utils/api'
-import { useGachaStore } from '@/stores'
 import { useRouter } from 'vue-router'
+import { getAvatarBg, getVideoPaths } from '@/assets/utils/api'
+import { useGachaStore } from '@/stores'
 
 import { non_limited_students } from '@/assets/data/non_limited_students'
 import { limited_students_1 } from '@/assets/data/limited_students_1'
 
-const gachaStore = useGachaStore()
 const router = useRouter()
+const gachaStore = useGachaStore()
+const video_path = getVideoPaths()
 
 // 抽卡弹窗
 const showGachaModal = ref(false)
@@ -41,8 +42,8 @@ const banners = [
         title: '3★确定招募',
         subtitle: '来招募更多性格迥异的学生吧!',
         notice: '选择招募 10 次，必定获得 1 名 3★ 学生! \n※ 点击右上角按钮查看招募记录',
-        preview_img: '/ba-gacha/Banner/EventBanner1.png',
-        preview_video: '/ba-gacha/Banner/Gacha_Banner_3star_gb.mp4',
+        preview_img: '/ba-gacha/banner/EventBanner1.png',
+        preview_video: video_path['preview'][1], // Gacha_Banner_3star_gb
         cards: non_limited_students.filter((item) => item['StarGrade'] === 3),
         limit: []
     },
@@ -51,8 +52,8 @@ const banners = [
         title: '限定限时招募',
         subtitle: '【限定】泳装日奈（3★）招募概率提升!',
         notice: '选择招募 10 次，必定获得 1 名 3★ 学生! \n※ 点击右上角按钮查看招募记录',
-        preview_img: '/ba-gacha/Banner/EventBanner2.png',
-        preview_video: '/ba-gacha/Banner/Gacha_Banner_220322_gb_1.mp4',
+        preview_img: '/ba-gacha/banner/EventBanner2.png',
+        preview_video: video_path['preview'][2], // Gacha_Banner_220322_gb_1
         cards: non_limited_students,
         limit: limited_students_1
     },
@@ -61,8 +62,8 @@ const banners = [
         title: '通常招募',
         subtitle: '来招募更多性格迥异的学生吧!',
         notice: '选择招募 10 次，必定获得 1 名 3★ 学生! \n※ 点击右上角按钮查看招募记录',
-        preview_img: '/ba-gacha/Banner/EventBanner0.png',
-        preview_video: '/ba-gacha/Banner/Gacha_Banner_Normal_gb.mp4',
+        preview_img: '/ba-gacha/banner/EventBanner0.png',
+        preview_video: video_path['preview'][0], // Gacha_Banner_Normal_gb
         cards: non_limited_students,
         limit: []
     }
@@ -93,7 +94,7 @@ const changeBanner = (index: number) => {
                 <p>{{ bodyGachaModal }}</p>
                 <div style="margin: 20px 0; font-weight: 500; font-size: 20px">青耀石消耗数量</div>
                 <div class="point">
-                    <img src="/Stone.png" />
+                    <img src="/images/Stone.png" />
                     <div class="num">
                         <span>{{ gachaStore.lastGachaNum * 120 }}</span>
                     </div>
@@ -105,7 +106,7 @@ const changeBanner = (index: number) => {
             <div class="history">
                 <div class="card" v-for="(item, idx) in gachaStore.history" :key="idx">
                     <div class="star">
-                        <img src="/Star.png" v-for="(_, idx2) in item['StarGrade']" :key="idx2" />
+                        <img src="/images/Star.png" v-for="(_, idx2) in item['StarGrade']" :key="idx2" />
                     </div>
                     <div class="char"><img :src="getAvatarBg(item.Id)" /></div>
                     <div class="name">{{ item['Name'] }} * {{ item['Cnt'] }}</div>
@@ -133,17 +134,17 @@ const changeBanner = (index: number) => {
             <template #button-group>
                 <div class="button-container main">
                     <div class="gacha-button button-blue" @click="showModal(1, '招募 1 次？')">
-                        <img src="/Gacha0.png" class="gacha_icon" />
+                        <img src="/images/Gacha0.png" class="gacha_icon" />
                         <div class="right">
-                            <img src="/Stone.png" class="stone_icon" />
+                            <img src="/images/Stone.png" class="stone_icon" />
                             <div class="cost"><span>120</span></div>
                             <div class="text">招募 1 次</div>
                         </div>
                     </div>
                     <div class="gacha-button button-yellow" @click="showModal(10, '招募 10 次？')">
-                        <img src="/Gacha1.png" class="gacha_icon" />
+                        <img src="/images/Gacha1.png" class="gacha_icon" />
                         <div class="right">
-                            <img src="/Stone.png" class="stone_icon" />
+                            <img src="/images/Stone.png" class="stone_icon" />
                             <div class="cost"><span>1200</span></div>
                             <div class="text">招募 10 次</div>
                         </div>

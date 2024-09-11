@@ -46,11 +46,11 @@
     }
 
     .button-blue {
-        @include gacha-button($blue, '/ButtonBlueBg0.png', '/ButtonBlueBg1.png');
+        @include gacha-button($blue, '/images/ButtonBlueBg0.png', '/images/ButtonBlueBg1.png');
     }
 
     .button-yellow {
-        @include gacha-button($golden, '/ButtonYellowBg0.png', '/ButtonYellowBg1.png');
+        @include gacha-button($golden, '/images/ButtonYellowBg0.png', '/images/ButtonYellowBg1.png');
     }
 
     .gacha_icon {
@@ -85,12 +85,12 @@
     }
 
     .button-blue {
-        @include gacha-button($blue, '/ButtonBlueBg0.png', '/ButtonBlueBg1.png');
+        @include gacha-button($blue, '/images/ButtonBlueBg0.png', '/images/ButtonBlueBg1.png');
         margin-right: 5vw;
     }
 
     .button-yellow {
-        @include gacha-button($golden, '/ButtonYellowBg0.png', '/ButtonYellowBg1.png');
+        @include gacha-button($golden, '/images/ButtonYellowBg0.png', '/images/ButtonYellowBg1.png');
     }
 }
 

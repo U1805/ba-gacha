@@ -32,7 +32,7 @@
 // 顶部状态栏（体力，金钱，石头等）
 .header {
     grid-area: 1 / 1 / 2 / 3;
-    background: url('/Header.png') top no-repeat;
+    background: url('/images/Header.png') top no-repeat;
     background-size: contain;
     filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.441));
     background-size: contain;
@@ -71,7 +71,7 @@
     grid-template-rows: 5vw 1fr;
 
     @include hw-filled;
-    background: url('/Background.png') no-repeat;
+    background: url('/images/Background.png') no-repeat;
     background-size: cover;
 
     .preview {
@@ -93,7 +93,7 @@
         z-index: 3;
 
         @include hw(100%, 50vw);
-        content: url('/Background.png');
+        content: url('/images/Background.png');
         mask-image: linear-gradient(to left, #fff 70%, transparent 100%);
     }
 
@@ -194,7 +194,7 @@
             @include position(auto, auto, 0, 0);
             @include hw-filled;
             content: '';
-            background: url('/IntroBgLeft.png') no-repeat left bottom;
+            background: url('/images/IntroBgLeft.png') no-repeat left bottom;
             background-size: 75%;
         }
 

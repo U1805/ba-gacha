@@ -20,9 +20,9 @@ const colorTable: { [key: number]: string } = {
                 v-for="(item, index) in gachaStore.gachaResult"
             >
                 <div class="char"><img :src="getAvatarNoBg(item.Id)" /></div>
-                <div class="new" v-show="item['isNew']"><img src="/New.png" /></div>
+                <div class="new" v-show="item['isNew']"><img src="/images/New.png" /></div>
                 <div class="star">
-                    <img src="/Star.png" v-for="(_, index) in item.StarGrade" :key="index" />
+                    <img src="/images/Star.png" v-for="(_, index) in item.StarGrade" :key="index" />
                 </div>
             </div>
         </div>
@@ -41,7 +41,7 @@ const colorTable: { [key: number]: string } = {
     @include hw(45vw, 80vw);
     flex-direction: column;
     border-radius: 20px;
-    background: url('/Background.png');
+    background: url('/images/Background.png');
     background-size: cover;
     overflow: hidden;
 }

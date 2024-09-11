@@ -30,7 +30,7 @@ const gachaStore = useGachaStore()
             <p>再次招募？</p>
             <div style="margin: 20px 0; font-weight: 500; font-size: 20px">青耀石消耗数量</div>
             <div class="point">
-                <img src="/Stone.png" />
+                <img src="/images/Stone.png" />
                 <div class="num">
                     <span>{{ gachaStore.lastGachaNum * 120 }}</span>
                 </div>
@@ -48,7 +48,7 @@ const gachaStore = useGachaStore()
                     <div>再来一次</div>
                 </div>
                 <div class="point-container">
-                    <img src="/Point.png" />
+                    <img src="/images/Point.png" />
                     <div class="text"><span>招募点数</span></div>
                     <div class="num">
                         <span>{{ gachaStore.totalCnt }}</span>

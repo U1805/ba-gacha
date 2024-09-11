@@ -27,7 +27,7 @@
     border-radius: 16px;
     box-shadow: 0 10px 6px -2px;
     background:
-        url('/IntroBgRight.png') right bottom no-repeat,
+        url('/images/IntroBgRight.png') right bottom no-repeat,
         rgb(242, 242, 242);
     background-size: 80%;
 
@@ -49,7 +49,7 @@
             content: '';
             @include position(0, auto, auto, 0);
             @include hw-filled;
-            background: url('/HeaderBg.png') no-repeat left top;
+            background: url('/images/HeaderBg.png') no-repeat left top;
             background-size: contain;
         }
         button {
@@ -98,15 +98,15 @@
         }
 
         .button-gray {
-            @include gacha-button($gray, '/ButtonGrayBg0.png', '/ButtonGrayBg1.png');
+            @include gacha-button($gray, '/images/ButtonGrayBg0.png', '/images/ButtonGrayBg1.png');
         }
 
         .button-blue {
-            @include gacha-button($blue, '/ButtonBlueBg0.png', '/ButtonBlueBg1.png');
+            @include gacha-button($blue, '/images/ButtonBlueBg0.png', '/images/ButtonBlueBg1.png');
         }
 
         .button-yellow {
-            @include gacha-button($golden, '/ButtonYellowBg0.png', '/ButtonYellowBg1.png');
+            @include gacha-button($golden, '/images/ButtonYellowBg0.png', '/images/ButtonYellowBg1.png');
         }
     }
 }

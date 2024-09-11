@@ -3,8 +3,10 @@ import ClickEffect from './components/ClickEffect.vue'
 import { useGachaStore } from '@/stores/index'
 import { onMounted } from 'vue'
 import { non_limited_students } from './assets/data/non_limited_students';
+import { getVideoPaths } from './assets/utils/api';
 
 const gachaStore = useGachaStore()
+const video_path = getVideoPaths()
 onMounted(async () => {
     gachaStore.getData()
     const non_limited_students_3star = 
@@ -27,6 +29,16 @@ onMounted(async () => {
         src="https://webusstatic.yo-star.com/bluearchive_jp_web/img/bg_cover.9bd1cfea.png"
         class="top-bg-cover"
     />
+    <!-- 视频预加载 -->
+    <div style="display: none;">
+        <video
+            v-for="(url, index) in Object.values(video_path).flat()"
+            :key="index"
+            :src="url"
+            preload="auto"
+            muted
+        ></video>
+    </div>
 </template>
 
 <style scoped lang="scss">

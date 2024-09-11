@@ -36,7 +36,7 @@ export default {
         },
         lineColor: {
             type: String,
-            default: '#000000'
+            default: '#00000000'
         },
         bgColor: {
             type: String,
@@ -76,7 +76,8 @@ export default {
             return this.height / this.width
         },
         stageInfo() {
-            return (this.$refs.canvas as HTMLCanvasElement).getBoundingClientRect()
+            const canvas = this.$refs.canvas as HTMLCanvasElement
+            return canvas.getBoundingClientRect()
         },
         myBg() {
             return this.bgColor ? this.bgColor : 'rgba(255, 255, 255, 0)'
@@ -84,7 +85,8 @@ export default {
     },
     watch: {
         myBg: function (newVal) {
-            ;(this.$refs.canvas as HTMLCanvasElement).style.background = newVal
+            const canvas = this.$refs.canvas as HTMLCanvasElement
+            canvas.style.background = newVal
         }
     },
     beforeMount() {

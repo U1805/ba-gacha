@@ -29,3 +29,6 @@ coverage
 
 .vscode
 docs
+
+# all mp4 files
+*.mp4

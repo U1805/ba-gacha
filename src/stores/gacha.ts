@@ -62,25 +62,30 @@ class Gacha {
         }
     }
 
-    // 随机获取一个学生
+    // FIXME: 随机获取一个学生
     getRandomStudent(last: boolean = false) {
         const data_temp = JSON.parse(JSON.stringify(this.database))
         this.fisherYatesShuffle(data_temp)
+        let result = null
 
-        const random = Math.random()
-        let sum = 0
-
-        for (let i = 0; i < data_temp.length; i++) {
-            const item = data_temp[i]
-            sum += last ? item.LastProb : item.Prob
-            if (sum >= random)
-                return {
-                    Id: item.Id,
-                    Name: item.Name,
-                    StarGrade: item.StarGrade
-                } as myStudent
+        while (!result){
+            const random = Math.random()
+            let sum = 0
+            
+            for (let i = 0; i < data_temp.length; i++) {
+                const item = data_temp[i]
+                sum += last ? item.LastProb : item.Prob
+                if (sum >= random){
+                    result = {
+                        Id: item.Id,
+                        Name: item.Name,
+                        StarGrade: item.StarGrade
+                    } as myStudent
+                    break
+                }
+            }
         }
-        console.warn('not get random student success')
+        return result
     }
 
     // 确定三星，此时 database 中只有三星学生
@@ -106,7 +111,7 @@ class Gacha {
         for (let i = 0; i < num; i++) {
             let student: myStudent
             if (sure) student = this.getSureStudent()
-            else student = this.getRandomStudent()!
+            else student = this.getRandomStudent()
 
             const studentR: resultItem = {
                 ...student,

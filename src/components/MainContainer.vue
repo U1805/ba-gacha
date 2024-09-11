@@ -40,7 +40,7 @@ const select_info = computed(() => {
                     <slot name="button-group"></slot>
                 </div>
                 <div class="tab-foot">
-                    <img src="/Point.png" draggable="false" class="point_icon" />
+                    <img src="/images/Point.png" draggable="false" class="point_icon" />
                     <div class="text">
                         <span>招募点数</span>
                     </div>
