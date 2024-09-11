@@ -23,7 +23,7 @@ const showModal = (num: number, msg: string) => {
     gachaStore.lastGachaNum = num
 }
 function getStudents() {
-    const sure = banners[select.value].title === '3★确定招募'
+    const sure = banners[gachaStore.lastGachaBanner].title === '3★确定招募'
     gachaStore.gachaStudents(gachaStore.lastGachaNum, sure)
     router.push('/gacha')
 }
@@ -42,7 +42,7 @@ const banners = [
         title: '3★确定招募',
         subtitle: '来招募更多性格迥异的学生吧!',
         notice: '选择招募 10 次，必定获得 1 名 3★ 学生! \n※ 点击右上角按钮查看招募记录',
-        preview_img: '/ba-gacha/banner/EventBanner1.png',
+        preview_img: '/ba-gacha/banners/EventBanner1.png',
         preview_video: video_path['preview'][1], // Gacha_Banner_3star_gb
         cards: non_limited_students.filter((item) => item['StarGrade'] === 3),
         limit: []
@@ -52,7 +52,7 @@ const banners = [
         title: '限定限时招募',
         subtitle: '【限定】泳装日奈（3★）招募概率提升!',
         notice: '选择招募 10 次，必定获得 1 名 3★ 学生! \n※ 点击右上角按钮查看招募记录',
-        preview_img: '/ba-gacha/banner/EventBanner2.png',
+        preview_img: '/ba-gacha/banners/EventBanner2.png',
         preview_video: video_path['preview'][2], // Gacha_Banner_220322_gb_1
         cards: non_limited_students,
         limit: limited_students_1
@@ -62,17 +62,16 @@ const banners = [
         title: '通常招募',
         subtitle: '来招募更多性格迥异的学生吧!',
         notice: '选择招募 10 次，必定获得 1 名 3★ 学生! \n※ 点击右上角按钮查看招募记录',
-        preview_img: '/ba-gacha/banner/EventBanner0.png',
+        preview_img: '/ba-gacha/banners/EventBanner0.png',
         preview_video: video_path['preview'][0], // Gacha_Banner_Normal_gb
         cards: non_limited_students,
         limit: []
     }
 ]
 const infos = reactive(banners)
-const select = ref(0)
 
 const changeBanner = (index: number) => {
-    select.value = index
+    gachaStore.lastGachaBanner = index
     const up_list_2 = infos[index].limit.filter((item) => item.StarGrade === 2).map((item) => item.Id)
     const up_list_3 = infos[index].limit.filter((item) => item.StarGrade === 3).map((item) => item.Id)
     gachaStore.setGacha([...infos[index].cards, ...infos[index].limit], up_list_2, up_list_3)
@@ -118,7 +117,7 @@ const changeBanner = (index: number) => {
         <!-- 概率情报 -->
         <CustomModal v-model="showProbModal" :title="'概率情报'"></CustomModal>
         <!-- 主界面 -->
-        <MainContainer :infos="infos" :select="select" @change-banner="changeBanner">
+        <MainContainer :infos="infos" @change-banner="changeBanner">
             <template #header>
                 <div class="header">
                     <div class="title">学生招募</div>

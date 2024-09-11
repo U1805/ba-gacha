@@ -2,11 +2,11 @@
 import { useGachaStore } from '@/stores/index'
 import { computed } from 'vue'
 const gachaStore = useGachaStore()
-const props = defineProps(['infos', 'select'])
+const props = defineProps(['infos'])
 const emits = defineEmits(['changeBanner'])
 
 const select_info = computed(() => {
-    return props.infos[props.select]
+    return props.infos[gachaStore.lastGachaBanner]
 })
 </script>
 

@@ -8,6 +8,7 @@ export const useGachaStore = defineStore('counter', () => {
     const gacha: Ref<Gacha> = ref(new Gacha([]))
     const gachaResult: Ref<resultItem[]> = ref([])
     const lastGachaNum: Ref<number> = ref(1)
+    const lastGachaBanner: Ref<number> = ref(0)
 
     const totalCnt = computed(() => {
         let cnt = 0
@@ -60,6 +61,7 @@ export const useGachaStore = defineStore('counter', () => {
 
     return {
         lastGachaNum,
+        lastGachaBanner,
         history,
         totalCnt,
         gachaResult,
